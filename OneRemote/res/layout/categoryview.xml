@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:text="OneRemote"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/ssdp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/add_btn"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Search"
+            android:textColor="@color/blue"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4B9BB6" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <menuapp.activity.util.DragDrop.LinearLayoutListView
+            android:id="@+id/pane1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/cat_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:fastScrollEnabled="true"
+                android:listSelector="@android:color/transparent"
+                android:persistentDrawingCache="scrolling"
+                android:scrollingCache="false" >
+            </ListView>
+        </menuapp.activity.util.DragDrop.LinearLayoutListView>
+
+        <Button
+            android:id="@+id/add_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/setting_btm"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Please use the settings icon to customize this page."
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</LinearLayout>

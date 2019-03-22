@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/back"
+            android:padding="15dp"
+            android:text="Choose Option"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#4B9BB6" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+         >
+
+        <LinearLayout
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/maxsize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:button="@anim/customradiobutton"
+                    android:checked="false"
+                    android:text=" Maximum size of image"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/width"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/txtbox_img"
+                    android:digits="0123456789"
+                    android:hint="Width"
+                    android:inputType="phone"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/txtbox_img"
+                    android:digits="0123456789"
+                    android:hint="Height"
+                    android:inputType="phone"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="18dp"/>
+
+                <RadioButton
+                    android:id="@+id/enlarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:button="@anim/customradiobutton"
+                    android:checked="false"
+                    android:text=" Allow enlarge"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/set_photo"
+                android:layout_margin="10dp"
+                android:background="@anim/round_corner"
+                android:padding="5dp"
+                android:text="Add"
+                android:textSize="18dp"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
