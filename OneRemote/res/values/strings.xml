@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OneRemote</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Mesages -->
+    <string name="internet_error">Please connect to working internet connection.</string>
+    <string name="api_error">Server is throwing error ,please contact with server administrator.</string>
+    <string name="server_error">Server not responding. Please try again later.</string>
+    <!-- Prefrences -->
+    <string name="array_set">array</string>
+    <string name="Parent_id">parent_id</string>
+    <string name="P_Cat_id">P_cat_id</string>
+    <string name="Cat_id">cat_id</string>
+    <string name="Cat_name">cat_name</string>
+    <string name="Sub_Cat_id">sub_cat_id</string>
+    <string name="Sub_Cat_name">sub_cat_name</string>
+    <string name="Sub_Cat_item_id">sub_cat_item_id</string>
+    <string name="Sub_Cat_item_name">sub_cat_item_name</string>
+    <string name="Scalling">scale</string>
+    <string name="Width">w</string>
+    <string name="Height">h</string>
+
+    <!-- List Show -->
+
+    <string name="id">id</string>
+    <string name="name">name</string>
+
+    <!-- color -->
+    <color name="text_blue">#001824</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">#000000</color>
+    <color name="btn_white">#FFFFFF</color>
+    <color name="btn_blue">#001824</color>
+    <color name="blue">#4B9BB6</color>
+    <color name="no_image">#73B5D3</color>
+
+    <string-array name="spinner_item">
+        <item>Category</item>
+        <item>Device</item>
+        <item>Action</item>
+    </string-array>
+    <string name="version">Version : 1.28</string>
+    
+    <string name="app_version">1.28</string>
+ <string name="app_text">Click on a device to connect.\nClick and hold to save it as a button.
+Some devices may not offer results.\nOnly devices that support SSDP and
+have a Presentation Page will work.</string>
+    
+</resources>
