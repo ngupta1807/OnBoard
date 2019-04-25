@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+        <TextView
+                style="@style/CustomTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:hint="@string/hash_tag"
+        />
+
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/old_pass"
+                android:hint="@string/hash_tag"
+                android:layout_margin="@dimen/pading"
+                android:imeOptions="actionDone"
+                style="@style/CustomEditText"
+                android:inputType="text" />
+
+
+        <Button
+                android:layout_width="fill_parent"
+                style="@style/CustomButton"
+                android:id="@+id/action_submit"
+                android:onClick="login"
+                android:text="@string/submit" />
+    </LinearLayout>
+
+</RelativeLayout>
