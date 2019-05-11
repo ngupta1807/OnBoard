@@ -1,52 +1,55 @@
-package com.sample.app.Frag
+package com.sample.app.frag
 
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.sample.app.R
+import com.sample.app.util.Common
+import com.sample.app.util.Validate
+import kotlinx.android.synthetic.main.fragment_hashtag.*
 
 
-class Setting() : Fragment(),View.OnClickListener  {
+class HashTag : Fragment(),View.OnClickListener  {
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.user -> {
-                street.setTextColor(resources.getColor(android.R.color.holo_green_dark))
-                user.setTextColor(resources.getColor(android.R.color.holo_red_dark))
-            }
-            R.id.street -> {
-                user.setTextColor(resources.getColor(android.R.color.holo_green_dark))
-                street.setTextColor(resources.getColor(android.R.color.holo_red_dark))
+            R.id.action_submit -> {
+                if (Validate(mcon).isValidName(hash_tag.text.toString().trim(), hash_tag ,getString(R.string.h_tag))) {
+                    Common(mcon).writeData(hash_tag.text.toString().trim())
+                    Toast.makeText(mcon,getString(R.string.h_tag)+" saved", Toast.LENGTH_LONG).show()
+                }
             }
             else -> {
             }
         }
     }
 
-    private var mListener: OnFragmentInteractionListener? = null
-    @BindView(R.id.user) lateinit var user: TextView
-    @BindView(R.id.street) lateinit var street: TextView
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_setting, container, false)
+        val view = inflater.inflate(R.layout.fragment_hashtag, container, false)
         ButterKnife.bind(this, view)
+        mcon=activity!!.applicationContext
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity!!.title = "Setting"
+        submit.setOnClickListener(this)
+        hash_tag.append(Common(mcon).readData())
     }
 
     override fun onAttach(context: Context?) {
         super.onAttach(context)
         if (context is OnFragmentInteractionListener) {
-            mListener = context as OnFragmentInteractionListener
+            mListener = context
         } else {
             throw RuntimeException(context.toString() + " must implement OnFragmentInteractionListener")
         }
@@ -56,9 +59,13 @@ class Setting() : Fragment(),View.OnClickListener  {
         super.onDetach()
         mListener = null
     }
-    public interface OnFragmentInteractionListener{
+
+    interface OnFragmentInteractionListener{
         fun onFragmentInteraction( uri: Uri)
     }
 
-
+    private var mListener: OnFragmentInteractionListener? = null
+    private lateinit var mcon: Context
+    @BindView(R.id.action_submit) lateinit var submit: Button
+    @BindView(R.id.hash_tag) lateinit var hash_tag: EditText
 }

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- font name -->
+    <string name="font_helvetica_regular">fonts/Helvetica_normal.ttf</string>
+
+    <!-- Field name -->
+    <string name="hash_tag">Enter HashTag</string>
+    <string name="b_word">Enter Bad Words</string>
+    <string name="submit">Submit</string>
+
+
+    <!-- Prefrence message -->
+
+    <string name="preference_file_key">hashtag</string>
+
+
+    <!-- Eror message -->
+    <string name="server_error">Something went wrong while loading tweets.</string>
+    <string name="no_data">No data found linked with hashtag </string>
+    <string name="contect_issue">Check your internet connection.</string>
+
+    <!-- app message -->
+    <string name="no_internet">Please connect to working internet.</string>
+    <string name="valid_data">Please enter valid data.</string>
+
+
+    <!-- navigation message -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Navigation bar-->
+    <string name="tweets">Tweets</string>
+    <string name="h_tag">HashTag</string>
+    <string name="black_list">Bad Words</string>
+
+    <!-- app text -->
+    <string name="static_txt">Loading user\'s timeline recent 10 records after every 1 minute linked with </string>
+    <string name="r_saved">record save </string>
+    <string name="r_deleted">Delete Record </string>
+    <string name="alert">Alert!</string>
+    <string name="bwrd_deleted">BadWord deleted</string>
+
+    <!-- popup text -->
+
+    <string name="delete">Delete</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+
+</resources>

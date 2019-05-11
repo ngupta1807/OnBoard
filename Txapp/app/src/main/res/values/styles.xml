@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:colorPressedHighlight">@color/colorPrimaryLight</item>
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@color/secondaryText</item>
+        <item name="icon">@color/icons</item>
+        <item name="divider">@color/divider</item>
+    </style>
+
+    <!-- No action bar theme -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:colorPressedHighlight">@color/colorPrimaryLight</item>
+
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@color/secondaryText</item>
+        <item name="icon">@color/icons</item>
+        <item name="divider">@color/divider</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="Widget.MyApp.Toolbar.Solid" parent="Widget.AppCompat.ActionBar">
+        <item name="android:colorControlNormal">@color/toolbarTextColor</item>
+
+        <!-- navigation icon color -->
+        <item name="android:textColorPrimary">@color/toolbarTextColor</item>
+
+        <!-- color of the menu overflow icon -->
+        <item name="android:textColorSecondary">@color/toolbarTextColor</item>
+
+        <item name="android:actionMenuTextColor">@color/toolbarTextColor</item>
+    </style>
+
+</resources>

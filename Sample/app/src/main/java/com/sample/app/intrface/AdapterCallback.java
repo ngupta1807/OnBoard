@@ -1,4 +1,4 @@
-package com.sample.app.util;
+package com.sample.app.intrface;
 
 import com.sample.app.param.BWord;
 

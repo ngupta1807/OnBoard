@@ -1,8 +1,9 @@
-package com.sample.app.util
+package com.sample.app.apis
 
 import android.util.Base64
 import com.google.gson.Gson
 import com.sample.app.param.Authenticated
+import com.sample.app.util.ConstantParam
 import org.apache.http.NameValuePair
 import org.apache.http.message.BasicNameValuePair
 import java.io.*
@@ -12,7 +13,7 @@ import java.net.URLEncoder
 
 class APICall{
      fun postRequest( requestURL: String): String {
-         lateinit var response: String
+         var response: String =""
          lateinit var urlConnection:HttpURLConnection
          var params = ArrayList<NameValuePair>();
          try {
@@ -80,7 +81,7 @@ class APICall{
     private fun readInputStreamToString(connection: HttpURLConnection): String {
         val sb = StringBuffer()
         var `is`: InputStream? = null
-        lateinit var result: String
+        var result: String =""
         try {
             val statusCode = connection.responseCode
             if (statusCode >= 200 && statusCode < 400) {

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_margin="@dimen/pading"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+
+        <TextView
+                style="@style/CustomTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/b_word"
+        />
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+        >
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/b_word"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/action_submit"
+                    android:hint="@string/b_word"
+                    android:layout_margin="@dimen/pading"
+                    android:imeOptions="actionDone"
+                    style="@style/CustomEditText"
+                    android:inputType="text" />
+            <Button
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.3"
+                    android:layout_width="60dp"
+                    style="@style/CustomButton"
+                    android:id="@+id/action_submit"
+                    android:text="@string/submit" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:id="@+id/bad_word_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+</LinearLayout>

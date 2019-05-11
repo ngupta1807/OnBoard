@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:background="@color/colorPrimary"
                 android:layout_height="match_parent">
     <LinearLayout
             android:id="@+id/linearLayout"
@@ -21,9 +20,11 @@
         <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/old_pass"
+                android:id="@+id/hash_tag"
                 android:hint="@string/hash_tag"
                 android:layout_margin="@dimen/pading"
+                android:maxLength="20"
+                android:singleLine="true"
                 android:imeOptions="actionDone"
                 style="@style/CustomEditText"
                 android:inputType="text" />
@@ -33,7 +34,6 @@
                 android:layout_width="fill_parent"
                 style="@style/CustomButton"
                 android:id="@+id/action_submit"
-                android:onClick="login"
                 android:text="@string/submit" />
     </LinearLayout>
 
