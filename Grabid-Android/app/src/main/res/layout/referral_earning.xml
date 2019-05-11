@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray1"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/tab_background"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/tab_underline"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/selected_tab"
+            app:tabTextAppearance="@style/TabTextAppearance"
+            app:tabTextColor="@color/tab_unselected_text_color">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textSize="@dimen/index_text_size" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paid"
+                android:textSize="@dimen/index_text_size" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due"
+                android:textSize="@dimen/index_text_size" />
+
+        </android.support.design.widget.TabLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/all"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/index_text_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/paid"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/index_text_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/unpaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/un_paid"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/index_text_size" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/lay_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blacklite">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:color/white"></View>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="100dp"
+                        android:paddingTop="100dp"></FrameLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="35dp"
+                        android:src="@drawable/wallett" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="CURRENT BALANCE"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                    <com.grabid.views.RobotoTextView
+                        android:id="@+id/currentbalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/balance"
+                        android:textSize="35sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/referralallback"
+                    android:orientation="vertical">
+
+                    <com.grabid.views.RegularTextView
+                        android:id="@+id/typeval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|top"
+                        android:background="@color/seagreen"
+                        android:gravity="left|top"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Loyalty"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/date_time" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:paddingTop="18dp"
+                            android:src="@drawable/amount" />
+
+                        <com.grabid.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/img"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="16dp"
+                            android:text="Loyalty Dollars"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/input_size" />
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/loyalty_dolar_earned"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/circle_green"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/input_size" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/litegray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/referralallback"
+                    android:orientation="vertical">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|top"
+                        android:background="@color/darkblue"
+                        android:gravity="left|top"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Referral"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/date_time" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="18dp"
+                            android:src="@drawable/amount" />
+
+                        <com.grabid.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_toRightOf="@+id/img"
+                            android:paddingLeft="15dp"
+                            android:text="Referral Dollars"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/input_size" />
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/cm_paid"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/circleblue"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/input_size" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/litegray" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/layTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/total_earning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/referal_dolar_earned"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/btn_size" />
+
+                        <com.grabid.views.RegularTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/referal_dolar_available"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/btn_size" />
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/cm_unpaid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/loyalty_dolar_earned"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/btn_size" />
+
+                        <com.grabid.views.RegularTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/loyalty_dolar_earned"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/btn_size" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/lay_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/paid_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <com.grabid.views.BoldTextView
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.4"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <com.grabid.views.BoldTextView
+                    android:id="@+id/amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.4"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Amount"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <com.grabid.views.BoldTextView
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.4"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Type"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/input_size" />
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/paid_header"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="5dp"
+                android:overScrollMode="never"
+                android:padding="5dp"
+                android:scrollbars="none"
+                android:scrollingCache="false"></ListView>
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="No Record Found"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/title_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/cash_out"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_size"
+        android:visibility="gone" />
+
+</RelativeLayout>

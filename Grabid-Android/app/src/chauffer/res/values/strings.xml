@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_version">1.0.9.2</string>
+
+    <!--<string name="l_fb_id">408288642605843</string>
+    <string name="l_fb_id_fb">fb408288642605843</string>-->
+
+    <!--Home Acticity-->
+    <string name="profileactivate">Thanks for joining the GRABiD community. To search for transfers or submit transfers, please activate your profile.</string>
+    <string name="verifyemailandaccount">Thanks for joining the GRABiD Chauffeur community. To search for transfers or submit transfers, please verify your email and your account needs to be approved by admin.</string>
+    <string name="verifyadmin">Thanks for joining the GRABiD Chauffeur community. To search for transfers or submit transfers,your account needs to be approved by admin.</string>
+    <string name="verifyemail">Thanks for joining the GRABiD Chauffeur community. To search for transfers or submit transfers,please verify your email.</string>
+    <string name="quitapp">Are you sure you want to quit the application?</string>
+    <!--Sign In Validations-->
+    <string name="usernameemailandpassword">Please enter username/email and password.</string>
+    <string name="usernamepassword">Please enter username/email or mobile number.</string>
+    <string name="passwordcheck">Please enter your password.</string>
+    <!--Sign Up validations-->
+    <string name="enterfirstname">Please enter your first name.</string>
+    <string name="enterlastname">Please enter your last name.</string>
+    <string name="emptymobileno">Empty field! Please enter your valid mobile number.</string>
+    <string name="countrycode">Please select country code.</string>
+    <string name="validmobileno">Please enter valid mobile number.</string>
+    <string name="enterotp">Please enter OTP.</string>
+    <string name="enterpassword">Please enter your password.</string>
+    <string name="passwordlength">Password should be at least 6 digit.</string>
+    <string name="enterconformpassword">Please confirm your password. Password should be at least 6 digit.</string>
+    <string name="paswordnotmatch">Password and confirm password does not match.</string>
+    <string name="userage">User age should be greater than 18 years and less than 90 years.</string>
+    <string name="accepttermsandconditions">Please accept the terms and conditions first.</string>
+    <!--Add feedback-->
+    <string name="giveyourating">Please give your rating.</string>
+    <!--Grabid Map Fragment-->
+    <string name="sendyounotification">GRABiD Chauffeur would like to send you notifications.</string>
+    <string name="enablenoti">Would you like to know when a delivery is available that suits your profile? Enable notifications to be in the know.</string>
+
+    <!--DriverLicense-->
+    <string name="enterlicensenumber">Please enter Driver\'s Licence Number.</string>
+    <string name="chooselicenseexpirydate">Please choose Driver\'s Licence Valid Until.</string>
+    <string name="expirydategreaterthencurrentdate">Licence expiry date should be greater than Current Date.</string>
+    <string name="chooselicensedriverimage">Please choose Driver licence image.</string>
+    <string name="drivercertificateno">Please enter Driver certificate number.</string>
+    <string name="validcertificateno">Please enter valid certificate number.</string>
+    <string name="drivercertvaliduntile">Please choose Driver certificate valid until.</string>
+    <string name="certificateexpirydate">Certificate expiry date should be greater than Current Date.</string>
+    <string name="drivercertificateimage">Please choose driver certificate image.</string>
+    <string name="choosemedicarecardnumber">Please enter medicare card number.</string>
+    <string name="choosemedicarecardimage">Please choose medicare card image.</string>
+    <!-- ProfileStepOnefile-->
+    <string name="enterusername">Please enter your username.</string>
+    <string name="usernamevalid">Username should contains only numbers,alphabets,dot,hyphen and underscore</string>
+    <string name="emptyemail">Please enter your valid email.</string>
+    <string name="invalidemail">Invalid email! Please enter valid email.</string>
+    <string name="paymentoption">Please select payment mode option.</string>
+    <!--ProfileStepTwopany-->
+    <string name="enterabnnumber">Please enter ABN number.</string>
+    <string name="digitabnnumber">Please enter 11 digit ABN number.</string>
+    <string name="selectregisterforgst">Please select registered for GST option.</string>
+    <string name="companystreetandno">Please enter company street no and name.</string>
+    <string name="entersuburb">Please enter suburb.</string>
+    <string name="selectcountry">Please select your country.</string>
+    <string name="selectstate">Please select your state.</string>
+    <string name="postalcode">Please enter postal code.</string>
+    <string name="validpostalcode">Please enter valid postal code.</string>
+    <string name="tendigitofficeno">Please enter 10 digit office number.</string>
+    <string name="totalnoofvehicle">Please enter total number of vehicles.</string>
+    <string name="entervehicleno">Please enter Vehicle Registration number. &amp; suitable Vehicle</string>
+    <string name="vehiclenoalphanumeric">Vehicle Registration Number must contain only numbers and letters. No special characters or spaces are allowed.</string>
+    <string name="uniqueregno">Please enter unique Vehicle Registration Number.</string>
+    <string name="nominate">Please nominate if you are the vehicle owner for Registration Number </string>
+    <string name="addimagesforregpaper">Please add images of registration paper for Vehicle Registration Number: </string>
+    <string name="addimagesforinspaper">Please add images of vehicle insurance certificate for Vehicle Registration Number: </string>
+    <string name="selectfreightins">Please select freight insurance option.</string>
+    <string name="selectfreightinscover">Freight insurance cover amount required for registration number</string>
+    <string name="enterequalvehicle">Please enter vehicles equal to total vehicles.</string>
+    <string name="totalqtyshouldnotless">Total qty should not be less then added vehicles</string>
+    <!--SubmitTransferStepOnement-->
+    <string name="selecttransfertype">Please Select Transfer Type.</string>
+    <string name="isthisasap">Please select Is this ASAP?</string>
+    <string name="totalpassenger">Please enter total no of passengers.</string>
+    <string name="isthisroundtrip">Please select Is this a Round Trip?</string>
+    <string name="passengergreaterthenzero">No. of Passenger should be greater than zero.</string>
+    <string name="selectpaymentmode">Please select payment mode option while transfer is collect type</string>
+    <!--SubmitTransferStepOnement Address-->
+    <string name="transfertitlev">Please enter transfer title.</string>
+    <string name="selectsuitablevehicle">Please select suitable vehicle.</string>
+    <string name="pperson">Please enter pick up contact person name.</string>
+    <string name="ppersonnumber">Please enter pick up person number.</string>
+    <string name="validpicknumber">Please enter valid pick up number.</string>
+    <string name="pickupaddress">Please enter pick up address.</string>
+    <string name="validpickaddress">Please select valid pickup address with country name</string>
+    <string name="pickupdatetime">Please select pick up date and time.</string>
+    <string name="dropoffaddress">Please enter drop off address.</string>
+    <string name="validdropaddress">Please select valid dropoff address with country name</string>
+    <string name="auctionbid">Please select auction bid.</string>
+    <string name="maximumopeningbid">Please enter maximum opening bid.</string>
+    <string name="validmaximumopeningbid">Please enter valid maximum opening bid amount.</string>
+    <string name="auctionstartdatetime">Please select auction start date and time.</string>
+    <string name="auctionstartmustbegreatercurrent">Auction start date must be greater than current day/time</string>
+    <string name="auctionendtime">Please select auction end date and time.</string>
+    <string name="auctionendgreaterthenauctionstart">Auction end date must be greater than auction start date.</string>
+    <string name="althenpickuptime">Auction Start date/time must be less than Pickup date/time.</string>
+    <string name="onehourlater">Pick-up time must be 1 hour later than auction end day/time</string>
+    <string name="alpickuptime">Auction end date/time must be less than Pickup date/time.</string>
+    <string name="fixedprice">Please enter fixed price.</string>
+    <string name="validfixedprice">Please enter valid fixed price amount.</string>
+    <string name="geozone">Please select GEO ZONE.</string>
+    <string name="georadius">Please enter geo radius.</string>
+    <!--Delivery Info-->
+    <string name="enterreason">Please Enter Reason.</string>
+    <string name="unbookmarksuccessfully">Transfer has been unbookmarked successfully</string>
+    <string name="bookmarksuccessfully">Transfer has been bookmarked successfully</string>
+    <string name="bidsubmitsuccess">Your bid has been submitted successfully.</string>
+    <string name="rejectallocatedtransfer">Are you sure you want to reject the transfer allocated to you?</string>
+    <string name="withdrawtransfer">Are you sure you want to withdraw from the transfer?</string>
+    <string name="canceltransfer">Are you sure you want to cancel this transfer?</string>
+    <string name="transferstatustointransiet">Are you sure you want to update transfer status to In-transit?</string>
+    <string name="transferstatustocomplete">Are you sure you want to update transfer status to Complete?</string>
+    <string name="acceptdriverbidfortransfer">Are you sure you want to accept that driver bid for this transfer?</string>
+    <string name="enterreasonfortransferrejection">Please enter the reason for rejecting this transfer allocation.</string>
+    <string name="entervalidamount">Please enter valid amount</string>
+    <string name="enterbidprice">Please enter bid price.</string>
+    <string name="auctionnotyetactive">This auction is not yet active.</string>
+    <string name="cannotchoosedriver">You can not choose driver before auction end time.</string>
+    <!--Common Search Key -->
+
+    <string-array name="jobypes">
+        <item>Offload Transfer</item>
+        <item>Collect Transfer</item>
+    </string-array><!-- update with latest one -->
+    <string-array name="transfertypes">
+        <item>ALL</item>
+        <item>Take Now</item>
+        <item>Active</item>
+        <item>Future</item>
+    </string-array>
+    <string name="submitjobs">Submit Transfer</string>
+    <string name="j_type">Transfer Type</string>
+    <string name="isasap">Is this ASAP?</string>
+    <string name="roundtrip">Is this a round trip?</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="r_trip">Round Trip</string>
+    <string name="of_cl">Offload/Collect</string>
+    <string name="totalpassengers">Total Passengers</string>
+    <string name="total_passenger">Total Number of Passengers</string>
+    <string name="pick_up_dropoff_notes">Enter Pick Up / Drop Off Notes</string>
+    <string name="submit_job">SUBMIT TRANSFER</string>
+    <string name="preview_transfer">PREVIEW</string>
+    <string name="review">REVIEW</string>
+    <string name="deliveries">Transfers</string>
+    <string name="delivries">Transfers</string>
+    <string name="paymenttypes">PAYMENT MODE</string>
+    <string name="delivriesdis">Transfers (as Dispatcher)</string>
+    <string name="delivriessen">Transfers (as Driver)</string>
+
+    <string name="deliveryname">Transfer Name</string>
+    <string name="shipper_feedback">Dispatcher Feedback</string>
+    <string name="driver_feedback">Driver Feedback</string>
+    <string name="search_delivery">Search Transfers</string>
+    <string name="submit_delivery">SUBMIT TRANSFERS</string>
+    <string name="submit_delivry">Submit Transfers</string>
+    <string name="submitdelivery">Submit Transfer</string>
+    <string name="bookmarked">Bookmarked Transfers</string>
+    <string name="shipper">Dispatcher</string>
+    <string name="shipper_name">Dispatcher Name:</string>
+    <string name="shipper_rating">Dispatcher Rating:</string>
+    <string name="search_deliveries">SEARCH TRANSFERS</string>
+    <string name="search_delivries">Search Transfers</string>
+    <string name="delivery">Transfer</string>
+    <string name="d_type">Transfer Type</string>
+    <string name="delivery_item">Transfer Items:</string>
+    <string name="shipperc">DISPATCHER</string>
+    <string name="pending_del">Transfers</string>
+    <string name="submitshipment">SUBMIT TRANSFER</string>
+    <string name="offloadjob">Offload Transfer</string>
+    <string name="collectjob">Collect Transfer</string>
+    <string name="offloadjobs">Offload Transfers</string>
+    <string name="collectjobs">Collect Transfers</string>
+    <string name="jobdetail">Transfer Details</string>
+    <string name="previewdelivery">Preview Delivery</string>
+    <string name="deliverystatus">Transfer Status</string>
+    <string name="suitable_vehicle_job">Suitable vehicles for this transfer</string>
+    <!-- <string name="google_maps_key">AIzaSyAR2V0PDweA03rm_5HVWOBm9KT618brPN4</string>-->
+    <!--<string name="google_maps_key">AIzaSyDbjEJYaObHTyUL_zkn4V0XeexYAISu_z4</string>-->
+    <string name="google_maps_key">AIzaSyCpbcLPcwz1NiJpl_WWJ2H2GfFaqwj748Q</string>
+    <string name="not_title">Transfer:</string>
+    <string name="payment_id">Transfer ID</string>
+    <string name="driverc">DRIVER</string>
+    <string name="feedbacksender">You have successfully submitted your feedback for the driver.
+        Thank you.
+    </string>
+    <string name="feedbackcarrier">You have successfully submitted your feedback for the dispatcher.
+        Thank you.
+    </string>
+    <string name="cancelshipper">Please provide reason for cancellation of the transfer</string>
+    <string name="cancelshippernew">Note: GRABiD Chauffeur investigates all cancellations. Please check GRABiD Chauffeur Cancellation Policy to see if any penalties or compensation applies.</string>
+    <string name="canceldriver">Please provide reason for withdrawal. Note: GRABiD Chauffeur
+        investigates all withdrawals. In accordance with GRABiD Chauffeur Cancellation Policy, if the
+        withdrawal is less than 48 hours from the transfer time, you will be charged $15 processing fees.
+    </string>
+    <string name="canceldrivernew">Note: GRABiD Chauffeur investigates all withdrawals. Please check GRABiD Chauffeur Cancellation Policy to see if any penalties or compensation applies.</string>
+
+    <string name="senderdetail">Dispatcher Detail</string>
+    <string name="driverdetail">Driver Detail</string>
+    <string name="send">(Dispatcher)</string>
+    <string name="drive">(Driver)</string>
+    <string name="track">Track Transfer</string>
+    <string name="creditcard">Please save your credit card details before creating a transfer.</string>
+    <string name="deletebankdetail">Are you sure you want to delete this bank account from the GRABiD Chauffeur Wallet.</string>
+    <string name="deletecrcarddetail">Are you sure you want to delete this credit card from the GRABiD Chauffeur Wallet.</string>
+
+    <string name="wallet_success">You have successfully added the bank account to GRABiD Chauffeur Wallet.</string>
+    <string name="wallet_delete">You have successfully deleted the bank account from GRABiD Chauffeur Wallet.</string>
+    <string name="wallet_update">You have successfully updated the bank account to GRABiD Chauffeur Wallet.</string>
+    <string name="cr_wallet_success">You have successfully added the credit card  to GRABiD Chauffeur Wallet.</string>
+    <string name="cr_wallet_delete">You have successfully deleted the credit card  from GRABiD Chauffeur Wallet.</string>
+    <string name="cr_wallet_update">You have successfully updated the credit card to GRABiD Chauffeur Wallet.</string>
+    <string name="savebankdetails">Please save your bank details in the GRABiD Chauffeur Wallet before accepting the Take Now offer.</string>
+    <string name="savecreditdetails">Please save your credit card details in the GRABiD Chauffeur Wallet before take now.</string>
+    <string name="savebankdetailsbidnow">Please save your bank details in the GRABiD Chauffeur Wallet before bidnow.</string>
+    <string name="savecreditdetailsbidnow">Please save your credit card details in the GRABiD Chauffeur Wallet before bidnow.</string>
+    <string name="savebankdetailsaccept">Please save your bank details in the GRABiD Chauffeur Wallet before choosing the winning bidder.</string>
+    <string name="savecreditdetailsaccept">Please save your credit card details in the GRABiD Chauffeur Wallet before choosing the winning bidder.</string>
+    <string name="invite_for_grabid">Tell your Friends about GRABiD Chauffeur</string>
+    <string name="invite_message">Invite your friends to GRABiD Chauffeur app using your unique referral code and earn commissions.</string>
+    <string name="termsandcondition">By clicking on SIGN UP and creating an account, you agree to GRABiD Chauffeur Terms &amp; Conditions and Privacy Policy</string>
+    <string name="joingrabid">Join GRABiD today using my referral code:</string>
+    <string name="favourite">Favourite Drivers</string>
+    <string name="searchfavourite">Search Driver</string>
+    <string name="carrier1">Driver:</string>
+    <string name="selectgroup">Tick which group to offer the transfer to:</string>
+    <!-- <string name="send1">Send to Favourite Drivers only</string>
+     <string name="send2">Send to Favourite Drivers first and if not accepted send to all</string>
+     <string name="send3">Send to all</string>-->
+    <string name="send1">Offer to Favourite Drivers only</string>
+    <string name="send2">Offer to Favourite Drivers first and if not accepted offer to All Drivers</string>
+    <string name="send3">Offer to All Drivers</string>
+    <string name="pleasetick">Please choose a group to send the transfer.</string>
+    <string name="transfertitle">Transfer Title</string>
+    <string name="available_bids">Available Bids on Transfer</string>
+    <string name="favouritelocation">View Favourites</string>
+    <string name="preference">Driver Preferences</string>
+    <string name="favouritegroups">Favourite Groups</string>
+    <string name="allorselected">Do you want to add driver for selected favourite groups?</string>
+    <string name="suretoremove">Are you sure to remove that driver form favourite driver list. if yes then driver will remove from all favourite groups in which that driver added.</string>
+    <string name="nofavouritefroup">Your favourite groups do not have any drivers available currently. Please select another option to submit the transfer.</string>
+    <string name="removeuserfavgroup">Are you sure to remove that driver from favourite group.</string>
+    <string name="selectcarrier">Available Driver</string>
+    <string name="delivery_id">Transfer ID</string>
+
+    <string name="clientID">592598835178-8muri61ncs711ka0259ukepbklncqgkh.apps.googleusercontent.com</string>
+    <string name="l_fb_id">307539919416380</string>
+    <string name="l_fb_id_fb">fb307539919416380</string>
+    <string name="searckey">key=AIzaSyCpbcLPcwz1NiJpl_WWJ2H2GfFaqwj748Q</string>
+</resources>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/cancel_delivery"
+        android:overScrollMode="never"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white" >
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#66000000"
+            android:padding="10dp" >
+            <com.grabid.views.BoldTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/input_size" />
+            <com.grabid.views.RegularTextView
+                android:id="@+id/bid_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maximun Opening Bid - 123456"
+                android:textSize="@dimen/btn_size"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_below="@+id/name"
+                android:textColor="@android:color/white"
+                android:paddingTop="5dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_border" />
+        <LinearLayout
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+        <com.grabid.views.RegularTextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:text="Admin"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/input_size" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/call"
+                android:src="@drawable/call_icon"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/msg_icon"
+                android:padding="5dp"
+                android:id="@+id/msg"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:numStars="5"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:progressDrawable="@drawable/rating_blue"
+        android:layout_height="18dp"
+        android:rating="2.5"
+        android:id="@+id/rating_shipper" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_seprator"/>
+    <RelativeLayout
+        android:id="@+id/lay_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/white" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.grabid.views.BoldTextView
+                android:id="@+id/pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PICKUP"
+                android:drawableLeft="@drawable/pickup_icon"
+                android:drawablePadding="5dp"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/input_size" />
+            <com.grabid.views.BoldTextView
+                android:id="@+id/pu_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Melbourne 234 street"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+            <com.grabid.views.RegularTextView
+                android:id="@+id/pu_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2016/11/04 02:00 PM"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+            <com.grabid.views.RegularTextView
+                android:id="@+id/pu_lift_equip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Lifting Equipment - Available On Site"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/index_text_size" />
+        </LinearLayout>
+        <com.grabid.views.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/location_icon"
+            android:text="Residental"
+            android:drawablePadding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_seprator"/>
+    <RelativeLayout
+        android:id="@+id/lay_dropoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/white" >
+        <com.grabid.views.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/location_listing2"
+            android:text="Commerical"
+            android:drawablePadding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/green"
+            android:textSize="@dimen/input_size" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.grabid.views.BoldTextView
+                android:id="@+id/drop_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DROP OFF"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/drop_icon"
+                android:drawablePadding="5dp"
+                android:textColor="@color/green"
+                android:textSize="@dimen/input_size" />
+            <com.grabid.views.BoldTextView
+                android:id="@+id/do_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:text="Dummy 11234 street"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+            <com.grabid.views.RegularTextView
+                android:id="@+id/do_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:text="2016/11/04 02:00 PM"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+            <com.grabid.views.RegularTextView
+                android:id="@+id/do_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:text="Appointment - Yes"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/index_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_seprator"/>
+    <RelativeLayout
+        android:id="@+id/lay_auction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/white" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.grabid.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AUCTION START"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/input_size" />
+            <com.grabid.views.RegularTextView
+                android:id="@+id/auction_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2016/11/04 02:00 PM"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/btn_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AUCTION END"
+            android:layout_gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/input_size" />
+            <com.grabid.views.RegularTextView
+                android:id="@+id/auction_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2016/11/04 02:00 PM"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/btn_size" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>
+    <com.grabid.views.BoldTextView
+        android:id="@+id/cancel_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_delivry"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="@dimen/input_size"
+        android:clickable="true"
+        android:textColor="@android:color/white"
+        android:padding="15dp" />
+</RelativeLayout>

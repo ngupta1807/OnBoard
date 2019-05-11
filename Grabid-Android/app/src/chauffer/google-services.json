@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "592598835178",
+    "firebase_url": "https://grabid-chauffeur-12676.firebaseio.com",
+    "project_id": "grabid-chauffeur-12676",
+    "storage_bucket": "grabid-chauffeur-12676.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592598835178:android:a881d2106ebf5879",
+        "android_client_info": {
+          "package_name": "com.grabid.chauffeur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592598835178-67l3abof5c7frcmorv573iomuds5nano.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grabid.chauffeur",
+            "certificate_hash": "1efb3e9da8e8eab451741aabea5426a7dbc8ba28"
+          }
+        },
+        {
+          "client_id": "592598835178-v7oa1i8rn951fjopd4nkbg223ldcmsq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grabid.chauffeur",
+            "certificate_hash": "d7edd7d35a202c5bed412142c63ddc8f7babca06"
+          }
+        },
+        {
+          "client_id": "592598835178-8muri61ncs711ka0259ukepbklncqgkh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpbcLPcwz1NiJpl_WWJ2H2GfFaqwj748Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592598835178-vahil97b5ek4378a5j7bb32pfqaotlpi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.GRABiD.Chauffer"
+              }
+            },
+            {
+              "client_id": "592598835178-8muri61ncs711ka0259ukepbklncqgkh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

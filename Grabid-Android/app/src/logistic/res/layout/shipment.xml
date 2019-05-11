@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/bar" />
+
+    <LinearLayout
+        android:id="@+id/progres_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/active_dotblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_lineblue"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dotblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_lineblue"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dotblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_lineblue"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/dotblue" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btm"
+        android:layout_below="@+id/progres_bar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/toplayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/form_margin"
+                    android:text="@string/delivery"
+                    android:textColor="@color/form_title"
+                    android:textSize="@dimen/btn_size" />
+
+                <com.grabid.views.BoldTextView
+                    android:id="@+id/delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gray_dropdown"
+                    android:gravity="center|left"
+                    android:hint="Choose Delivery"
+                    android:text=""
+                    android:textColor="@color/form_feild"
+                    android:textColorHint="@color/form_title"
+                    android:textSize="@dimen/btn_size" />
+
+                <LinearLayout
+                    android:id="@+id/lay_deliverysub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/d_type"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/d_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/gray_dropdown"
+                        android:gravity="center|left"
+                        android:hint="Choose Delivery Type"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_animal_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/animal_type"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/animal_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_dropdown"
+                        android:gravity="center|left"
+                        android:hint="Select"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/notes"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:ems="15"
+                        android:hint="Enter details"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_totalqty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/total_qty"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.grabid.views.BoldEditText
+                            android:id="@+id/qty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/gray_txtbox"
+                            android:ems="15"
+                            android:hint="Enter Total Quantity"
+                            android:inputType="number"
+                            android:textColor="@color/form_feild"
+                            android:textColorHint="@color/form_title"
+                            android:textSize="@dimen/btn_size" />
+
+                    </RelativeLayout>
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/qty_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/blue"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/cont"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btmlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lay_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <com.grabid.views.BoldTextView
+                            android:id="@+id/itemdetailtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/input_size" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/back_icon"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/input_size"
+                            android:visibility="visible" />
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/previous"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/back_icon"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/input_size"
+                            android:visibility="gone" />
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/next_icon"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/input_size"
+                            android:visibility="gone" />
+
+                        <com.grabid.views.RegularTextView
+                            android:id="@+id/same"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="Same"
+                            android:textColor="@color/seagreen"
+                            android:textSize="@dimen/input_size"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/qty"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size"
+                        android:visibility="gone" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/item_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:ems="15"
+                        android:hint="Enter Quantity"
+                        android:inputType="number"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_hwlw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/weight"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:hint="Enter Weight"
+                        android:inputType="number"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/length"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/length"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:hint="Enter Length"
+                        android:inputType="number"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/width"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/width"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:hint="Enter Width"
+                        android:inputType="number"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/height"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:hint="Enter height"
+                        android:inputType="number"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_haz_stack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/stackable"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/stackable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_dropdown"
+                        android:gravity="center|left"
+                        android:hint="Choose Stackable"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/hazardous"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/hazardous"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_dropdown"
+                        android:gravity="center|left"
+                        android:hint="Choose Hazardous"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:id="@+id/hazardous_good_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/hazardous_good_title"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size"
+                        android:visibility="gone" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/hazardous_good_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:hint="@string/hazardous_good_title"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_animal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/lay_animal_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.grabid.views.RegularTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/form_margin"
+                            android:text="@string/notes"
+                            android:textColor="@color/form_title"
+                            android:textSize="@dimen/btn_size" />
+
+                        <com.grabid.views.BoldEditText
+                            android:id="@+id/animal_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gray_txtbox"
+                            android:ems="15"
+                            android:hint="Enter details"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/form_feild"
+                            android:textColorHint="@color/form_title"
+                            android:textSize="@dimen/btn_size" />
+                    </LinearLayout>
+
+                    <com.grabid.views.RegularTextView
+                        android:id="@+id/animalcarriertitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/animal_carrier"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/animal_carrier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_dropdown"
+                        android:gravity="center|left"
+                        android:text=""
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/name"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size"
+                        android:visibility="gone" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:ems="15"
+                        android:hint="Enter Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size"
+                        android:visibility="gone" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/breedapp"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/animal_breed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:ems="15"
+                        android:hint="Enter Breed"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/weight"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/animal_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:ems="15"
+                        android:hint="Enter weight"
+                        android:inputType="number"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/current_vaccination"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/current_vaccination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_dropdown"
+                        android:gravity="center|left"
+                        android:hint="Select"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="@string/more"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="top"
+                        android:hint=""
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <!--<com.grabid.views.RegularEditText
+                        android:id="@+id/more1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:hint=""
+                        android:inputType="textMultiLine"
+                        android:lines="5"
+                        android:padding="8dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/input_size"
+                        android:visibility="visible" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/choose_photoblue" />
+
+                    <!--     <com.grabid.views.RegularTextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:gravity="center"
+                             android:padding="8dp"
+                             android:text="@string/photo"
+                             android:textColor="@android:color/black"
+                             android:textSize="@dimen/btn_size" />
+
+                         <com.grabid.views.RegularTextView
+                             android:id="@+id/image"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="10dp"
+                             android:background="@drawable/rounded_border_black"
+                             android:gravity="center"
+                             android:paddingBottom="10dp"
+                             android:paddingLeft="20dp"
+                             android:paddingRight="20dp"
+                             android:paddingTop="10dp"
+                             android:text="@string/choose_photo"
+                             android:textColor="@android:color/black"
+                             android:textSize="@dimen/btn_size" />-->
+
+
+                    <RelativeLayout
+                        android:id="@+id/lay_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:tag="" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/img"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toLeftOf="@+id/edit_img"
+                            android:background="@android:color/white" />
+
+                        <ImageView
+                            android:id="@+id/edit_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/img"
+                            android:layout_alignRight="@+id/img"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="0dp"
+                            android:clickable="true"
+                            android:padding="10dp"
+                            android:src="@drawable/pencil_icon"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <!-- <RelativeLayout
+                         android:id="@+id/lay_add_more"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="2dp"
+                         android:visibility="visible">
+
+                         <com.grabid.views.BoldTextView
+                             android:id="@+id/save"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginBottom="20dp"
+                             android:layout_marginTop="10dp"
+                             android:background="@color/blue"
+                             android:clickable="true"
+                             android:gravity="center"
+                             android:padding="10dp"
+                             android:text="Save Item"
+                             android:textColor="@color/white"
+                             android:textSize="@dimen/input_size" />
+
+
+                         &lt;!&ndash;    <com.grabid.views.RegularTextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="@dimen/input_size"
+                                 android:padding="8dp"
+                                 android:visibility="gone"
+                                 android:layout_centerVertical="true"
+                                 android:background="@drawable/border_black"
+                                 android:layout_alignParentLeft="true"
+                                 android:textColor="@android:color/black"
+                                 android:text="Save Item"
+                                 android:id="@+id/save" />
+                             <com.grabid.views.RegularTextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="@dimen/input_size"
+                                 android:padding="8dp"
+                                 android:visibility="gone"
+                                 android:layout_centerVertical="true"
+                                 android:background="@drawable/border_black"
+                                 android:layout_alignParentRight="true"
+                                 android:textColor="@android:color/black"
+                                 android:text="Add More"
+                                 android:id="@+id/add_more" />&ndash;&gt;
+                     </RelativeLayout>-->
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <com.grabid.views.BoldTextView
+         android:id="@+id/save"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:background="@color/blue"
+         android:clickable="true"
+         android:gravity="center"
+         android:padding="10dp"
+         android:text="Save Item"
+         android:textColor="@color/white"
+         android:textSize="@dimen/input_size"
+         android:visibility="gone" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/btm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cont"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size"
+            android:visibility="gone" />
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SAVE ITEM DATA"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/crop_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.theartofdev.edmodo.cropper.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/CropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_lay" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="20dp">
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/cancel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/rounded_border_black"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/input_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/done"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_border_black"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Done"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/input_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

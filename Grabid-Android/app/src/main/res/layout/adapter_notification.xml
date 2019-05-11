@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >-->
+
+    <RelativeLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colored_blue_sidebar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/notification_counter"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.LightTextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/btn_size" />
+
+        </LinearLayout>
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/notification_counter"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/triangle_blue_corner"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:paddingTop="2dp"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/index_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <!--  </android.support.v7.widget.CardView>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/litegray" />
+</LinearLayout>

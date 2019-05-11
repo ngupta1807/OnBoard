@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allsidegrayborder"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1.5dp"
+            android:src="@drawable/driver1" />
+
+        <com.grabid.views.SemiBoldTextView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="10dp"
+            android:text="@string/group"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.SemiBoldTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/del"
+            android:text="xyz"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:weightSum="3">
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/viewtxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="VIEW"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/rename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="RENAME"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/remove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@color/redd"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="REMOVE"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_size" />
+    </LinearLayout>
+</LinearLayout>

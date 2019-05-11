@@ -1,0 +1,384 @@
+<resources>
+    <!--<string name="app_name">GRABiD</string>-->
+    <string name="app_version_name">GRABiD</string>
+    <!--home screen-->
+    <string name="logoutmsg">Are you sure you want to Logout?</string>
+    <!--AllocateDriversvers-->
+    <string name="allocatetransfer">Are you sure you want to allocate this transfer to this driver?</string>
+    <string name="allocatedelivery">Are you sure you want to allocate this delivery to this carrier?</string>
+    <!--ForgotPassword-->
+    <string name="enteremail">Please enter your email/username</string>
+    <string name="validemail">Invalid email! Please enter valid email.</string>
+
+    <!--Bank Info-->
+    <string name="bankname">Please enter bank name.</string>
+    <string name="accountholdname">Please enter bank account holder name.</string>
+    <string name="accountno">Please enter bank account number.</string>
+    <string name="accountnomax">Account Number should contain at least 5 characters.</string>
+    <string name="bsbno">Please enter BSB number.</string>
+    <string name="bsbnomax">BSB Number should contain at least 6 characters.</string>
+    <!--change password-->
+    <string name="currentpassword">Please enter your current password.</string>
+    <string name="newpassword">Please enter your new password.</string>
+    <string name="newpasswordmax">New password should be of atleast 6 characters.</string>
+    <string name="confirmpassword">Please confirm your new password.</string>
+    <string name="notmatchpassword">New password and confirm password does not match.</string>
+    <!--credit card-->
+    <string name="invalidcardno">Invalid card number. Please enter valid 16 digit card number.</string>
+    <string name="invalidcvv">Invalid CVV. Please enter valid 3 digit CVV number.</string>
+
+    <!--common-->
+    <string name="completeallfield">Please complete all fields.</string>
+
+
+
+    <string name="openDrawer">Open navigation drawer</string>
+    <string name="closeDrawer">Close navigation drawer</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="login">Login with</string>
+    <string name="signup">Sign Up!</string>
+    <string name="register">REGISTER</string>
+    <string name="cont">CONTINUE</string>
+    <string name="getotp">GET ACCESS CODE</string>
+    <string name="verifyotp">VERIFYOTP</string>
+    <string name="submit">SUBMIT</string>
+    <string name="external_dir">GetSignature</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="vehicle_owner">Select Vehicle Owner</string>
+    <string name="multi_vehicle">Select Multiple Vehicles</string>
+    <string name="qty">Qty:</string>
+    <string name="item_detial">Item Detail</string>
+    <string name="total_qty">Total Qty</string>
+    <string name="notes">Notes</string>
+    <string name="paymentvia">Payment Via</string>
+    <string name="paymenttype">Payment Type</string>
+    <string name="paymentmode">Payment Mode</string>
+    <string name="adddmore">ADD</string>
+    <string name="favouriteout">Favourite Network</string>
+    <string name="suitable_veh">Suitable Vehicles</string>
+    <string name="weight">Weight(kg)</string>
+    <string name="length">Length(cm)</string>
+    <string name="width">Width (cm)</string>
+    <string name="height">Height (cm)</string>
+    <string name="more">More Details</string>
+    <string name="photo">Photo</string>
+    <string name="search">Search</string>
+    <string name="searchcaps">SEARCH</string>
+    <string name="reset">Reset</string>
+    <string name="booking_type">Booking Type</string>
+    <string name="pending">PENDING</string>
+    <string name="upcoming">UPCOMING</string>
+    <string name="history">HISTORY</string>
+    <string name="detail">Delivery Details</string>
+    <string name="c_detail">Complete Delivery</string>
+    <string name="p_detail">Pick Up Delivery</string>
+    <string name="in_transit">IN-TRANSIT</string>
+    <string name="completed">COMPLETED</string>
+    <string name="cancelled">CANCELLED</string>
+    <string name="referral_code">Referral Code:</string>
+    <string name="invite">Please Tap on the Referral Code\nto share the code with your\nfriends and invite them to join\nGRABiD.</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_name">Account Name</string>
+    <string name="account_num">Account Number</string>
+    <string name="branch_code">Routing Number</string>
+    <string name="swift_code">Swift Code:</string>
+    <string name="card_type">Card Type</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="card_number">Credit Card Number</string>
+    <string name="expiry">Expiry</string>
+    <string name="cvv">CVV</string>
+    <string name="previous">  &lt;  </string>
+    <string name="next">  &gt;  </string>
+    <string name="resetcap">RESET</string>
+    <string name="submit_shipment">SUBMIT DELIVERY</string>
+    <string name="ready_to_bid">READY TO BID</string>
+    <string name="driver">Driver</string>
+    <string name="carrier">Carrier</string>
+    <string name="export">Export</string>
+    <string name="needtowithdraw">Need to Withdraw</string>
+    <string name="uploaddocuments">Upload Documents</string>
+    <string name="userbelongs">Choose which Favourite Group/s this \n user belongs to</string>
+    <string name="selectgroupuserbelongs">Select Groups</string>
+    <string name="pending_bid">Pending Bids</string>
+    <string name="in_vite">Invite</string>
+    <string name="my_account">My Account</string>
+    <string name="help">Help</string>
+
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="charge_me">Charge Me</string>
+    <string name="creditcardtitle">Credit Card</string>
+    <string name="pay_me">Pay Me</string>
+    <string name="collect">Collect</string>
+    <string name="amountcollected">Amount Collected From Passenger</string>
+    <string name="amountdrivercharge">Amount Charged To Driver</string>
+    <string name="transactiondetails">Transaction Detail</string>
+    <string name="bankdetails">Bank Details</string>
+    <string name="paid">PAID</string>
+    <string name="un_paid">DUE</string>
+
+
+    <string name="setting">SETTINGS</string>
+    <string name="notification">Notifications</string>
+    <string name="referral">GRABiD Wallet</string>
+
+    <string name="change_password">Change Password</string>
+    <string name="settings">Settings</string>
+    <string name="no_internet">No active internet connection found! Please check your internet connection and try again.</string>
+    <string name="no_response">Server is not responding this time. Please check your internet connection and try again.</string>
+    <string name="fail">Unable to execute your process. Please try after sometime.</string>
+    <string name="vehicle_insurance">VEHICLE INSURANCE</string>
+    <string name="freight_insurance">FREIGHT INSURANCE</string>
+
+    <string name="visa">Visa</string>
+    <string name="mastercard">MasterCard</string>
+    <string name="amex">Amex</string>
+    <string name="discover">Discover</string>
+    <string name="maestro">Maestro</string>
+
+    <string-array name="cardTypes">
+        <item>@string/visa</item>
+        <item>@string/mastercard</item>
+    </string-array>
+    <!-- <item>@string/amex</item>
+     <item>@string/discover</item>
+     <item>@string/maestro</item>-->
+    <string name="sender">Sender Name</string>
+    <string name="sender_sign">Sender Signature Image</string>
+    <string name="receiver">Receiver Name</string>
+    <string name="receiver_sign">Receiver Signature Image</string>
+
+    <string name="title">Delivery Name/Reference</string>
+    <string name="pu_person">Pick Up Contact Person</string>
+    <string name="pu_mobile">Pick Up Number</string>
+    <string name="pu_address">Pick Up Address</string>
+    <string name="pu_date">Pick Up Day &amp; Time</string>
+    <string name="pu_date_end">End Pick Up Day &amp; Time</string>
+    <string name="pu_date_choose">Select Pick Up Options</string>
+    <string name="do_person">Drop Off Contact Person</string>
+    <string name="do_mobile">Drop Off Number</string>
+    <string name="do_address">Drop Off Address</string>
+    <string name="do_date">Drop Off Day &amp; Time</string>
+    <string name="do_date_choose">Select Drop Off Options</string>
+    <string name="do_date_end">End Drop Off Day &amp; Time</string>
+    <string name="pu_build_type">Pick Up Building Type</string>
+    <string name="com_build_name">Pick up Company / Building Name</string>
+    <string name="do_com_build_name">Drop off Company / Building Name</string>
+    <string name="hazardous_good_title">Enter Hazardous Goods Code Type</string>
+    <string name="enter_com_build_name">Enter Company / Building Name</string>
+    <string name="freight_del_type">Freight Delivery Type</string>
+    <string name="suitable_vehicle">Suitable vehicles for this delivery</string>
+    <string name="pu_lift_equip">Pick Up Lifting Equipment:</string>
+    <string name="do_build_type">Drop Off Building Type:</string>
+    <string name="do_lift_equip">Drop Off Lifting Equipment:</string>
+    <string name="do_call">Drop Off Call Before Delivery:</string>
+    <string name="do_appoint_require">Drop Off Appointment Required:</string>
+    <string name="special_permit">Special permit required?</string>
+    <string name="induction_require">Induction required?</string>
+    <string name="special_restriction">Any Special Restrictions/Instructions</string>
+    <string name="special_permit_detail">Special Permit Detail</string>
+    <string name="max_opening_bid">Maximum Opening Bid</string>
+    <string name="auction_duration">Auction Duration</string>
+    <string name="auction_start">Auction Start</string>
+    <string name="auction_end">Auction End</string>
+    <string name="cancel_delivery">Cancel Delivery</string>
+    <string name="cancel_delivry">CANCEL DELIVERY</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="geo_zone">GEO Zone(km) Enable</string>
+    <string name="auction_bid">Auction Bid</string>
+    <string name="fix_price">Fixed Offer Take Now Price</string>
+    <string name="stackable">Stackable</string>
+    <string name="hazardous">Hazardous</string>
+    <string name="animal_type">Animal Type</string>
+    <string name="animal_carrier">Animal Carrier</string>
+    <string name="name">Name</string>
+    <string name="breed">Breed</string>
+    <string name="breedapp">Breed (if applicable)</string>
+    <string name="current_vaccination">Current Vaccinations</string>
+    <string name="cc">Country Code</string>
+
+    <string name="removeShipmentALert">If you reduce the item quantity, the last item you added will be removed.</string>
+    <string name="removeVehicleALert">If you reduce the vehicle quantity, the last vehicle you added will be removed.</string>
+    <string name="removeshipment">If you reduce the item quantity, the last item you added will be removed.</string>
+    <string name="removeVehicleALertSingle">If you reduce vehicle quantity,the last vehicle you added will be removed.</string>
+
+    <string name="support">Need help? Please contact us at\nsupport@grabid.com.au</string>
+    <string name="documentdelivery">GRABiD helps you with proof of pick up and delivery. You can capture and upload consignment barcodes before clicking on CONFIRM. Otherwise click on CANCEL to get directly to signature on glass.</string>
+    <string name="termsconditions">Terms And Conditions</string>
+    <string name="privacypolicy">Privacy And Policy</string>
+    <string name="feedback">Feedback</string>
+    <string-array name="build_type">
+        <item>@string/commercial</item>
+        <item>@string/residential</item>
+    </string-array>
+    <string-array name="nav_type">
+        <item>Google Maps</item>
+        <item>Waze</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <string-array name="status_type">
+        <item>Pending</item>
+        <item>Upcoming</item>
+        <item>In-Transit</item>
+        <item>Completed</item>
+        <item>All</item>
+    </string-array>
+    <!--<item>Cancelled</item>-->
+    <string-array name="shipper_status_type">
+        <item>Available</item>
+        <item>Upcoming</item>
+        <item>In-Transit</item>
+        <item>Completed</item>
+        <item>Cancelled</item>
+        <item>All</item>
+    </string-array>
+
+    <string name="commercial">Commercial</string>
+    <string name="residential">Residential</string>
+    <string-array name="life_equipment">
+        <item>@string/on_site</item>
+        <item>@string/not_on_site</item>
+        <item>@string/manual</item>
+    </string-array>
+    <string name="on_site">Available on site</string>
+    <string name="not_on_site">Not available on site</string>
+    <string name="n_a">N/A</string>
+    <string name="manual">Manual Handling</string>
+
+    <string name="all">ALL</string>
+    <string name="freight">Freight</string>
+    <string name="appliance">Appliances</string>
+    <string name="vehicle">Vehicles</string>
+    <string name="livestock">Livestock</string>
+
+    <string name="take_now">Take Now</string>
+    <string name="accountholdername">Card holder name should have first name and last name eg - Mark Joe .</string>
+    <string name="active">Active</string>
+    <string name="future">Future</string>
+
+    <string-array name="animal_type">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Snack</item>
+        <item>Other</item>
+    </string-array>
+    <string name="company"><u>Company:</u></string>
+    <string name="address"><u>Address:</u></string>
+    <string name="suburb"><u>Suburb:</u></string>
+    <string name="state"><u>State:</u></string>
+    <string name="country"><u>Country:</u></string>
+
+    <string name="getphotos">Upload Consignment Barcodes</string>
+    <string name="hint_sign">Click here to take Digital Signature</string>
+    <string name="dialog_title">SIGN HERE</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_save">Save</string>
+
+    <string name="contact_pu">Pick Up Contact Person:</string>
+    <string name="contact_do">Drop Off Contact Person:</string>
+
+    <string name="title_pu">Please take Pick Up person digital signature with name to start picking up the delivery</string>
+    <!-- <string name="title_do">Please take receiver digital signature with name to complete the delivery</string>-->
+    <string name="title_do">To update delivery status to complete, please have Drop Off Contact Person digitally sign below: </string>
+    <string name="title_pending">To update delivery status to in-transit, please have Pick Up Contact Person digitally sign below:  </string>
+
+    <string-array name="choose_pu_date_time">
+        <item>@string/after</item>
+        <item>@string/before</item>
+        <item>@string/between</item>
+        <item>@string/on</item>
+    </string-array>
+    <string-array name="choose_do_date_time">
+        <item>@string/before</item>
+        <item>@string/between</item>
+        <item>@string/on</item>
+    </string-array>
+    <string name="after">After</string>
+    <string name="before">Before</string>
+    <string name="between">Between</string>
+    <string name="on">On</string>
+
+    <string-array name="freight_type">
+        <item>@string/small</item>
+        <item>@string/large</item>
+        <item>@string/refrigerated</item>
+    </string-array>
+    <string name="small">20ft Shipping Container</string>
+    <string name="large">40ft Shipping Container</string>
+    <string name="refrigerated">Refrigerated Container</string>
+
+    <string name="referal_dolar_earned">Referral Dollars Earned To Date</string>
+    <string name="referal_dolar_available">Referral Dollars Available Cash-Out</string>
+    <string name="loyalty_dolar_earned">Loyalty Dollars Earned To Date</string>
+    <string name="loyalty_dolar_available">Loyalty Dollars Available Cash-Out</string>
+
+    <string name="cash_out">CASH OUT NOW</string>
+
+    <!--<string name="fb_id">692155797474291</string>-->
+
+
+    <string name="latlongerror">Can not access latitude &amp; longitude, please check your gps connection.</string>
+    <!-- <string name="fb_id">1457836317851070</string>-->
+    <!--<string name="client_id">961148736047-iijql96url6vjpr5u4emou058fjac3ud.apps.googleusercontent.com</string>-->
+
+    <string name="back"> Back </string>
+    <string name="reffral_code">Referral Code</string>
+    <string name="privatepolicy">Privacy Policy</string>
+    <string name="terms"><u> Terms &amp; Conditions</u></string>
+    <string name="g_wallet">GRABiD Wallet</string>
+    <string name="wallet">Loyalty/Referral Earnings</string>
+    <string name="upcoming_del">UPCOMING DELIVERIES</string>
+    <string name="intransit_del">IN TRANSIT DELIVERIES</string>
+    <string name="completed_del">COMPLETED DELIVERIES</string>
+    <string name="cancelled_del">CANCELLED DELIVERIES</string>
+    <string name="propose">Propose Directions</string>
+    <string name="dateofbirth">DOB</string>
+    <string name="enterdob">Enter DOB</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="registerforgst">Registered For GST</string>
+    <string name="vehicleowner">Vehicle Owner?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="yescap">YES</string>
+    <string name="nocap">NO</string>
+    <string name="penalty">Penalty</string>
+    <string-array name="data01">
+        <item name="code">+91</item>
+        <item name="country">India</item>
+    </string-array>
+
+    <string-array name="data02">
+        <item name="code">+61</item>
+        <item name="country">Australia</item>
+    </string-array>
+    <array name="countries">
+        <item>@array/data01</item>
+        <item>@array/data02</item>
+
+    </array>
+    <string name="creditcarddecline">Your credit card will be expire this month. Please update your credit card</string>
+    <string name="addgrouptoname">Please give this Favourite Group a name.</string>
+    <string name="addfavouritegroup">Add Favourite Group</string>
+    <string name="group">Group:</string>
+    <string name="title_activity_selectgroups">SELECTGROUPS</string>
+    <string name="vehregpap">Upload Vehicle Registration Papers</string>
+    <string name="vehreginspap">Upload Vehicle Insurance Certificate</string>
+    <string name="saveexit">SAVE &amp; EXIT</string>
+    <string name="freightins">Freight Insurance?</string>
+    <string name="freightdollar">Freight Insurance Cover (in $)</string>
+    <string name="removegrp">Are you sure to remove that group form favourite groups list.</string>
+    <string name="removevreg">Are you sure, you want to delete the Vehicle Registration papers image?</string>
+    <string name="removevinc">Are you sure, you want to delete the Vehicle Insurance papers image?</string>
+    <string name="maxvreg">You have reached the maximum limit of Vehicle Registration papers image.</string>
+    <string name="maxvinc">You have reached the maximum limit of Vehicle Insurance certificates image.</string>
+    <string name="selectgroupalert">Tick a group to offer the delivery to.</string>
+    <string name="client_id">845250573232-e00i4gde6t0mp1t558pvto11r2bgc1s0.apps.googleusercontent.com</string>
+
+</resources>

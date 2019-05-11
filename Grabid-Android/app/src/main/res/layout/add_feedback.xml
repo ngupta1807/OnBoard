@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <com.grabid.views.RegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Feedback:"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/input_size" />
+
+    <com.grabid.views.RegularEditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_black"
+        android:gravity="top|left"
+        android:hint="Enter your inputs here (optional)"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/input_size" />
+
+    <com.grabid.views.RegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:text="Rating:"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/input_size" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="center"
+        android:max="5"
+        android:numStars="5"
+        android:progressDrawable="@drawable/rating_background" />
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_size" />
+
+</LinearLayout>

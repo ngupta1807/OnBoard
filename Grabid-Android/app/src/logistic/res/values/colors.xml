@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#4b7ef4</color>
+    <color name="green">#00DC88</color>
+    <color name="red">#8B0000</color>
+    <color name="line_seprator">#d2d2d2</color>
+    <color name="text_color">#515151</color>
+    <color name="login_box">#5f8cf6</color>
+
+    <color name="light_gray">#EEEEEE</color>
+    <color name="ultra_dark">#29303F</color>
+    <color name="litegray">#d2d2d2</color>
+    <color name="liteegray">#A2C6FA</color>
+    <color name="gray1">#ECE9EA</color>
+    <color name="line_seprator_text">#d2d2d2</color>
+    <color name="list_background">#EBEBEB</color>
+    <color name="back_add">#4b7ef4</color>
+
+    <color name="form_title">#959595</color>
+    <color name="form_feild">#494949</color>
+    <color name="bar">#d1d1d1</color>
+    <color name="app_text_color">#5e5e5e</color>
+    <color name="notify_read">#f2f2f2</color>
+    <color name="transparent">#00000000</color>
+    <color name="redd">#FF0000</color>
+    <color name="seagreen">#00DC88</color>          <!-- 00DC88 -->
+
+    <color name="darkblue">#2986EE</color>
+    <!--<color name="liteegray">#A2C6FA</color>-->
+
+    <color name="white">#ffffff</color> <!-- tootlbar  title background -->
+    <color name="black">#000000</color>  <!-- tootlbar  title -->
+
+    <!-- Changed colors-->
+    <!--Sign-in -->
+    <color name="blue">#4b7ef4</color>
+    <color name="groupdone">#4b7ef4</color>
+    <color name="homefilter">#4b7ef4</color>
+    <color name="acceptColor">#4b7ef4</color>
+    <color name="signin_btn">@android:color/transparent</color>
+    <color name="signin_brdr_btn">@android:color/white</color>
+    <color name="edit_bcgrnd">#5f8cf6</color>
+    <color name="edittext_bcgrnd_brdr">@android:color/transparent</color>
+    <color name="top_bar_color">#ffffff</color>
+    <color name="top_bar_title_color">@android:color/black</color>
+    <color name="left_center_bar">#00DC88</color>
+
+    <!-- home -->
+    <color name="filer_text_color_selected">@android:color/white</color>
+    <color name="filer_background_color_selected">#2986EE</color>
+    <color name="filer_text_color_unselected">@android:color/black</color>
+    <color name="filer_background_color_unselected">@android:color/white</color>
+
+    <!--credit card -->
+    <color name="selected_tab">#ffffff</color>
+    <color name="credit_loyalty">#13df80</color>
+    <color name="credit_referal">#2986EE</color>
+    <!-- earning -->
+    <color name="tab_background">#2986EE</color>
+    <color name="tab_unselected_text_color">#A2C6FA</color>
+    <color name="tab_underline">#00DC88</color>
+    <color name="balance">#00DC88</color>
+    <color name="save_btn">#2986EE</color>
+
+    <!-- deliveries -->
+    <color name="pending_color">#4b7ef4</color>
+    <color name="upcoming_color">#e8b71a</color>
+    <color name="intransit_color">#8f3fb0</color>
+    <color name="completed_color">#13df80</color>
+    <color name="cancelled_color">#fa5a5a</color>
+    <color name="available_color">#000000</color>
+
+    <!-- invite -->
+    <color name="invite_title">#00DC88</color>
+
+    <!-- common -->
+    <color name="text_color_black">@android:color/black</color>
+    <color name="hint_color">@android:color/white</color>
+    <color name="text_color_white">@android:color/white</color>
+    <color name="addfavourite">#4b7ef4</color>
+    <color name="blacklite">#2986EE</color>
+
+
+</resources>

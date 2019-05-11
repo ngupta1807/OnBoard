@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/tab_background"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/tab_underline"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/selected_tab"
+        app:tabTextAppearance="@style/TabTextAppearance"
+        app:tabTextColor="@color/tab_unselected_text_color">
+
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textSize="@dimen/index_text_size" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/penalty"
+            android:textSize="@dimen/index_text_size" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="@dimen/index_text_size" />
+
+    </android.support.design.widget.TabLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <!--<com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upcoming"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/upcoming"
+            android:clickable="true"
+            android:textSize="@dimen/index_text_size"
+            android:textColor="@android:color/black"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>-->
+        <com.grabid.views.RegularTextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/history"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/index_text_size" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/detail"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/index_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bankdetailborder"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="60dp">
+
+                <LinearLayout
+                    android:id="@+id/layTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.grabid.views.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="@string/card_type"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularTextView
+                        android:id="@+id/card_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_dropdown"
+                        android:clickable="true"
+                        android:gravity="center|left"
+                        android:hint="Select Card Type"
+                        android:padding="0dp"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="@string/card_holder_name"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.RegularEditText
+                        android:id="@+id/card_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:ems="15"
+                        android:hint="Enter Card Holder Name"
+                        android:inputType="textCapSentences"
+                        android:padding="0dp"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="@string/card_number"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.MonitoringEditText
+                        android:id="@+id/card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:hint="Enter credit card number"
+                        android:inputType="number"
+                        android:maxLength="19"
+                        android:padding="0dp"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/lay_left"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/lay_right"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.grabid.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="0dp"
+                                android:text="@string/expiry"
+                                android:textColor="@color/form_feild"
+                                android:textColorHint="@color/form_title"
+                                android:textSize="@dimen/btn_size" />
+
+                            <com.grabid.views.RegularTextView
+                                android:id="@+id/card_expiry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/gray_txtbox"
+                                android:ems="15"
+                                android:gravity="center|left"
+                                android:hint="Expiry Date"
+                                android:padding="0dp"
+                                android:textColor="@color/form_title"
+                                android:textSize="@dimen/btn_size" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_right"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.grabid.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="0dp"
+                                android:text="@string/cvv"
+                                android:textColor="@color/form_feild"
+                                android:textColorHint="@color/form_title"
+                                android:textSize="@dimen/btn_size" />
+
+                            <com.grabid.views.RegularEditText
+                                android:id="@+id/card_cvv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/gray_txtbox"
+                                android:ems="5"
+                                android:hint="CVV"
+                                android:inputType="numberPassword"
+                                android:maxLength="3"
+                                android:padding="0dp"
+                                android:textColor="@color/form_title"
+                                android:textSize="@dimen/btn_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/credit_card" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/layOver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/submit"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/framelayout"
+            android:layout_marginTop="0dp"
+            android:background="@color/save_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SAVE DETAILS"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="false"></ListView>
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="No Record Found"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/title_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

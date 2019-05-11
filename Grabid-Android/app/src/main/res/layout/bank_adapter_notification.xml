@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/allsidegrayborder"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1.5dp"
+            android:src="@drawable/delivery" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:paddingLeft="10dp"
+            android:text="@string/deliveryname"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.LightTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/del"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Delivery"
+            android:textColor="@color/seagreen"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1.5dp"
+            android:src="@drawable/amount" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img1"
+            android:paddingLeft="10dp"
+            android:text="message"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.LightTextView
+            android:id="@+id/messageval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="amount"
+            android:textColor="@color/seagreen"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1.5dp"
+            android:src="@drawable/date" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img3"
+            android:paddingLeft="10dp"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.LightTextView
+            android:id="@+id/datevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="date"
+            android:textColor="@color/seagreen"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltpaymentvia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1.5dp"
+            android:src="@drawable/id" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/paymentviatitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img5"
+            android:paddingLeft="10dp"
+            android:text="@string/paymenttype"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.LightTextView
+            android:id="@+id/paymentvia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/seagreen"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/delstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgstat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1.5dp"
+            android:src="@drawable/delivery" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgstat"
+            android:paddingLeft="10dp"
+            android:text="@string/deliverystatus"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.LightTextView
+            android:id="@+id/delstatusval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/seagreen"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/litegray"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1.5dp"
+            android:src="@drawable/id" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img4"
+            android:paddingLeft="10dp"
+            android:text="@string/delivery_id"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.LightTextView
+            android:id="@+id/shipmentvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/litegray" />
+</LinearLayout>

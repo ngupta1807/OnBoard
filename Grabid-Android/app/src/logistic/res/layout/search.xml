@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/header"
+        android:background="@color/bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldAutoCompleteTextView
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_dropdown"
+            android:hint="From"
+            android:inputType="text"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="To"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldAutoCompleteTextView
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_dropdown"
+            android:hint="To"
+            android:inputType="text"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="@string/booking_type"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/booking_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_dropdown"
+            android:gravity="center_vertical"
+            android:hint="Choose Booking Type"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="Pickup Date"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/pick_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_txtbox"
+            android:drawableRight="@drawable/calendar"
+            android:gravity="center|left"
+            android:hint="Pickup Date"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="Drop Off Date"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/drop_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_txtbox"
+            android:drawableRight="@drawable/calendar"
+            android:gravity="center|left"
+            android:hint="Drop Off Date"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="Delivery Status"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/delivery_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_dropdown"
+            android:gravity="center_vertical"
+            android:hint="Choose Delivery Status"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="Maximum Opening Bid / Take Now"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularEditText
+            android:id="@+id/max_bid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_txtbox"
+            android:digits="0123456789"
+            android:hint="Enter Price"
+            android:inputType="number"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/btn_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="2">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/searchcaps"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size" />
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/resetcap"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size" />
+    </LinearLayout>
+
+</RelativeLayout>

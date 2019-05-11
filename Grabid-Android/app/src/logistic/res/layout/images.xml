@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/bar" />
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/documentdelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/documentdelivery"
+        android:textSize="@dimen/btn_size"></com.grabid.views.BoldTextView>
+
+    <ListView
+        android:id="@+id/barcodeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addphotos"
+        android:layout_below="@+id/documentdelivery"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"></ListView>
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/addphotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitlinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/photolayout"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Capture Barcode"
+        android:textColor="@color/seagreen"
+        android:textSize="@dimen/input_size"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/submitlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/seagreen"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="CANCEL"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"></View>
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/seagreen"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="CONFIRM"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <!-- <Button
+         android:id="@+id/imagebtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:text="Add Photos" />
+
+     <Button
+         android:id="@+id/uploadphotos"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:text="Upload Photos" />
+
+
+     <GridView
+         android:id="@+id/gridview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:columnWidth="90dp"
+         android:gravity="center"
+         android:horizontalSpacing="10dp"
+         android:numColumns="auto_fit"
+         android:stretchMode="columnWidth"
+         android:verticalSpacing="10dp" />-->
+
+
+</RelativeLayout>

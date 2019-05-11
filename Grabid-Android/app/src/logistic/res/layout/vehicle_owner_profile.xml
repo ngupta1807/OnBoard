@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/bar" />
+
+    <LinearLayout
+        android:id="@+id/progres_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_line"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/active_dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_line"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_line"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/dot" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/signup"
+        android:layout_below="@+id/progres_bar"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <!--   <ScrollView
+               android:id="@+id/scrollView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/signup"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true"
+               android:layout_below="@+id/progres_bar"
+               android:layout_marginTop="16dp"
+               android:scrollbars="none">
+       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:ems="14"
+                android:hint="Enter Company Name"
+                android:inputType="textCapSentences"
+                android:maxLength="14"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="ABN Number"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/abn_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:ems="14"
+                android:hint="Enter ABN Number"
+                android:inputType="number"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/registerforgst"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <RadioGroup
+                android:id="@+id/radiogst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/green"
+                    android:text="@string/yes"
+                    android:textColor="@color/form_feild"
+                    android:textSize="@dimen/radiobtn_size" />
+
+                <RadioButton
+                    android:id="@+id/radiono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/green"
+                    android:text="@string/no"
+                    android:textColor="@color/form_feild"
+                    android:textSize="@dimen/radiobtn_size" />
+
+            </RadioGroup>
+
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Company Contact Person"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/company_contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:ems="15"
+                android:hint="Enter Company Contact Person"
+                android:inputType="textCapSentences"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Company Street No. \u0026 Name"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldAutoCompleteTextView
+                android:id="@+id/company_street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:ems="15"
+                android:hint="Enter Company Street No. \u0026 Name"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Suburb"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/suburb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:ems="15"
+                android:hint="Enter Suburb"
+                android:inputType="textCapSentences"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Country"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select Country"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="State"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select State"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Postal Code"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:ems="15"
+                android:hint="Enter Postal Code"
+                android:imeOptions="actionNext"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cc"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldTextView
+                        android:id="@+id/cc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:clickable="true"
+                        android:gravity="center|left"
+                        android:hint=""
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_feild"
+                        android:textSize="@dimen/btn_size"></com.grabid.views.BoldTextView>
+
+                    <com.grabid.views.MySpinner
+                        android:id="@+id/countrycode"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:spinnerMode="dialog"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <com.grabid.views.RegularTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:digits="0123456789"
+                        android:ems="15"
+                        android:hint="Enter Phone Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="12"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_feild"
+                        android:textSize="@dimen/btn_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Office Phone No"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/office_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:digits="0123456789"
+                android:ems="13"
+                android:hint="Enter Office Phone No"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_feild"
+                android:textSize="@dimen/btn_size" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.grabid.views.RegularTextView
+                        android:id="@+id/vehicle_qty_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/form_margin"
+                        android:text="Total Vehicles"
+                        android:textColor="@color/form_title"
+                        android:textSize="@dimen/btn_size" />
+
+                    <com.grabid.views.BoldEditText
+                        android:id="@+id/vehicle_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gray_txtbox"
+                        android:ems="15"
+                        android:hint="Enter Total Vehicles"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/form_feild"
+                        android:textColorHint="@color/form_feild"
+                        android:textSize="@dimen/btn_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/add_more_vehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@drawable/add_btn" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_vehicles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/cont"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_size" />
+</RelativeLayout>

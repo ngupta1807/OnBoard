@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/header"
+        android:background="@color/bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter current password"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldEditText
+            android:id="@+id/current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_txtbox"
+            android:hint="Enter current password"
+            android:inputType="textPassword"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="Enter new password"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldEditText
+            android:id="@+id/new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_txtbox"
+            android:ems="15"
+            android:hint="Enter new password"
+            android:inputType="textPassword"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/form_margin"
+            android:text="Confirm New Password"
+            android:textColor="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.BoldEditText
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_txtbox"
+            android:ems="15"
+            android:hint="Confirm New Password"
+            android:inputType="textPassword"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+
+    </LinearLayout>
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_size" />
+
+</RelativeLayout>

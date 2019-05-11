@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_txtbox"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingTop="@dimen/input_size"
+            android:text="Select Card Type"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center|right"
+            android:paddingRight="15dp"
+            android:src="@drawable/close" />
+    </FrameLayout>
+
+    <com.grabid.views.RegularTextView
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_txtbox"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="YES"
+        android:textColor="@color/form_title"
+        android:textSize="12sp" />
+
+    <com.grabid.views.RegularTextView
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_txtbox"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="NO"
+        android:textColor="@color/form_title"
+        android:textSize="12sp" />
+</LinearLayout>

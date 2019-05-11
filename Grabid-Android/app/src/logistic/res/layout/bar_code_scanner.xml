@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/itemno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/btn_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/barcodeclose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="@drawable/closeroundbtn"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="X"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/barcodeimg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <permission
+        android:name="com.grabid.chauffeur.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.grabid.chauffeur.permission.MAPS_RECEIVE" />
+    <application>
+        <activity
+            android:name="com.grabid.activities.VehicleListSubmitMultiple"
+            android:screenOrientation="sensorPortrait"></activity>
+        <activity
+            android:name="com.grabid.activities.VehicleListProfileCompany"
+            android:screenOrientation="sensorPortrait"></activity>
+
+    </application>
+</manifest>

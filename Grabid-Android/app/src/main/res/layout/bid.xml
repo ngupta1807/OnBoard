@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/allsidegrayborder"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:id="@+id/bidinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bidder:"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.LightTextView
+                android:id="@+id/bidder_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/title"
+                android:text="tittle"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bidder_id"
+                android:layout_marginTop="8dp"
+                android:text="Bid Price:"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.LightTextView
+                android:id="@+id/bid_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bidder_id"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/price"
+                android:text="Test feedabck"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/btn_size" />
+        </RelativeLayout>
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/acceptColor"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="ACCEPT"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/litegray" />
+</LinearLayout>
+

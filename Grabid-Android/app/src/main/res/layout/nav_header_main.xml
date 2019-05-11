@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:background="@color/blue"
+    android:orientation="vertical">
+    <!--android:background="#2986EE"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/lay_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <FrameLayout
+                android:id="@+id/framelay"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/menu_pic"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lay_img"
+            android:text="UserName"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:background="@color/left_center_bar"
+            android:orientation="vertical"
+            android:paddingBottom="14dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="14dp">
+
+            <com.grabid.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:text="@string/shipperc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_size" />
+
+            <RatingBar
+                android:id="@+id/rating_shipper"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressDrawable="@drawable/rating"
+                android:stepSize="0.1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="50"
+            android:background="@color/left_center_bar"
+            android:orientation="vertical"
+            android:paddingBottom="14dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="14dp">
+
+            <com.grabid.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:text="@string/driverc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_size" />
+
+            <RatingBar
+                android:id="@+id/rating_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressDrawable="@drawable/rating"
+                android:stepSize="0.1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

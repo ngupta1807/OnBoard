@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="I acknowledge and confirm that:"
+            android:inputType="phone"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/input_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/litegray"></View>
+
+
+        <WebView
+            android:id="@+id/textterm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="none"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/input_size" />
+
+        <LinearLayout
+            android:id="@+id/lay_auction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:gravity="bottom"
+            android:weightSum="2">
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="CANCEL"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/input_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/proceed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="CONFIRM"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/input_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

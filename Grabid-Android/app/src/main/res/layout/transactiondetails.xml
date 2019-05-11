@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bankdetailborder"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="1.5dp"
+                android:src="@drawable/id" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img5"
+                android:paddingLeft="10dp"
+                android:text="@string/deliveryname"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.LightTextView
+                android:id="@+id/delivery_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/seagreen"
+                android:textSize="@dimen/btn_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/litegray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="1.5dp"
+                    android:src="@drawable/id" />
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img"
+                    android:paddingLeft="10dp"
+                    android:text="@string/payment_id"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <com.grabid.views.LightTextView
+                    android:id="@+id/shipment_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="1.5dp"
+                    android:src="@drawable/date" />
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img3"
+                    android:paddingLeft="10dp"
+                    android:text="Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <com.grabid.views.LightTextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Date"
+                    android:textColor="@color/seagreen"
+                    android:textSize="@dimen/btn_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltpaymentvia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="1.5dp"
+                    android:src="@drawable/id" />
+
+                <com.grabid.views.RegularTextView
+                    android:id="@+id/headingpv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img6"
+                    android:paddingLeft="10dp"
+                    android:text="@string/paymentvia"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <com.grabid.views.LightTextView
+                    android:id="@+id/paymentvia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/seagreen"
+                    android:textSize="@dimen/btn_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/totalamountrel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="1.5dp"
+                    android:src="@drawable/amount" />
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img1"
+                    android:paddingLeft="10dp"
+                    android:text="Total Amount Due"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <com.grabid.views.LightTextView
+                    android:id="@+id/totalamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Total Amount Due"
+                    android:textColor="@color/seagreen"
+                    android:textSize="@dimen/btn_size" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/walletreferral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="1.5dp"
+                    android:src="@drawable/amount" />
+
+                <com.grabid.views.RegularTextView
+                    android:id="@+id/referralh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img4"
+                    android:paddingLeft="10dp"
+                    android:text="Wallet Amount Use"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <com.grabid.views.LightTextView
+                    android:id="@+id/referral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Referral"
+                    android:textColor="@color/seagreen"
+                    android:textSize="@dimen/btn_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="1.5dp"
+                    android:src="@drawable/amount" />
+
+                <com.grabid.views.RegularTextView
+                    android:id="@+id/amountpay_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img2"
+                    android:paddingLeft="10dp"
+                    android:text="AmountPay"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <com.grabid.views.LightTextView
+                    android:id="@+id/amount_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="AmountPay"
+                    android:textColor="@color/seagreen"
+                    android:textSize="@dimen/btn_size" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

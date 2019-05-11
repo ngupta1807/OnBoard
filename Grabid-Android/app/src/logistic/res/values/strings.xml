@@ -1,0 +1,262 @@
+<resources>
+
+    <string name="app_version">1.0.9.2</string>
+    <!--Home Acticity-->
+    <string name="profileactivate">Thanks for joining the GRABiD community. To search for deliveries or submit deliveries, please activate your profile.</string>
+    <string name="verifyemailandaccount">Thanks for joining the GRABiD Logistics community. To search for deliveries or submit deliveries, please verify your email and your account needs to be approved by admin.</string>
+    <string name="verifyadmin">Thanks for joining the GRABiD Logistics community. To search for deliveries or submit deliveries,your account needs to be approved by admin.</string>
+    <string name="verifyemail">Thanks for joining the GRABiD Logistics community. To search for deliveries or submit deliveries,please verify your email.</string>
+    <string name="quitapp">Are you sure you want to quit the application?</string>
+    <!--Sign In Validations-->
+    <string name="usernameemailandpassword">Please enter username/email and password.</string>
+    <string name="usernamepassword">Please enter username/email or mobile number.</string>
+    <string name="passwordcheck">Please enter your password.</string>
+    <!--Add feedback-->
+    <string name="giveyourating">Please give your rating.</string>
+    <!--Sign Up validations-->
+    <string name="enterfirstname">Please enter your first name.</string>
+    <string name="enterlastname">Please enter your last name.</string>
+    <string name="emptymobileno">Empty field! Please enter your valid mobile number.</string>
+    <string name="countrycode">Please select country code.</string>
+    <string name="validmobileno">Please enter valid mobile number.</string>
+    <string name="enterotp">Please enter OTP.</string>
+    <string name="enterpassword">Please enter password. Password should be at least 6 digit.</string>
+    <string name="enterconformpassword">Please confirm your password. Password should be at least 6 digit.</string>
+    <string name="paswordnotmatch">Password and confirm password does not match.</string>
+    <string name="userage">User age should be greater than 18 years and less than 90 years.</string>
+    <string name="accepttermsandconditions">Please accept the terms and conditions first.</string>
+    <!--Delivery Info-->
+    <string name="enterreason">Please Enter Reason.</string>
+    <string name="unbookmarksuccessfully">Delivery has been unbookmarked successfully</string>
+    <string name="bookmarksuccessfully">Delivery has been bookmarked successfully</string>
+    <string name="bidsubmitsuccess">Your bid has been submitted successfully.</string>
+    <string name="rejectallocateddelivery">Are you sure you want to reject the delivery allocated to you?</string>
+    <string name="withdrawdelivery">Are you sure you want to withdraw from the delivery?</string>
+    <string name="canceldelivery">Are you sure you want to cancel this delivery?</string>
+    <string name="deliverystatustointransiet">Are you sure you want to update delivery status to In-transit?</string>
+    <string name="deliverystatustocomplete">Are you sure you want to update delivery status to Complete?</string>
+    <string name="acceptcarrierbidfordelivery">Are you sure you want to accept that carrier bid for this delivery?</string>
+    <string name="enterreasonforallocationrejection">Please enter the reason for rejecting this delivery allocation.</string>
+    <string name="entervalidamount">Please enter valid amount</string>
+    <string name="enterbidprice">Please enter bid price.</string>
+    <string name="auctionnotyetactive">This auction is not yet active.</string>
+    <string name="cannotchoosecarrier">You can not choose carrier before auction end time.</string>
+
+    <!--DriverLicense-->
+    <string name="selectlicensetype">Please select licence type.</string>
+    <string name="enterlicensenumber">Please enter licence number.</string>
+    <string name="chooselicenseexpirydate">Please choose licence expiry date.</string>
+    <string name="expirydategreaterthencurrentdate">Licence expiry date should be greater than Current Date.</string>
+    <string name="chooselicensecarrierimage">Please choose carrier licence image.</string>
+    <string name="choosemedicarecardnumber">Please enter medicare card number.</string>
+    <string name="choosemedicarecardimage">Please choose medicare card image.</string>
+
+    <!--Grabid Map Fragment-->
+    <string name="sendyounotification">GRABiD Logistics would like to send you notifications.</string>
+    <string name="enablenoti">Would you like to know when a delivery is available that suits your profile? Enable notifications to be in the know.</string>
+
+    <!--Location Validation-->
+    <string name="accesslocation">GRABiD Logistics would like to access your Location.</string>
+    <string name="needpermision">GRABiD Logistics needs Location permissions.</string>
+    <string name="granytlocationpermission">Go to Permissions to Grant Location Permission.</string>
+    <string name="cameraandphoto">GRABiD Logistics would like to access your camera and Photos.</string>
+    <string name="sharephototochoose">GRABiD Logistics will only upload and share the photo you choose.</string>
+    <string name="gotopermissionandgrant">Go to Permissions to Grant Camera and Storage</string>
+
+    <!--ProfileStepOnefile-->
+    <string name="enterusername">Please enter your username.</string>
+    <string name="usernamevalid">Username should contains only numbers,alphabets,dot,hyphen and underscore</string>
+    <string name="emptyemail">Please enter your valid email.</string>
+    <string name="invalidemail">Invalid email! Please enter valid email.</string>
+    <!--ProfileStepTwopany-->
+    <string name="enterabnnumber">Please enter ABN number.</string>
+    <string name="digitabnnumber">Please enter 11 digit ABN number.</string>
+    <string name="selectregisterforgst">Please select registered for GST option.</string>
+    <string name="companystreetandno">Please enter company street no and name.</string>
+    <string name="entersuburb">Please enter suburb.</string>
+    <string name="selectcountry">Please select your country.</string>
+    <string name="selectstate">Please select your state.</string>
+    <string name="postalcode">Please enter postal code.</string>
+    <string name="validpostalcode">Please enter valid postal code.</string>
+    <string name="tendigitofficeno">Please enter 10 digit office number.</string>
+    <string name="totalnoofvehicle">Please enter total number of vehicles.</string>
+    <string name="entervehicleno">Please enter Vehicle Registration number. &amp; suitable Vehicle</string>
+    <string name="vehiclenoalphanumeric">Vehicle Registration Number must contain only numbers and letters. No special characters or spaces are allowed.</string>
+    <string name="uniqueregno">Please enter unique Vehicle Registration Number.</string>
+    <string name="nominate">Please nominate if you are the vehicle owner for Registration Number </string>
+    <string name="addimagesforregpaper">Please add images of registration paper for Vehicle Registration Number: </string>
+    <string name="addimagesforinspaper">Please add images of vehicle insurance certificate for Vehicle Registration Number: </string>
+    <string name="selectfreightins">Please select freight insurance option.</string>
+    <string name="selectfreightinscover">Freight insurance cover amount required for registration number</string>
+    <string name="enterequalvehicle">Please enter vehicles equal to total vehicles.</string>
+    <string name="totalqtyshouldnotless">Total qty should not be less then added vehicles</string>
+
+    <!--SubmitDeliveryStepOnement-->
+    <string name="item_weight">Please enter item weight.</string>
+    <string name="wgreaterzero">weight must be greater than zero.</string>
+    <string name="itemlength">Please enter item length.</string>
+    <string name="lgreaterzero">length must be greater than zero</string>
+    <string name="itemwidh">Please enter item width.</string>
+    <string name="widthgreaterzero">width must be greater than zero.</string>
+    <string name="itemheight">Please enter height.</string>
+    <string name="heightgreaterzero">height must be greater than zero.</string>
+    <string name="itemstackable">Please select item stackable.</string>
+    <string name="itemhazardous">Please select item hazardous.</string>
+    <string name="hazardousgoodtype">Please enter hazardous goods code type.</string>
+    <string name="item_detaill">Please enter item detail.</string>
+    <string name="animalcarrier">Please select animal carrier.</string>
+    <string name="animalweight">Please enter animal weight.</string>
+    <string name="animalwegreaterthezero">animalWeight must be greater than zero.</string>
+    <string name="currentvaccination">Please select current vaccination.</string>
+
+
+    <!--SubmitDeliveryStepOnement Address-->
+    <string name="deliveryrefname">Please enter delivery name/reference.</string>
+    <string name="pperson">Please enter pick up contact person name.</string>
+    <string name="ppersonnumber">Please enter pick up person number.</string>
+    <string name="validpicknumber">Please enter valid pick up number.</string>
+    <string name="pickupcc">Please select pick up country code.</string>
+    <string name="pickupaddress">Please enter pick up address.</string>
+    <string name="validpickaddress">Please select valid pickup address with country name</string>
+    <string name="pickdatetimeype">Please choose pick up date and time type.</string>
+    <string name="pickupdatetime">Please select pick up date and time.</string>
+    <string name="pickupenddatetime">Please select pick up end date and time.</string>
+    <string name="pickupdategreatstartdate">pickup end date must be greater than pickup start date.</string>
+    <string name="dropoffcontactpersonname">Please enter drop off contact person name.</string>
+    <string name="dropoffpersonnumber">Please enter drop off person number.</string>
+    <string name="validdropoffnumber">Please enter valid drop off number.</string>
+    <string name="dropcc">Please select drop off country code.</string>
+    <string name="dropoffaddress">Please enter drop off address.</string>
+    <string name="validdropaddress">Please select valid dropoff address with country name</string>
+    <string name="dropdaytimetype">Please choose drop off date and time type.</string>
+    <string name="selectdropdate">Please select drop off date and time.</string>
+    <string name="dropmustgreatercurrent">Dropoff day must be greater than current day/time</string>
+    <string name="dropenddaytime">Please select drop off end date and time.</string>
+    <string name="droptimemustgreaterstarttime">Drop off end date must be greater than dropoff start date.</string>
+    <string name="auctionbid">Please select auction bid.</string>
+    <string name="maximumopeningbid">Please enter maximum opening bid.</string>
+    <string name="validmaximumopeningbid">Please enter valid maximum opening bid amount.</string>
+    <string name="auctionstartdatetime">Please select auction start date and time.</string>
+    <string name="auctionstartmustbegreatercurrent">Auction start date must be greater than current day/time</string>
+    <string name="auctionendtime">Please select auction end date and time.</string>
+    <string name="auctionendgreaterthenauctionstart">Auction end date must be greater than auction start date.</string>
+    <string name="althenpickuptime">Auction Start date/time must be less than Pickup date/time.</string>
+    <string name="onehourlater">Pick-up time must be 1 hour later than auction end day/time</string>
+    <string name="alpickuptime">Auction end date/time must be less than Pickup date/time.</string>
+    <string name="fixedprice">Please enter fixed price.</string>
+    <string name="validfixedprice">Please enter valid fixed price amount.</string>
+
+    <!--SubmitDeliveryStepOnement Submit-->
+    <string name="selectsuitablevehicle">Please select suitable vehicles.</string>
+    <string name="selectbuildtype">Please select pickup build type.</string>
+    <string name="pickupbuildname">Please enter pickup company / building name.</string>
+    <string name="pickupindreq">Please select pickup induction required?</string>
+    <string name="pickupleq">Please select pickup lifting equipment.</string>
+    <string name="pickuplavid">Please select pickup Lifting Equipment Available option.</string>
+    <string name="pickuplneid">Please select pickup Lifting Equipment Needed option.</string>
+    <string name="dropofbuildtype">Please select drop off build type.</string>
+    <string name="dropoffcom">Please enter drop off company / building name.</string>
+    <string name="dropoffindreq">Please select drop off induction required?</string>
+    <string name="dropoffcalreq">Please select drop off call required before delivery.</string>
+    <string name="dropoffaporeq">Please select drop off appointment required.</string>
+    <string name="dropoffliftequip">Please select drop off lifting equipment.</string>
+    <string name="dropoffliftavaids">Please select drop off Lifting Equipment Available option.</string>
+    <string name="dropoffliftneededid">Please select drop off Lifting Equipment Needed option.</string>
+    <string name="specialpermit">Please select special permit.</string>
+    <string name="specialpermitdetail">Please enter special permit detail.</string>
+    <string name="geozone">Please select GEO ZONE.</string>
+    <string name="georadius">Please enter geo radius.</string>
+    <!--coomon key-->
+
+    <string-array name="transfertypes">
+        <item>ALL</item>
+        <item>Take Now</item>
+        <item>Active</item>
+        <item>Future</item>
+    </string-array>
+    <string name="deliveries">Deliveries</string>
+    <string name="delivries">Deliveries</string>
+    <string name="shipper_feedback">Sender Feedback</string>
+    <string name="driver_feedback">Carrier Feedback</string>
+    <string name="delivriessen">Deliveries (as Sender)</string>
+    <string name="delivriescar">Deliveries (as Carrier)</string>
+    <string name="search_delivery">Search Deliveries</string>
+    <string name="submit_delivery">SUBMIT DELIVERIES</string>
+    <string name="submit_delivry">Submit Deliveries</string>
+    <string name="submitdelivery">Submit Delivery</string>
+    <string name="bookmarked">Bookmarked Deliveries</string>
+    <string name="shipper">Sender</string>
+    <string name="shipper_name">Shipper Name:</string>
+    <string name="shipper_rating">Shipper Rating:</string>
+    <string name="search_deliveries">SEARCH DELIVERIES</string>
+    <string name="search_delivries">Search Deliveries</string>
+    <string name="delivery">Delivery</string>
+    <string name="deliveryname">Delivery Name</string>
+    <string name="deliverystatus">Delivery Status</string>
+    <string name="d_type">Delivery Type</string>
+    <string name="delivery_item">Delivery Items:</string>
+    <string name="shipperc">SENDER</string>
+    <string name="pending_del">Deliveries</string>
+    <string name="submitshipment">SUBMIT SHIPMENT</string>
+    <string name="not_title">Delivery:</string>
+    <string name="payment_id">Delivery ID</string>
+    <string name="delivery_id">Delivery ID</string>
+    <string name="driverc">CARRIER</string>
+    <string name="feedbacksender">You have successfully submitted your feedback for the carrier. Thank you.</string>
+    <string name="feedbackcarrier">You have successfully submitted your feedback for the sender. Thank you.</string>
+    <string name="cancelshipper">Please provide reason for cancellation of the delivery</string>
+    <string name="canceldriver">Please provide reason for withdrawal. Note: GRABiD Logistics investigates all withdrawals. In accordance with GRABiD Logistics Cancellation Policy, if the withdrawal is less than 48 hours from the delivery time, you will be charged $15 processing fees.</string>
+    <string name="senderdetail">Sender Detail</string>
+    <string name="driverdetail">Carrier Detail</string>
+    <string name="send">(Sender)</string>
+    <string name="drive">(Carrier)</string>
+    <string name="track">Track Delivery</string>
+    <string name="creditcard">Please save your credit card details before creating a delivery.</string>
+    <string name="cancelshippernew">Note: GRABiD Logistics investigates all cancellations. Please check GRABiD Logistics Cancellation Policy to see if any penalties or compensation applies.</string>
+    <string name="canceldrivernew">Note: GRABiD Logistics investigates all withdrawals. Please check GRABiD Logistics Cancellation Policy to see if any penalties or compensation applies.</string>
+
+    <string name="deletebankdetail">Are you sure you want to delete this bank account from the GRABiD Logistics Wallet.</string>
+    <string name="deletecrcarddetail">Are you sure you want to delete this credit card from the GRABiD Logistics Wallet.</string>
+
+    <string name="wallet_success">You have successfully added the bank account to GRABiD Logistics Wallet.</string>
+    <string name="wallet_delete">You have successfully deleted the bank account from GRABiD Logistics Wallet.</string>
+    <string name="wallet_update">You have successfully updated the bank account to GRABiD Logistics Wallet.</string>
+    <string name="cr_wallet_success">You have successfully added the credit card  to GRABiD Logistics Wallet.</string>
+    <string name="cr_wallet_delete">You have successfully deleted the credit card  from GRABiD Logistics Wallet.</string>
+    <string name="cr_wallet_update">You have successfully updated the credit card to GRABiD Logistics Wallet.</string>
+    <string name="savebankdetails">Please save your bank details in the GRABiD Logistics Wallet before accepting the Take Now offer.</string>
+    <string name="savecreditdetails">Please save your credit card details in the GRABiD Logistics Wallet before take now.</string>
+    <string name="savebankdetailsbidnow">Please set up your bank account details before making a bid. Click on OK to be taken to the GRABiD Wallet.</string>
+    <string name="savecreditdetailsbidnow">Please save your credit card details in the GRABiD Logistics Wallet before bidnow.</string>
+    <string name="savebankdetailsaccept">Please save your bank details in the GRABiD Logistics Wallet before choosing the winning bidder.</string>
+    <string name="savecreditdetailsaccept">Please save your credit card details in the GRABiD Logistics Wallet before choosing the winning bidder.</string>
+    <string name="invite_for_grabid">Tell your Friends about GRABiD Logistics</string>
+    <string name="invite_message">Invite your friends to GRABiD Logistics app using your unique referral code and earn commissions.</string>
+    <string name="termsandcondition">By clicking on SIGN UP and creating an account, you agree to GRABiD Logistics Terms &amp; Conditions and Privacy Policy</string>
+    <string name="joingrabid">Join GRABiD today using my referral code:</string>
+    <string name="favourite">Favourite Carriers</string>
+    <string name="searchfavourite">Search Carrier</string>
+    <string name="carrier1">Carrier:</string>
+    <string name="pod">Proof of Delivery</string>
+    <string name="podtitle">Proof Of Delivery</string>
+    <string name="documentpod">GRABiD Logistics helps you save a digital version of the POD. You can capture the POD before clicking on CONFIRM. Otherwise click on CANCEL to complete the delivery.</string>
+    <string name="selectgroup">Tick which group to offer the delivery to:</string>
+    <string name="send1">Offer to Favourite Carriers only</string>
+    <string name="send2">Offer to Favourite Carriers first and if not accepted offer to All Carriers</string>
+    <string name="send3">Offer to All Carriers</string>
+    <string name="pleasetick">Please choose a group to send the delivery.</string>
+    <string name="available_bids">Available Bids on Delivery</string>
+    <string name="favouritelocation">View Favourites</string>
+    <string name="preference">Carrier Preferences</string>
+    <string name="favouritegroups">Favourite Groups</string>
+    <string name="allorselected">Do you want to add carrier for selected favourite groups?</string>
+    <string name="suretoremove">Are you sure to remove that carrier form favourite carrier list. if yes then carrier will remove from all favourite groups in which that carrier added.</string>
+    <string name="nofavouritefroup">Your favourite groups do not have any carriers available currently. Please select another option to submit the delivery.</string>
+    <string name="removeuserfavgroup">Are you sure to remove that carrier from favourite group.</string>
+    <string name="selectcarrier">Available Carrier</string>
+    <string name="clientID">845250573232-e00i4gde6t0mp1t558pvto11r2bgc1s0.apps.googleusercontent.com</string>
+    <string name="l_fb_id">1063980893635125</string>
+    <string name="l_fb_id_fb">fb1063980893635125</string>
+    <string name="google_maps_key">AIzaSyBHbi0yKyQXfye4ovbRHpR8_41WXuJQx9U</string>
+   <string name="searckey">key=AIzaSyBHbi0yKyQXfye4ovbRHpR8_41WXuJQx9U</string>
+</resources>

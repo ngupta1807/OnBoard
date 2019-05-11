@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bid_price" />
+
+        <!-- <TextView
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_gravity="center_horizontal"
+             android:background="@drawable/circle_green"
+             android:gravity="center"
+             android:text="$"
+             android:textColor="@android:color/white"
+             android:textSize="50dp"
+             android:textStyle="bold" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/bidtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="Bid Price"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <com.grabid.views.RegularEditText
+            android:id="@+id/bid_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/gray_txtbox"
+            android:digits="0123456789"
+            android:ems="15"
+            android:hint="Enter Bid Price"
+            android:inputType="phone"
+            android:maxLength="9"
+            android:textColor="@color/form_feild"
+            android:textColorHint="@color/form_title"
+            android:textSize="@dimen/btn_size" />
+
+        <LinearLayout
+            android:id="@+id/lay_auction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:gravity="bottom"
+            android:weightSum="2">
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="CANCEL"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/input_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/proceed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SUBMIT BID"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/input_size" />
+        </LinearLayout>
+
+        <!-- <RelativeLayout
+             android:id="@+id/lay_auction"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp">
+
+             <com.grabid.views.BoldTextView
+                 android:id="@+id/proceed"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@color/blue"
+                 android:padding="10dp"
+                 android:text="Proceed"
+                 android:textColor="@color/white"
+                 android:textSize="@dimen/input_size" />
+
+             <com.grabid.views.BoldTextView
+                 android:id="@+id/cancel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:background="@color/blue"
+                 android:padding="10dp"
+                 android:text="Cancel"
+                 android:textColor="@color/white"
+                 android:textSize="@dimen/input_size" />
+         </RelativeLayout>-->
+    </LinearLayout>
+</LinearLayout>

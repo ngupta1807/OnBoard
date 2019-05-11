@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.grabid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:name=".application.GrabitApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+
+        <!-- tools:node="merge" -->
+        <activity
+            android:name=".activities.Splash"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomeActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activities.SignIn"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activities.SignUP"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activities.ForgotPassword"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".activities.VehicleList"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activities.AllocateDrivers"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".imageCrop.ImageCropActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".imageCrop.ImageActivity"
+            android:screenOrientation="sensorPortrait" />
+        <!-- Facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/l_fb_id" />
+        <!--
+             <provider
+             android:name="com.facebook.FacebookContentProvider"
+             android:authorities="com.facebook.app.FacebookContentProvider692155797474291"
+             android:exported="true" />
+        -->
+        <provider android:authorities="@string/l_fb_id"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            tools:replace="android:theme"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- Facebook end -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Firebase Notifications -->
+        <service
+            android:name=".fcm.FirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.GrabidFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ./Firebase Notifications -->
+        <!--
+             <activity
+             android:name=".activities.DialogActivity"
+             android:screenOrientation="sensorPortrait"
+             android:theme="@style/Theme.Transparent" />
+        -->
+        <activity
+            android:name=".activities.DialogActivity"
+            android:theme="@style/Theme.MaterialTransparent" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <receiver android:name=".services.LocationTracker"></receiver>
+        <service android:name=".services.GPSTracker" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b986427355615f9180a2001694fcbe435f7da8e2" />
+
+        <activity
+            android:name=".activities.TermsAndConditions"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".activities.FavoriteGroupSelectionList"
+            android:screenOrientation="sensorPortrait"></activity>
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/l_fb_id_fb" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

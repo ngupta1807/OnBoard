@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/bar" />
+
+    <LinearLayout
+        android:id="@+id/progres_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dotblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_lineblue"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dotblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_lineblue"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dotblue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_lineblue"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/active_dotblue" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit"
+        android:layout_below="@+id/progres_bar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/suitable_vehicle"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/suitable_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:hint="Select suitable vehicle"
+                android:maxLines="1"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/freight_del_type"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/freight_del_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select freight delivery type"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/pu_build_type"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/pu_build_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select Building Type"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/pu_build_type_comtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/com_build_name"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/pu_build_type_comname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:hint="@string/enter_com_build_name"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/induction_require"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/pu_induction_require"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select If Induction is Required On PickUp"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/special_restriction"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/pu_special_restriction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:gravity="top"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/pu_lift_equip"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/pu_lift_equip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select Lifting Equipment"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/txt_pu_lift_equip_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/pu_lift_equip_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select Available Equipment"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/do_build_type"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/do_build_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select Building Type"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/do_build_type_comtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/do_com_build_name"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/do_build_type_comname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:hint="@string/enter_com_build_name"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/induction_require"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/do_induction_require"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select If Induction Is Required On DropOff"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/special_restriction"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/do_special_restriction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:gravity="top"
+                android:hint=""
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/do_call"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/do_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select If Call Before Delivery Required"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/do_appoint_require"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/do_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select If Appointment Required"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/do_lift_equip"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/do_lift_equip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select lifting equipment"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/txt_do_lift_equip_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/pu_lift_equip"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/do_lift_equip_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Select Available Equipment"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/special_permit"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/special_permit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_dropdown"
+                android:gravity="center|left"
+                android:hint="Special Permit Required?"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/txt_spl_prmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/special_permit_detail"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/special_permit_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:gravity="top"
+                android:hint="Enter special permit detail"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="@string/geo_zone"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp">
+
+                <RadioGroup
+                    android:id="@+id/geo_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:button="@drawable/radio"
+                        android:text="     YES"
+                        android:textColor="@color/form_feild"
+                        android:textSize="@dimen/radiobtn_size" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:button="@drawable/radio"
+                        android:text="     NO"
+                        android:textColor="@color/form_feild"
+                        android:textSize="@dimen/radiobtn_size" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/geoRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gray_txtbox"
+                android:hint="Enter radius in km"
+                android:inputType="number"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="PREVIEW"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_size" />
+</RelativeLayout>

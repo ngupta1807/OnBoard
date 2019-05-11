@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/push_switch"
+            android:gravity="left"
+            android:paddingRight="10dp"
+            android:text="TURN ON/OFF NOTIFICATIONS"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/input_size"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/on_btn"
+            android:tag="change"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.grabid.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/gps_switch"
+            android:gravity="left"
+            android:paddingRight="10dp"
+            android:text="TURN ON/OFF LOCATION SERVICES"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/input_size"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/gps_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/off_btn"
+            android:tag="change"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/permissionlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/permissions_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="CHANGE PERMISSIONS"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bar"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/header"
+        android:background="@color/bar" />
+
+    <LinearLayout
+        android:id="@+id/progres_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_line"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/dot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/center_line"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/dot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/active_dot" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submitlinear"
+        android:layout_below="@+id/progres_bar"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Driver’s Licence Number"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/licence_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:ems="15"
+                android:hint="Enter Driver’s Licence Number"
+                android:inputType="number"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Driver’s Licence Valid Until"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/licence_valid_till"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:drawableRight="@drawable/calendar"
+                android:gravity="center|left"
+                android:text="Select Driver’s Licence Valid Until"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Driver’s Licence Image"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <!-- <com.grabid.views.RegularTextView
+                 android:id="@+id/btn_licence_image"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@drawable/choose_photo_blue"
+                 android:textColor="@android:color/black"
+                 android:visibility="visible" />-->
+            <com.grabid.views.RegularTextView
+                android:id="@+id/btn_licence_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/choose_photo_ch"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+            <!--  <com.grabid.views.RegularTextView
+                  android:id="@+id/btn_licence_image"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                  android:background="@drawable/imgback"
+                  android:padding="10dp"
+                  android:text="Upload Driver's Licence Image"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/btn_size"
+                  android:visibility="visible" />-->
+
+            <RelativeLayout
+                android:id="@+id/licence_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:tag="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/img"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toLeftOf="@+id/edit_img"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/edit_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img"
+                    android:layout_alignRight="@+id/img"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="0dp"
+                    android:padding="10dp"
+                    android:src="@drawable/pencil_icon_editch" />
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img"
+                    android:text="Driver's Licence Image"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Driver Certificate Number"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/certificate_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:digits="0123456789"
+                android:ems="15"
+                android:hint="Enter 6 Digit Driver Certificate Number"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Driver Certificate Valid Until"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldTextView
+                android:id="@+id/certificate_valid_till"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:drawableRight="@drawable/calendar"
+                android:gravity="center|left"
+                android:text="Select Driver Certificate Valid Until"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Driver Certificate Image"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <!--  <com.grabid.views.RegularTextView
+                  android:id="@+id/btn_cerificate_image"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@drawable/choose_photo_blue"
+                  android:textColor="@android:color/black"
+                  android:visibility="visible" />-->
+            <com.grabid.views.RegularTextView
+                android:id="@+id/btn_cerificate_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/choose_photo_ch"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+
+            <!-- <com.grabid.views.RegularTextView
+                 android:id="@+id/btn_cerificate_image"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/imgback"
+                 android:padding="10dp"
+                 android:text="Upload Driver Certificate Image"
+                 android:textColor="@color/white"
+                 android:textSize="@dimen/btn_size"
+                 android:visibility="visible" />-->
+
+            <RelativeLayout
+                android:id="@+id/certificate_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/imgcertificate"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:tag="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/imgcertificate"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toLeftOf="@+id/edit_img_certificate"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/edit_img_certificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgcertificate"
+                    android:layout_alignRight="@+id/imgcertificate"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="0dp"
+                    android:padding="10dp"
+                    android:src="@drawable/pencil_icon_editch" />
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgcertificate"
+                    android:text="Driver Certificate Image"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Medicare Card Number"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.BoldEditText
+                android:id="@+id/medicarecard_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_txtbox"
+                android:ems="15"
+                android:hint="Enter Medicare Card Number"
+                android:inputType="number"
+                android:textColor="@color/form_feild"
+                android:textColorHint="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="Medicare Card Image"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/btn_medicare_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/choose_photo_ch"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+
+
+            <!--<com.grabid.views.RegularTextView
+                android:id="@+id/btn_medicare_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/imgback"
+                android:padding="10dp"
+                android:text="Upload Medicare Card Image"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_size"
+                android:visibility="visible" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/medicare_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/mimg"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:tag="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/mimg"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toLeftOf="@+id/medit_img"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/medit_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mimg"
+                    android:layout_alignRight="@+id/mimg"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="0dp"
+                    android:padding="10dp"
+                    android:src="@drawable/pencil_icon_editch" />
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mimg"
+                    android:text="Medicare Card Image"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <com.grabid.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_margin"
+                android:text="National Police Check (not mandatory)"
+                android:textColor="@color/form_title"
+                android:textSize="@dimen/btn_size" />
+
+            <com.grabid.views.RegularTextView
+                android:id="@+id/btn_nationalpolice_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/choose_photo_ch"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+
+            <!--<com.grabid.views.RegularTextView
+                android:id="@+id/btn_nationalpolice_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/imgback"
+                android:padding="10dp"
+                android:text="Upload National Police Check Image"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_size"
+                android:visibility="visible" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/national_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/nimg"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:tag="" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/nimg"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toLeftOf="@+id/nedit_img"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/nedit_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/nimg"
+                    android:layout_alignRight="@+id/nimg"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="0dp"
+                    android:padding="10dp"
+                    android:src="@drawable/pencil_icon_editch" />
+
+                <com.grabid.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nimg"
+                    android:text="National Police Check Image"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/submitlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/saveexit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/saveexit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size" />
+
+        <com.grabid.views.BoldTextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="SAVE CHANGES"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size" />
+    </LinearLayout>
+
+</RelativeLayout>

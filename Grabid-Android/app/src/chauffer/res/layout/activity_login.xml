@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.grabid.views.LoginRegularEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_signin_border"
+            android:drawableLeft="@drawable/email_icon"
+            android:drawablePadding="10dp"
+            android:ems="15"
+            android:hint="Username, Email or Mobile Number"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/input_size" />
+
+        <com.grabid.views.LoginRegularEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_signin_border"
+            android:drawableLeft="@drawable/password_icon"
+            android:drawablePadding="10dp"
+            android:ems="15"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/input_size" />
+
+        <com.grabid.views.BoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="loginUser"
+            android:padding="8dp"
+            android:text="SIGN IN"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/input_size" />
+
+        <com.grabid.views.RegularTextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="openForgotPassword"
+            android:padding="8dp"
+            android:text="@string/forgot_password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/btn_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <com.grabid.views.BoldTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#3b5998"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/facebook"
+                android:gravity="center"
+                android:onClick="doFacebookLogin"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/input_size" />
+
+            <com.grabid.views.BoldTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#d34836"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/gmail_icon"
+                android:gravity="center"
+                android:onClick="doGooglePlusLogin"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/input_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.grabid.views.RegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/no_account"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_size" />
+
+    <com.grabid.views.BoldTextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="openSignup"
+        android:padding="15dp"
+        android:text="SIGN UP!"
+        android:textColor="#4c4c4c"
+        android:textSize="@dimen/input_size" />
+
+    <Spinner
+        android:id="@+id/countrycode"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:spinnerMode="dialog"
+        android:visibility="visible" />
+</RelativeLayout>
