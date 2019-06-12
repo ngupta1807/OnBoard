@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_back"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/upcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/upcoming"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <TextView
+                android:id="@+id/u_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/driver_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/history"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <TextView
+                android:id="@+id/h_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Detail"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <TextView
+                android:id="@+id/d_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_top"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:scrollingCache="false"></ListView>
+
+        <com.bookmyride.views.RegularTextView
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="No data found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_top"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lay_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/building_bank_detail" />
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Enter Your Bank Detail"
+                android:textColor="@color/hint_colors"
+                android:textSize="@dimen/input_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.bookmyride.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/card_holder_name"
+                    android:textColor="#4e4e4e"
+                    android:textSize="@dimen/input_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <com.bookmyride.views.RegularEditText
+                    android:id="@+id/ac_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg_forgot"
+                    android:hint="@string/bank_holder_name"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_colors"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="@dimen/input_size" />
+
+                <com.bookmyride.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/card_number"
+                    android:textColor="#4e4e4e"
+                    android:textSize="@dimen/input_size"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <com.bookmyride.views.RegularEditText
+                    android:id="@+id/ac_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg_forgot"
+                    android:hint="@string/bank_number"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_colors"
+                    android:textCursorDrawable="@drawable/edittext_cursor_color"
+                    android:textSize="@dimen/input_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/lay_right"
+                    android:orientation="vertical">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_expiry"
+                        android:textColor="#4e4e4e"
+                        android:textSize="@dimen/input_size"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/bank_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg_forgot"
+                        android:gravity="center_vertical"
+                        android:hint="@string/bank_name"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_cvv"
+                        android:textColor="#4e4e4e"
+                        android:textSize="@dimen/input_size"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/bsb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg_forgot"
+                        android:gravity="center_vertical"
+                        android:hint="@string/bsb"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_red"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lay_top"
+        android:visibility="gone"></RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

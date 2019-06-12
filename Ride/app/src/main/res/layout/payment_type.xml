@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lay_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_color">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onBack"
+            android:src="@drawable/back_arrow"
+            android:visibility="visible" />
+
+        <com.bookmyride.views.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Confirm Payment Method"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lay_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center|left"
+                android:text="RIDE_ID"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/ride_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center|left"
+                android:text=""
+                android:textColor="@color/driver_color"
+                android:textSize="@dimen/btn_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_fare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible">
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/paid_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center|left"
+                android:text="Total Ride Fare"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/ride_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center|left"
+                android:text=""
+                android:textColor="@color/driver_color"
+                android:textSize="@dimen/btn_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_wallet_used"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:visibility="visible">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center|left"
+                android:text="Wallet Amount Used"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/wallet_amt_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center|left"
+                android:text="$0"
+                android:textColor="@color/driver_color"
+                android:textSize="@dimen/btn_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center|left"
+                android:text="Discount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center|left"
+                android:text="$0"
+                android:textColor="@color/driver_color"
+                android:textSize="@dimen/btn_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                card_view:cardBackgroundColor="#208c31"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="visible">
+
+                        <com.bookmyride.views.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Cash Payment"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size" />
+
+                        <com.bookmyride.views.BoldTextView
+                            android:id="@+id/cash_amt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center|left"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/cash_icon"
+                            android:orientation="vertical">
+
+                            <com.bookmyride.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:paddingTop="3dp"
+                                android:text="Cash Payment"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/input_size"
+                                android:visibility="gone" />
+
+                            <com.bookmyride.views.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Click here after accepting cash payment in the taxi"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/input_size"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/cash_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/cash_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                card_view:cardBackgroundColor="#d42c15"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/terminal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="visible">
+
+                        <com.bookmyride.views.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Card Terminal Payment"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size"
+                            android:textStyle="bold" />
+
+                        <com.bookmyride.views.BoldTextView
+                            android:id="@+id/terminal_amt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center|left"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/terminal_icon"
+                            android:orientation="vertical">
+
+                            <com.bookmyride.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:paddingTop="3dp"
+                                android:text="Card Terminal Payment"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/input_size"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <com.bookmyride.views.RegularTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Click here after accepting payment using the card terminal in the taxi"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/input_size"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/terminal_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/card_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_creditCard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                card_view:cardBackgroundColor="#0066b0"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="7dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="visible">
+
+                        <com.bookmyride.views.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingTop="3dp"
+                            android:text="Saved Card Payment"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size"
+                            android:textStyle="bold" />
+
+                        <com.bookmyride.views.BoldTextView
+                            android:id="@+id/card_amt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center|left"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/cc_icon"
+                            android:orientation="vertical">
+
+                            <com.bookmyride.views.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:paddingTop="3dp"
+                                android:text="Saved Card Payment"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/input_size"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <com.bookmyride.views.RegularTextView
+                                android:id="@+id/cc_info"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:text="Click here if passenger wants to pay using saved credit card xxxx-xxxx-xxxx-0000."
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/input_size"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/cc_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/card_icon" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="#0066b0"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/paypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <com.bookmyride.views.BoldTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Accept By Paypal"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size"
+                            android:textStyle="bold" />
+
+                        <com.bookmyride.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="We are accept Paypal account"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/paypal_icon" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

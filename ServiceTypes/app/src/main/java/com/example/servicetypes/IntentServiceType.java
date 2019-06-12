@@ -16,9 +16,23 @@ public class IntentServiceType extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        Intent intent1 = new Intent();
-        intent1.setAction("com.example.service");
-        intent1.putExtra("DATAPASSED", "Intent service");
-        sendBroadcast(intent1);
+        thread.start();
     }
+
+    Thread thread = new Thread() {
+        @Override
+        public void run() {
+            try {
+                while(true) {
+                    sleep(2000);
+                    Intent intent1 = new Intent();
+                    intent1.setAction("com.example.service");
+                    intent1.putExtra("DATAPASSED", "Intent service");
+                    sendBroadcast(intent1);
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    };
 }

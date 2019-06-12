@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bookmyride">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!-- needed to enable/disable the speakerphone -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- needed to receive audio from microphone during a call -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <permission
+        android:name="com.bookmyride.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ride247.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.bookmyride.application.RideApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.bookmyride.activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bookmyride.activities.RideRequestList"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.AvailableRides"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.CardsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.CalendarDayView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.ReportIssue"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.WalletHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.MyCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.AddBankDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.Waiting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.RideDetail"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.Filter"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoTitleBar" />
+        <activity
+            android:name="com.bookmyride.activities.Confirmation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoTitleBar" />
+        <activity
+            android:name="com.bookmyride.activities.RatingToDriver"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.RidesOnCalendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.FilteredPreBookings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.RatingToPassenger"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.GuaranteeDriverInfo"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.DriverTypes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.DriverFleets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.fragments.AcceptPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.register.Address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.register.DriverInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.register.Location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.register.SelectUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.register.VehicleInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.CountryList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.VehicleModelManufacture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.EstimateRide"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.fragments.AcceptPaymentByCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.FareBreakup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.FareBreakdown"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.NotificationDialogs"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoTitleBar" />
+        <activity
+            android:name="com.bookmyride.activities.DriverOnlinePrompt"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoTitleBar" />
+        <activity
+            android:name="com.bookmyride.activities.RideCancelledDialog"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoTitleBar" />
+        <activity
+            android:name="com.bookmyride.activities.TrackDetail"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.PassengerHome"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.DriverHome"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.PaymentBrowser"
+            android:screenOrientation="portrait" />
+        <!--fasd-->
+        <activity
+            android:name="com.bookmyride.activities.SearchOnMap"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.DriverArrived"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.StartRiding"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.BeginRide"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.EndRide"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.MeterReading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.BookingTimer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.LocationSearch"
+            android:screenOrientation="portrait" />
+        <!--fasd-->
+        <activity
+            android:name="com.bookmyride.activities.PassengerSignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.SignIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.imageCrop.ImageCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bookmyride.activities.TermsConditions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <receiver
+            android:name="com.bookmyride.fcm.AlarmReceiver"
+            android:exported="false" />
+        <!--Facebook-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_id" />
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider118402794854076"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--Facebook End-->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Firebase Notifications -->
+        <service android:name="com.bookmyride.fcm.RideFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.bookmyride.fcm.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Firebase Notifications End-->
+        <service android:name="com.bookmyride.services.LocationService" />
+        <service android:name="com.bookmyride.services.RouteService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+</manifest>

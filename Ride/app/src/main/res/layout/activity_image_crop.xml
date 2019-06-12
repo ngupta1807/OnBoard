@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ultra_dark">
+
+    <com.albinmathew.photocrop.photoview.PhotoView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center" />
+
+    <com.albinmathew.photocrop.cropoverlay.CropOverlayView
+        android:id="@+id/crop_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:borderColor="#FF56FF1F"
+        app:cornerRadius="20dp"
+        app:drawCircle="true"
+        app:guideLines="false"
+        app:marginSide="20dp"
+        app:marginTop="50dp"
+        app:overlayColor="#575453" />
+
+    <com.bookmyride.views.BoldTextView
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@color/driver_color"
+        android:padding="13dp"
+        android:text=" DONE "
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_size" />
+
+    <com.bookmyride.views.BoldTextView
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:background="@color/driver_color"
+        android:padding="13dp"
+        android:text="Cancel"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/input_size" />
+</RelativeLayout>

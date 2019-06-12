@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_back">
+
+    <LinearLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="All"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <TextView
+                android:id="@+id/h_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/driver_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/history"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <TextView
+                android:id="@+id/d_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/redeem"
+        android:layout_below="@+id/lay_top"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/wallet_recharge_wallet" />
+
+        <com.bookmyride.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="CURRENT BALANCE"
+            android:textColor="@color/driver_color"
+            android:textSize="@dimen/input_size" />
+
+        <com.bookmyride.views.BoldTextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:text="$0.00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp"
+                card_view:cardBackgroundColor="#FFFFFF"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingTop="10dp">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/dollar_payment_history"
+                        android:drawablePadding="2dp"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Referral Amount Earned"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.BoldTextView
+                        android:id="@+id/total_referral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="$0.00"
+                        android:textColor="@color/driver_color"
+                        android:textSize="@dimen/input_size" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/driver_color"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:text="Referral"
+                android:textColor="@color/white"
+                android:textSize="@dimen/input_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp"
+                card_view:cardBackgroundColor="#FFFFFF"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:paddingBottom="00dp"
+                    android:paddingTop="0dp">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/dollar_payment_history"
+                        android:drawablePadding="2dp"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="Loyalty Amount Earned"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.BoldTextView
+                        android:id="@+id/total_loyalty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="$0.00"
+                        android:textColor="@color/driver_color"
+                        android:textSize="@dimen/input_size" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/yellow"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:text="Loyalty"
+                android:textColor="@color/white"
+                android:textSize="@dimen/input_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lay_top"
+        android:layout_marginTop="0dp"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:visibility="gone" />
+
+    <com.bookmyride.views.RegularTextView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/no_data"
+        android:textColor="@color/black"
+        android:textSize="@dimen/input_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.bookmyride.views.BoldTextView
+            android:id="@+id/redeem_referral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/driver_color"
+            android:gravity="center"
+            android:text="@string/redeem"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <com.bookmyride.views.BoldTextView
+            android:id="@+id/redeem_loyalty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/driver_color"
+            android:gravity="center"
+            android:text="@string/loyalty"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

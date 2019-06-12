@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_popup" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rounded_border_note">
+
+        <com.bookmyride.views.LinedTextView
+            android:id="@+id/custom_dialog_library_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_size" />
+
+        <com.bookmyride.views.LinedTextView
+            android:id="@+id/custom_dialog_library_message_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_dialog_library_title_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_size" />
+
+        <RelativeLayout
+            android:id="@+id/custom_dialog_library_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="43dp"
+            android:layout_below="@+id/custom_dialog_library_message_textview"
+            android:layout_marginTop="25dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="#e0dec6" />
+
+            <com.bookmyride.views.RegularTextView
+                android:id="@+id/custom_dialog_library_ok_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/driver_color"
+                android:textSize="@dimen/input_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

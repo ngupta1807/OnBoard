@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">130dp</dimen>
+    <dimen tools:override="true" name="design_navigation_icon_padding">15dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">280dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+	<dimen name="index_text_size">10sp</dimen>
+    <dimen name="title_size">12sp</dimen>
+    <dimen name="btn_size">12sp</dimen>
+    <dimen name="input_size">13sp</dimen>
+    <dimen name="title_padding">5sp</dimen>
+    <dimen name="list_padding">12dp</dimen>
+    <dimen name="male_toppadding">20px</dimen>
+	<dimen name="male_leftpadding">40px</dimen>
+    <dimen name="male_rightpadding">40px</dimen>
+    <dimen name="male_bottompadding">20px</dimen>
+    <dimen name="intro_top_margin">10dp</dimen>
+    <dimen name="intro_top_bottom_padding">30dp</dimen>
+    <dimen name="circle_padding">10dp</dimen>
+    <dimen name="fix_cardview">-8dp</dimen>
+    <dimen name="fix_cardview_vertical">-12dp</dimen>
+
+    <dimen name="text_size_m">20sp</dimen>
+    <dimen name="text_size_s">16sp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="spacing">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">24dp</dimen>
+    <dimen name="spacing_xsmall">4dp</dimen>
+</resources>

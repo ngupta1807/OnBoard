@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lay_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="100dp"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_curve_background_blue"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.bookmyride.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/facebook_icon"
+                            android:gravity="center"
+                            android:onClick="doFacebookLogin"
+                            android:padding="10dp"
+                            android:text="Login with  "
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/input_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_curve_background_red"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.bookmyride.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_curve_background_red"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/gmail"
+                            android:gravity="center"
+                            android:onClick="doGooglePlusLogin"
+                            android:padding="10dp"
+                            android:text="Login with  "
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/input_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+
+                    <com.bookmyride.views.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="OR"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/input_size"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+
+                <com.bookmyride.views.RegularTextView
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_curve_background_red"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="openHomeScreen"
+                    android:padding="10dp"
+                    android:text="Login to BookMyRide"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/input_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/register"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.bookmyride.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="New Here? "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <com.bookmyride.views.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/no_account"
+                    android:textColor="@color/yellow_color"
+                    android:textSize="@dimen/input_size" />
+            </LinearLayout>
+
+            <com.bookmyride.views.RegularTextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_curve_white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="openSignup"
+                android:padding="10dp"
+                android:text="Register"
+                android:textColor="#05313F"
+                android:textSize="@dimen/input_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

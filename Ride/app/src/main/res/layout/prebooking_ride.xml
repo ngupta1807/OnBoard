@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_back"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lay_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/calendar"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lay_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/rides_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.bookmyride.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Accepted Rides"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <TextView
+                    android:id="@+id/h_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/driver_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rides_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.bookmyride.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Requested Rides"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size" />
+
+                <TextView
+                    android:id="@+id/d_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/rides_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay_top"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <com.bookmyride.views.RegularTextView
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="60dp"
+            android:text="No Data Found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/calendar"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.bookmyride.activities.CalendarMonthView
+            android:id="@+id/month_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.bookmyride.views.BoldTextView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/driver_color"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="View On Calendar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_size"
+        android:visibility="visible" />
+</RelativeLayout>

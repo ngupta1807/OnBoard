@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thicknessRatio="2"
+    android:useLevel="false" >
+    <solid android:color="@android:color/white" />
+    <padding android:bottom="2dp"
+        android:top="2dp"
+        android:left="2dp" android:right="2dp"/>
+    <stroke
+        android:width="0dp"
+        android:color="@android:color/white" />
+</shape>

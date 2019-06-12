@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Ll_ride_request_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cdcdcd"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingRight="5dp">
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/circleView"
+            android:layout_width="77dp"
+            android:layout_height="77dp"
+            CircleProgressView:cpv_autoTextSize="true"
+            CircleProgressView:cpv_barColor="@color/driver_color"
+            CircleProgressView:cpv_barWidth="35dp"
+            CircleProgressView:cpv_innerContourSize="0dp"
+            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_outerContourSize="0dp"
+            CircleProgressView:cpv_rimColor="@color/white"
+            CircleProgressView:cpv_rimWidth="35dp"
+            CircleProgressView:cpv_seekMode="true"
+            CircleProgressView:cpv_showUnit="true"
+            CircleProgressView:cpv_spinColor="@color/white"
+            CircleProgressView:cpv_textColor="@color/white"
+            CircleProgressView:cpv_textScale="1"
+            CircleProgressView:cpv_unit="TIME LEFT"
+            CircleProgressView:cpv_unitColor="@color/white"
+            CircleProgressView:cpv_unitPosition="right_top"
+            CircleProgressView:cpv_unitScale="1"
+            CircleProgressView:cpv_value="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="#cc0000"
+                android:textSize="@dimen/input_size" />
+
+            <com.bookmyride.views.RegularTextView
+                android:id="@+id/pu_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cabily_alert_gaurante_message"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:gravity="fill"
+                android:text=""
+                android:textSize="@dimen/input_size" />
+
+            <com.bookmyride.views.RegularTextView
+                android:id="@+id/do_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cabily_alert_gaurante_message"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:gravity="fill"
+                android:text=""
+                android:textSize="@dimen/input_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.bookmyride.views.RegularTextView
+                    android:id="@+id/accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_weight="1"
+                    android:background="@color/driver_color"
+                    android:gravity="center"
+                    android:text="@string/accept"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/input_size"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <com.bookmyride.views.RegularTextView
+                    android:id="@+id/reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:text="@string/decline"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/input_size"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

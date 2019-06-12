@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ripple_blue_color">#01C1E5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0066b0</color>
+    <color name="register_btn_color">#CC00FF</color>
+    <color name="light_gray">#e0e0e0</color>
+
+    <color name="light_blue">#DF4218</color>
+    <color name="progress_ripplecolor">#DF4218</color>
+
+    <color name="driver_color">#d52c15</color>
+    <color name="driver_color_tr">#40D42C15</color>
+    <color name="passenger_color">#D42C15</color>
+
+    <color name="app_color_button">#DF4218</color>
+
+    <color name="pushnotification_custom_theme_color">#00000000</color>
+
+    <color name="white_color">#FFFFFF</color>
+
+    <color name="green">#78ad2c</color>
+    <color name="green_color">#1E8A31</color>
+    <color name="spinner_line_color">#e5e5e5</color>
+    <color name="spinner_arrow_color">#e5e5e5</color>
+    <color name="spinner_floatlabel_color">#F05253</color>
+    <color name="spinner_highlight_color">#4CB5AC</color>
+
+    <color name="app_color_transparent">#80000000</color>
+
+    <color name="ployline_color">#F44336</color>
+    <color name="yellow_color">#f9d214</color>
+    <color name="red_color">#F44336</color>
+    <color name="grey_color">#9E9E9E</color>
+    <color name="ployline_color_transperent">#00000000</color>
+    <color name="light_yellow">#EC910C</color>
+    <color name="light_red">#DF4218</color>
+    <color name="reg_colors">#AAAAAA</color>
+    <color name="hint_colors">#AAAAAA</color>
+
+    <color name="ultra_dark">#29303F</color>
+    <color name="dark">#696E79</color>
+    <color name="ultra_dark_overlay">#0D29303F</color>
+    <color name="grey">#808080</color>
+    <color name="yellow">#f9d214</color>
+    <color name="black_tr">#0D000000</color>
+    <color name="screen_back">#EDEBEC</color>
+    <color name="title_color">#313133</color>
+    <color name="line_color">#c4c4c4</color>
+
+
+    <color name="windowBackground">#1C1C1C</color>
+    <color name="colorButtonNormal">#FFFFFB</color>
+    <color name="textColorPrimary">#FFFFFB</color>
+    <color name="textColorPrimaryInverse">#1C1C1C</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="divider">#333333</color>
+</resources>

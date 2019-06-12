@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_bg"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_signinpage"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/driver_color"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onBack"
+            android:src="@drawable/back_arrow" />
+
+        <com.bookmyride.views.BoldTextView
+            android:id="@+id/signin_header_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/relativeLayout_signinpage"
+        android:background="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/continu"
+        android:layout_below="@+id/divider"
+        android:isScrollContainer="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/next_step" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/next_step" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/next_step" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/current_steps" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <com.bookmyride.views.LightTextView
+                    android:id="@+id/reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Information "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/reg"
+                    android:src="@drawable/red_star" />
+            </RelativeLayout>
+
+            <com.bookmyride.views.RegularTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/txt_dummy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/btn_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.bookmyride.views.RegularCheck
+                    android:id="@+id/use_same"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_box_white"
+                    android:checked="false"
+                    android:textSize="@dimen/input_size" />
+
+                <com.bookmyride.views.RegularTextView
+                    android:id="@+id/btn_use_same"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:text="Tick here if you want to choose a different Taxi vehicle before each shift."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_taxi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.bookmyride.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Taxi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.bookmyride.views.RegularCheck
+                        android:id="@+id/use_same_taxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_white"
+                        android:checked="false"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/btn_use_same_taxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:paddingLeft="5dp"
+                        android:text="Tick here if you want to choose a different Taxi vehicle before each shift."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_taxi_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/taxi_vehicle_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE TYPE"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/taxi_maker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE MANUFACTURER"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/taxi_maker_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MANUFACTURER"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/taxi_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE MODEL"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <TextView
+                        android:id="@+id/v_taxi_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/taxi_model_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MODEL"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/taxi_make_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT YEAR OF MANUFACTURER"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <com.bookmyride.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="AIR CONDITIONED"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size" />
+
+                        <ImageView
+                            android:id="@+id/taxi_push_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/on_button"
+                            android:tag="change"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/input_size"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/taxi_registration_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="VEHICLE REGISTRATION NUMBER"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_taxi_fleet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/taxi_fleet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT FLEET TYPE"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_ride_share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.bookmyride.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Economy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.bookmyride.views.RegularCheck
+                        android:id="@+id/use_same_economy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_white"
+                        android:checked="false"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/btn_use_same_economy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:paddingLeft="5dp"
+                        android:text="Tick here if you want to choose a different Economy vehicle before each shift."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_economy_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/ride_vehicle_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE TYPE"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/ride_maker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE MANUFACTURER"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/ride_maker_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MANUFACTURER"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/ride_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE MODEL"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <TextView
+                        android:id="@+id/v_ride_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/ride_model_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MODEL"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/ride_make_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT YEAR OF MANUFACTURER"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <com.bookmyride.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="AIR CONDITIONED"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size" />
+
+                        <ImageView
+                            android:id="@+id/ride_push_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/on_button"
+                            android:tag="change"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/input_size"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/ride_registration_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="VEHICLE REGISTRATION NUMBER"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_economy_fleet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/economy_fleet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT FLEET TYPE"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_hire_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.bookmyride.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Premium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.bookmyride.views.RegularCheck
+                        android:id="@+id/use_same_premium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_white"
+                        android:checked="false"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/btn_use_same_premium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:paddingLeft="5dp"
+                        android:text="Tick here if you want to choose a different Premium vehicle before each shift."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_premium_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/hire_vehicle_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE TYPE"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/hire_maker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE MANUFACTURER"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/hire_maker_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MANUFACTURER"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/hire_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT VEHICLE MODEL"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <TextView
+                        android:id="@+id/v_hire_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/hire_model_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MODEL"
+                        android:inputType="textCapSentences"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/hire_make_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT YEAR OF  MANUFACTURER"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <com.bookmyride.views.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="AIR CONDITIONED"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/input_size" />
+
+                        <ImageView
+                            android:id="@+id/hire_push_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/on_button"
+                            android:tag="change"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/input_size"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/hire_registration_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="VEHICLE REGISTRATION NUMBER"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_premium_fleet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/premium_fleet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT FLEET TYPE"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_motor_bike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.bookmyride.views.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Motor Bike"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.bookmyride.views.RegularCheck
+                        android:id="@+id/use_same_bike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_white"
+                        android:checked="false"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/btn_use_same_bike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:paddingLeft="5dp"
+                        android:text="Tick here if you want to choose a different Motor Bike vehicle before each shift."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_bike_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/bike_vehicle_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE TYPE"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/bike_maker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MANUFACTURER"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/bike_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="ENTER VEHICLE MODEL"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white"
+                        android:visibility="gone" />
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/bike_make_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT YEAR OF MANUFACTURER"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white" />
+
+                    <com.bookmyride.views.RegularEditText
+                        android:id="@+id/bike_registration_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="VEHICLE REGISTRATION NUMBER"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_bike_fleet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.bookmyride.views.RegularTextView
+                        android:id="@+id/bike_fleet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/dropdown_arrow"
+                        android:hint="SELECT FLEET TYPE"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/hint_colors"
+                        android:textSize="@dimen/input_size" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.bookmyride.views.RegularEditText
+                android:id="@+id/referral_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="ENTER REFERRAL CODE(OPTIONAL)"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hint_colors"
+                android:textSize="@dimen/input_size" />
+
+            <LinearLayout
+                android:id="@+id/lay_term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <com.bookmyride.views.RegularCheck
+                    android:id="@+id/accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_box_white"
+                    android:checked="false"
+                    android:text=" I accept BookMyRide "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+
+                <com.bookmyride.views.RegularTextView
+                    android:id="@+id/btn_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingLeft="0dp"
+                    android:text="@string/terms"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/input_size" />
+            </LinearLayout>
+
+            <com.bookmyride.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/img" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.bookmyride.views.RegularTextView
+        android:id="@+id/continu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_red"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_size" />
+</RelativeLayout>

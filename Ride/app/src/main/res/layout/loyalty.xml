@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/redeem"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/hint_loyalty"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/input_size" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_border"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="$0.00"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/input_size" />
+        </LinearLayout>
+
+        <com.bookmyride.views.BoldTextView
+            android:id="@+id/redeem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_color_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="@string/cash_out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/input_size" />
+    </RelativeLayout>
+</RelativeLayout>
+

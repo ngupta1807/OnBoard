@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/all"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <TextView
+                android:id="@+id/h_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/driver_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/favourite"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/btn_size" />
+
+            <TextView
+                android:id="@+id/d_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.bookmyride.views.RegularEditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/icon_address"
+        android:drawablePadding="10dp"
+        android:hint="Search keyword here"
+        android:inputType="textCapWords|textCapSentences"
+        android:paddingBottom="11dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/input_size"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/driver_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <com.bookmyride.views.RegularTextView
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="60dp"
+            android:text="No Data Found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

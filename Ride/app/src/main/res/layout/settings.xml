@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bookmyride.views.RegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deactivate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:text="Deactivate your account with BookMyRide"
+        android:textColor="@color/black"
+        android:textSize="@dimen/input_size" />
+
+    <com.bookmyride.views.BoldTextView
+        android:id="@+id/deactivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_red"
+        android:padding="10dp"
+        android:text="DEACTIVATE ACCOUNT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_size" />
+</RelativeLayout>

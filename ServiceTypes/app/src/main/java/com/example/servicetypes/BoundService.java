@@ -25,7 +25,7 @@ import java.net.URL;
 */
 
 public class BoundService extends Service {
-    MediaPlayer myPlayer;
+
     public BoundService() {
     }
 
@@ -51,7 +51,7 @@ public class BoundService extends Service {
         BackTask backTask = new BackTask();
         backTask.execute(urlStr);
     }
-
+    MediaPlayer myPlayer;
     public void playFile() {
         Log.v("App","Service playFile");
         myPlayer = MediaPlayer.create(this,R.raw.song);

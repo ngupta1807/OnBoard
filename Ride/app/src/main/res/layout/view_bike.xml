@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Vehicles Nearby\n(5KM)"
+                android:textColor="@color/hint_colors"
+                android:textSize="@dimen/btn_size"
+                android:visibility="visible" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/m_fare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_size"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dotted_rectangle"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Approx.\nPick Up In"
+                android:textColor="@color/hint_colors"
+                android:textSize="@dimen/btn_size"
+                android:visibility="visible" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/m_process_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_size"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp">
+
+            <com.bookmyride.views.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Cost\nPer KM"
+                android:textColor="@color/hint_colors"
+                android:textSize="@dimen/btn_size"
+                android:visibility="visible" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/m_gst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_size"
+                android:visibility="visible" />
+        </LinearLayout>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/dotted_line"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <com.bookmyride.views.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Estimated Fare: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_size" />
+
+            <com.bookmyride.views.BoldTextView
+                android:id="@+id/m_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/driver_color"
+                android:textSize="@dimen/input_size" />
+        </LinearLayout>
+
+        <com.bookmyride.views.RegularTextView
+            android:id="@+id/m_status"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_blue"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Request Ride"
+            android:textColor="@color/white"
+            android:textSize="@dimen/input_size" />
+    </RelativeLayout>
+</LinearLayout>

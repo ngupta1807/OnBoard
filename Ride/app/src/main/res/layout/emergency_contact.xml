@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.bookmyride.views.RegularTextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_ec"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:text="@string/list"
+        android:textColor="@color/reg_colors"
+        android:textSize="@dimen/input_size" />
+
+    <RelativeLayout
+        android:id="@+id/lay_ec"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/red_border">
+
+        <com.bookmyride.views.RegularEditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_colors"
+            android:textCursorDrawable="@drawable/edittext_cursor_color"
+            android:textSize="@dimen/input_size" />
+
+        <View
+            android:id="@+id/emergency_contact_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="1px"
+            android:background="@color/driver_color" />
+
+        <com.bookmyride.views.RegularTextView
+            android:id="@+id/dial_code"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/emergency_contact_view1"
+            android:background="@drawable/edittext_background"
+            android:digits="1234567890+"
+            android:gravity="center|left"
+            android:hint="@string/enter_code"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_colors"
+            android:textCursorDrawable="@drawable/edittext_cursor_color"
+            android:textSize="@dimen/input_size" />
+
+        <View
+            android:id="@+id/emergency_contact_view2"
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/emergency_contact_view1"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/dial_code"
+            android:background="@color/driver_color" />
+
+        <com.bookmyride.views.RegularEditText
+            android:id="@+id/mobile_no"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/emergency_contact_view1"
+            android:layout_toRightOf="@+id/emergency_contact_view2"
+            android:background="@drawable/edittext_background"
+            android:digits="1234567890"
+            android:hint="@string/hint_mobile"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_colors"
+            android:textCursorDrawable="@drawable/edittext_cursor_color"
+            android:textSize="@dimen/input_size" />
+
+        <View
+            android:id="@+id/emergency_contact_view3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dial_code"
+            android:layout_centerHorizontal="true"
+            android:background="@color/driver_color" />
+
+        <com.bookmyride.views.RegularEditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/emergency_contact_view3"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_colors"
+            android:textCursorDrawable="@drawable/edittext_cursor_color"
+            android:textSize="@dimen/input_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/save"
+        android:visibility="gone"></RelativeLayout>
+
+    <com.bookmyride.views.BoldTextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lay_ec"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:padding="8dp"
+        android:text="DELETE "
+        android:visibility="gone"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/input_size" />
+
+    <com.bookmyride.views.BoldTextView
+        android:id="@id/save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/driver_color"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_size" />
+</RelativeLayout>

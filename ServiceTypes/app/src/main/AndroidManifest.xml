@@ -46,9 +46,26 @@
         >
         </service>
 
-        <!--<service android:name="com.example.service.AidlService" >
+        <service
+                android:name=".IntentServiceType"
+                android:icon="@drawable/ic_launcher_background"
+                android:label="aa"
+        >
         </service>
--->
+        <service
+                android:name=".BoundServiceUsingMessanger"
+                android:icon="@drawable/ic_launcher_background"
+                android:label="aa"
+                android:process=":remote"
+        >
+        </service>
+
+
+        <service android:name=".AidlService">
+            <intent-filter>
+                <action android:name="com.example.servicetypes.AidlService"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

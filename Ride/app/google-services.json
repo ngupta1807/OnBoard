@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "629648188152",
+    "firebase_url": "https://bookmyride-d0d2b.firebaseio.com",
+    "project_id": "bookmyride-d0d2b",
+    "storage_bucket": "bookmyride-d0d2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629648188152:android:26174eb8dba2f68a",
+        "android_client_info": {
+          "package_name": "com.bookmyride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629648188152-9hnh0vsg7ej07o1e39mvg52epfidpoji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookmyride",
+            "certificate_hash": "8feff0b098b1193b8bdd4bc90af67f1f98e54917"
+          }
+        },
+        {
+          "client_id": "629648188152-b54moq95d1dhko0remgb47tv5cubfm2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeN99yk1Q3o2qjacQSPP1hEy1ncmGgKSQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629648188152-rat2c5bi4lo482ldcb482b6ta3cdsj0a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "629648188152-79shot6e39am9shr6kpgbf47bi58p2hv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.graycell.BookMyRide"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

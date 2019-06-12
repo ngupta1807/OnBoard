@@ -25,6 +25,10 @@ public class UnboundMyService extends Service {
         myPlayer.start();
         return super.onStartCommand(intent, flags, startId);
     }
+
+
+    // we can use return START_STICKY;  or return START_NOT_STICKY;
+
     @Override
     public void onCreate() {
         Toast.makeText(this, "Service Created", Toast.LENGTH_LONG).show();

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_driver"
+            android:title="DRIVER">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/home"
+                        android:icon="@drawable/home_driver"
+                        android:title="Home" />
+                    <item
+                        android:id="@+id/trip_summary"
+                        android:icon="@drawable/my_ride_driver"
+                        android:title="My Rides" />
+                    <item
+                        android:id="@+id/pending"
+                        android:icon="@drawable/prebooking_driver"
+                        android:title="Pre-Booked Rides" />
+                    <item
+                        android:id="@+id/invite_earn"
+                        android:icon="@drawable/invite_earn_passenger"
+                        android:title="Invite &amp; Earn" />
+                    <item
+                        android:id="@+id/info_payment_driver"
+                        android:icon="@drawable/payment_detail_driver"
+                        android:title="Payment Detail"
+                        android:visible="false" />
+                </group>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menu_passenger"
+            android:title="PASSENGER">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/book_ride"
+                        android:icon="@drawable/book_my_ride"
+                        android:title="Book My Ride" />
+                    <item
+                        android:id="@+id/my_rides"
+                        android:icon="@drawable/myride"
+                        android:title="My Rides" />
+                    <item
+                        android:id="@+id/info_payment_customer"
+                        android:icon="@drawable/payment_detail_driver"
+                        android:title="Payment Detail"
+                        android:visible="false" />
+                </group>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menu_wallet"
+            android:title="BookMyRide WALLET">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/view_wallet"
+                        android:icon="@drawable/earning_driver"
+                        android:title="Earning" />
+                    <item
+                        android:id="@+id/bank_account"
+                        android:icon="@drawable/payme_driver"
+                        android:title="Pay/Charge Me" />
+                    <item
+                        android:id="@+id/charge_me"
+                        android:icon="@drawable/chargeme_driver"
+                        android:title="Charge Me"
+                        android:visible="false" />
+                    <item
+                        android:id="@+id/recharge_wallet"
+                        android:icon="@drawable/recharge_wallet_passenger"
+                        android:title="Recharge Wallet" />
+                </group>
+            </menu>
+        </item>
+        <group
+            android:id="@+id/grp"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu_account"
+                android:title="MY ACCOUNT">
+                <menu>
+                    <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/favorite_driver"
+                            android:icon="@drawable/driver_nav"
+                            android:title="Drivers"
+                            android:visible="false" />
+                        <item
+                            android:id="@+id/notification"
+                            android:icon="@drawable/notification_nav"
+                            android:title="Notifications" />
+                        <item
+                            android:id="@+id/change_pass"
+                            android:icon="@drawable/change_password_passenger"
+                            android:title="Change Password" />
+                        <item
+                            android:id="@+id/settings"
+                            android:icon="@drawable/icon_settings"
+                            android:title="Deactivate Account" />
+                    </group>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/icon_about"
+                android:title="About" />
+            <item
+                android:id="@+id/upgrade"
+                android:icon="@drawable/register"
+                android:title="Register as Passenger" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/icon_logout"
+                android:title="Logout" />
+        </group>
+    </group>
+</menu>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "com.bookmyride"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 8
+        versionName "2.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g" //specify the heap size for the dex process
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile files('libs/org-apache-commons-codec.jar')
+    compile('com.facebook.android:facebook-android-sdk:4.6.0') {
+        exclude module: 'support-v4'
+    }
+    compile project(path: ':photo-crop-library')
+    compile project(':singledateandtimepicker')
+    compile project(':CircleProgressView')
+    compile 'com.koushikdutta.ion:ion:2.1.8'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.google.android.gms:play-services-auth:11.0.4'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    compile 'com.google.firebase:firebase-messaging:9.2.1'
+    compile 'me.drakeet.materialdialog:library:1.2.2'
+    compile 'com.google.android.gms:play-services-ads:11.0.4'
+    compile 'com.google.android.gms:play-services-gcm:11.0.4'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.google.maps.android:android-maps-utils:0.5'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.google.api-client:google-api-client:1.22.0'
+    compile 'com.google.api-client:google-api-client-android:1.22.0'
+    compile 'com.google.apis:google-api-services-people:v1-rev4-1.22.0'
+}
+apply plugin: 'com.google.gms.google-services'

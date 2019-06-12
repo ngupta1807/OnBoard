@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_passenger"
+            android:title="PASSENGER">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/book_ride"
+                        android:icon="@drawable/my_ride_driver"
+                        android:title="Book My Ride" />
+                    <item
+                        android:id="@+id/my_rides"
+                        android:icon="@drawable/myride"
+                        android:title="My Rides" />
+                    <item
+                        android:id="@+id/payment_info"
+                        android:icon="@drawable/payment_detail_driver"
+                        android:title="Payment Detail"
+                        android:visible="false" />
+                </group>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/menu_wallet"
+            android:title="BookMyRide WALLET">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/view_wallet"
+                        android:icon="@drawable/view_wallet_passenger"
+                        android:title="View Wallet" />
+                    <item
+                        android:id="@+id/my_card"
+                        android:icon="@drawable/chargeme_driver"
+                        android:title="Charge Me" />
+                    <item
+                        android:id="@+id/recharge_wallet"
+                        android:icon="@drawable/recharge_wallet_passenger"
+                        android:title="Recharge Wallet" />
+                </group>
+            </menu>
+        </item>
+        <group
+            android:id="@+id/grp"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu_account"
+                android:title="MY ACCOUNT">
+                <menu>
+                    <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/notification"
+                            android:icon="@drawable/notification_nav"
+                            android:title="Notifications" />
+                        <item
+                            android:id="@+id/change_pass"
+                            android:icon="@drawable/change_password_passenger"
+                            android:title="Change Password" />
+                        <item
+                            android:id="@+id/favorite_driver"
+                            android:icon="@drawable/favourite_driver"
+                            android:title="Favourite Drivers"
+                            android:visible="true" />
+                        <item
+                            android:id="@+id/emergency_contact"
+                            android:icon="@drawable/emergancy_passenger"
+                            android:title="Emergency Contact" />
+                        <item
+                            android:id="@+id/settings"
+                            android:icon="@drawable/icon_settings"
+                            android:title="Deactivate Account" />
+                    </group>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/invite_earn"
+                android:icon="@drawable/invite_earn_passenger"
+                android:title="Invite &amp; Earn" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/icon_about"
+                android:title="About" />
+            <item
+                android:id="@+id/upgrade"
+                android:icon="@drawable/register"
+                android:title="Register as Driver" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/icon_logout"
+                android:title="Logout" />
+        </group>
+    </group>
+
+</menu>

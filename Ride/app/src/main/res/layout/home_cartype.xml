@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/select_cartype_single_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.bookmyride.views.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="Select Car Type"
+            android:textColor="#4e4e4e"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/car_type_dialog_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_cartype_single_top_layout"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
+
+</RelativeLayout>

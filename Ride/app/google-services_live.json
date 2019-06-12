@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "262545640494",
+    "project_id": "ride247-172102"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262545640494:android:8ef7be684d1878c7",
+        "android_client_info": {
+          "package_name": "com.ride247"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262545640494-uqqc206hiv4nd45o5bi05cpacm0qpjn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ride247",
+            "certificate_hash": "f58c11dcd5134b447e5790de0d3501c181932337"
+          }
+        },
+        {
+          "client_id": "262545640494-8ouq9ktout1qu4hl54sn46u82kstjkc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGACrSnIPoc2CjnJx4fviJZ2768SONkqM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
