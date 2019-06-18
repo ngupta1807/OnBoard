@@ -1,0 +1,51 @@
+polymorphism
+interface & abstrat difference
+async & syncronization
+When you execute something synchronously, you wait for it to finish before moving on to another task.
+When you execute something asynchronously, you can move on to another task before it finishes.
+Hash table  & hash map
+Arraylist & vectorlist
+Marking the class "final" means that no other class can extend it and hence abstract classes cannot be marked final. 
+map & 
+
+
+Q1)error string resource id #0*30
+Ams)you are trying to display int in toast.
+
+Soap: containing the following elements:
+Envalop,Head,body,fault.
+
+soap header.
+xmpp connection method.
+=> Connectionmanager
+
+swap two number
+a=5 b=10
+a=a+b; 15
+b=a-b;  5
+a=a+b; 10
+
+
+what is android :os 
+
+service & intent service
+
+IntentService is a base class for Services that handle asynchronous requests using onHandleIntent method.
+Service is an application component that can perform long-running operations in the background.
+
+passing data from Fragment to activity:
+
+Bundle bundle = new Bundle();
+bundle.putString("message", "Alo Elena!");
+FragmentClass fragInfo = new FragmentClass();
+fragInfo.setArguments(bundle);
+transaction.replace(R.id.fragment_single, fragInfo);
+transaction.commit();
+
+stop and pause diff.
+
+diffrence bt activity and frgment life cycle.
+
+
+com.android.library = > says that this is a library.
+com.android.application = > says that this is a project and will generate apk.

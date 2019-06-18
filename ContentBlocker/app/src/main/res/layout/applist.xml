@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Apps to Block"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="10dp"/>
+    <ListView
+        android:id="@+id/appsList"
+        android:layout_below="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"></ListView>
+
+    <Button
+        android:id="@+id/block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Block"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="10dp"/>
+</RelativeLayout>
