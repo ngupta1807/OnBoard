@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topLayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true">
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="5dp">
+        <ImageView
+                android:id="@+id/nav"
+                android:background="@drawable/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp" />
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Scan QrCode"
+                style="@style/CustomHeaderText"
+                android:textSize="@dimen/nav_head_size" />
+    </RelativeLayout>
+    <include layout="@layout/progress_bar_bg"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/header"/>
+
+    <com.tipbox.app.ui.camera.CameraSourcePreview
+            android:layout_below="@+id/progressbar"
+            android:layout_above="@+id/clicked"
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <com.tipbox.app.ui.camera.GraphicOverlay
+                android:id="@+id/graphicOverlay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+    </com.tipbox.app.ui.camera.CameraSourcePreview>
+    <TextView
+            android:id="@+id/clicked"
+            android:layout_width="fill_parent"
+            android:clickable="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="No QR code is detected"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            style="@style/CustomClickableButton"
+    />
+</RelativeLayout>

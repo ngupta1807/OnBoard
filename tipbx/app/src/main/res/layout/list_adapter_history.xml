@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/app_background"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:id="@+id/card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/zd_sidebar">
+
+        <LinearLayout
+                android:id="@+id/lt_view"
+                android:layout_toLeftOf="@+id/rt_view"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/zd_lt_border"
+        >
+
+            <TextView
+                    android:id="@+id/name"
+                    style="@style/CustomBoldTextView"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/btn_size"/>
+            <RelativeLayout
+                    android:background="@drawable/zd_bt_border"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/date"
+                        style="@style/CustomTextView"
+                        android:textColor="@color/hint_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:drawablePadding="2dp"
+                        android:drawableLeft="@drawable/calender_icon"
+                        android:textSize="@dimen/nav_txt_size"/>
+                <TextView
+                        android:id="@+id/time"
+                        style="@style/CustomTextView"
+                        android:textColor="@color/hint_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="2dp"
+                        android:text=""
+                        android:layout_marginLeft="9dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/watch_icon"
+                        android:layout_toRightOf="@+id/date"
+                        android:textSize="@dimen/nav_txt_size"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/t_id"
+                        style="@style/CustomTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hint_color"
+                        android:text=""
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:drawablePadding="2dp"
+                        android:drawableLeft="@drawable/transaction_id_icon"
+                        android:textSize="@dimen/nav_txt_size"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/rt_view"
+                android:layout_width="60dp"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+        >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_gravity="center_horizontal"
+                       android:id="@+id/pay_type_yellow"
+                       android:visibility="invisible"
+                       android:background="@drawable/dollar_up"
+                       android:layout_height="wrap_content"
+            />
+
+            <TextView
+                    android:id="@+id/price"
+                    style="@style/CustomBoldHalvaticaTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="$2"
+            />
+            <ImageView android:layout_width="wrap_content"
+                       android:id="@+id/pay_type_blue"
+                       android:visibility="invisible"
+                       android:background="@drawable/dollar_down"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

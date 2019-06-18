@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/swipe_st_bg"
+>
+    <include layout="@layout/progress_bar_bg"
+    />
+
+    <TextView
+            android:layout_below="@+id/progressbar"
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_margin="25dp"
+            style="@style/CustomHeaderText"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+
+    />
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:id="@+id/lay"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+        <RelativeLayout
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_profile_picture"
+        >
+            <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/upload_img"
+            />
+
+        </RelativeLayout>
+        <Button
+                android:layout_width="40dp"
+                android:layout_toRightOf="@+id/logo"
+                style="@style/CustomClickableButton"
+                android:id="@+id/add"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="20dp"
+                android:onClick="select"
+                android:background="@drawable/upload_picture"/>
+    </RelativeLayout>
+    <TextView
+            android:layout_below="@+id/lay"
+            android:textSize="@dimen/btn_size"
+            android:layout_marginTop="20dp"
+            style="@style/CustomTextView"
+            android:layout_width="120dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Upload your profile picture now !"/>
+    <TextView
+            android:id="@+id/skip"
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/btn_size"
+            style="@style/CustomTextView"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/skip_arrow"
+            android:drawablePadding="4dp"
+            android:padding="10dp"
+            android:clickable="true"
+            android:background="@drawable/zd_rounded_skip"
+            android:gravity="center_horizontal"
+            android:focusableInTouchMode="true"
+            android:text="Skip for Now"/>
+</RelativeLayout>

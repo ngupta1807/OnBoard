@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/swipe_st_bg"
+
+>
+    <include layout="@layout/progress_bar_bg"
+    />
+
+    <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:visibility="invisible"
+            android:backgroundTint="@color/white"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_marginTop="7dp"/>
+
+    <TextView
+            android:layout_below="@+id/progressbar"
+            android:visibility="gone"
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="30dp"
+            style="@style/CustomHeaderText"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+
+    />
+    <RelativeLayout
+            android:layout_below="@+id/progressbar"
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/default_pic_tm"
+        >
+            <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/profile_pic_circul"
+            />
+
+        </RelativeLayout>
+
+        <TextView
+                android:layout_below="@+id/logo"
+                android:id="@+id/p_name"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                style="@style/CustomTextView"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/white"
+                android:text="Performer Name"/>
+
+        <RelativeLayout
+                android:id="@+id/lay_amt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/p_name"
+                android:layout_centerInParent="true"
+        >
+            <TextView android:id="@+id/txt"
+                      android:layout_marginTop="10dp"
+                      style="@style/CustomTextView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:focusableInTouchMode="true"
+                      android:textColor="@color/colorPrimary"
+                      android:text="Tip Amount $"/>
+
+            <TextView
+                    android:id="@+id/tip_amt"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txt"
+                    style="@style/CustomTextView"
+                    android:padding="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="0"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+        <ScrollView
+                android:layout_below="@+id/profile"
+                android:layout_margin="10dp"
+               android:layout_above="@+id/pay_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:id="@+id/top"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+
+                        android:layout_centerHorizontal="true"
+                >
+                    <RelativeLayout android:id="@+id/one_dolar"
+                                    android:clickable="true"
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/box_bg"
+                    >
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:clickable="true"
+                                   android:src="@drawable/tick" android:id="@+id/one_select"
+                                   android:layout_alignParentRight="true" android:layout_margin="20dp"
+                        />
+                        <LinearLayout android:layout_centerInParent="true" android:gravity="center"
+                                      android:orientation="vertical" android:layout_width="fill_parent"
+                                      android:layout_height="match_parent">
+                            <TextView
+                                    android:id="@+id/one_tip"
+                                    android:layout_width="wrap_content"
+                                    style="@style/CustomBoldTextView"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="TIP"
+                            />
+                            <TextView
+                                    android:id="@+id/one_price"
+                                    android:layout_margin="10dp"
+                                    style="@style/CustomBoldHalvaticaTextView"
+                                    android:textSize="@dimen/scan_size"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$2"
+                            />
+                            <TextView style="@style/CustomBoldTextView"
+                                      android:id="@+id/one_swipe"
+                                      android:layout_gravity="center_horizontal"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="PER SWIPE"
+                            />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_marginLeft="10dp" android:id="@+id/two_dollar"
+                                    android:clickable="true"
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:background="@drawable/box_bg"
+                    >
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:clickable="true"
+                                   android:src="@drawable/tick" android:id="@+id/two_select"
+                                   android:layout_alignParentRight="true" android:layout_margin="20dp"
+                        />
+                        <LinearLayout android:layout_centerInParent="true" android:gravity="center"
+                                      android:orientation="vertical" android:layout_width="fill_parent"
+                                      android:layout_height="match_parent">
+                            <TextView
+                                    android:id="@+id/two_tip"
+                                    android:layout_width="wrap_content"
+                                    style="@style/CustomBoldTextView"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="TIP"
+                            />
+                            <TextView style="@style/CustomBoldHalvaticaTextView"
+                                      android:id="@+id/two_price"
+                                      android:layout_margin="10dp"
+                                      android:textSize="@dimen/scan_size"
+                                      android:layout_gravity="center_horizontal"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="$3"
+                            />
+                            <TextView style="@style/CustomBoldTextView"
+                                      android:id="@+id/two_swipe"
+                                      android:layout_gravity="center_horizontal"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="PER SWIPE"
+                            />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_below="@+id/top"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_margin="10dp"
+                        android:layout_centerHorizontal="true"
+
+                >
+                    <RelativeLayout android:id="@+id/three_dollar"
+                                    android:clickable="true"
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:background="@drawable/box_bg"
+                    >
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:clickable="true"
+                                   android:src="@drawable/tick" android:id="@+id/three_select"
+                                   android:layout_alignParentRight="true" android:layout_margin="20dp"
+                        />
+                        <LinearLayout android:layout_centerInParent="true" android:gravity="center"
+                                      android:orientation="vertical" android:layout_width="fill_parent"
+                                      android:layout_height="match_parent">
+                            <TextView
+                                    android:id="@+id/three_tip"
+                                    android:layout_width="wrap_content"
+                                    style="@style/CustomBoldTextView"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="TIP"
+                            />
+                            <TextView style="@style/CustomBoldHalvaticaTextView"
+                                      android:id="@+id/three_price"
+                                      android:layout_margin="10dp"
+                                      android:textSize="@dimen/scan_size"
+                                      android:layout_gravity="center_horizontal"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="$5"
+                            />
+                            <TextView style="@style/CustomBoldTextView"
+                                      android:id="@+id/three_swipe"
+                                      android:layout_gravity="center_horizontal"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="PER SWIPE"
+                            />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout android:layout_marginLeft="10dp" android:id="@+id/custom"
+                                    android:clickable="true"
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:background="@drawable/box_bg"
+                    >
+                        <ImageView android:visibility="gone" android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:clickable="true"
+                                   android:src="@drawable/tick" android:id="@+id/custom_select"
+                                   android:layout_alignParentRight="true" android:layout_margin="20dp"
+                        />
+                        <LinearLayout android:layout_centerInParent="true" android:gravity="center"
+                                      android:orientation="vertical" android:layout_width="fill_parent"
+                                      android:layout_height="match_parent">
+                            <TextView
+                                    android:id="@+id/custom_tip"
+                                    android:layout_width="wrap_content"
+                                    style="@style/CustomBoldTextView"
+                                    android:gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="TIP"
+                            />
+                            <TextView style="@style/CustomBoldHalvaticaTextView"
+                                      android:layout_margin="10dp"
+                                      android:id="@+id/custom_price"
+                                      android:textSize="@dimen/scan_size"
+                                      android:gravity="center_horizontal"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="$?"
+                            />
+                            <TextView style="@style/CustomBoldTextView"
+                                      android:id="@+id/custom_swipe"
+                                      android:gravity="center_horizontal"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:text="$ PER SWIPE \n ADD CUSTOM"
+                            />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+        <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/pay_now"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                style="@style/CustomClickableButton"
+                android:clickable="true"
+                android:text="Send"/>
+
+    </RelativeLayout>

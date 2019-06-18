@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">tipboxme</string>
+    <!-- font name -->
+    <string name="m_medium">fonts/m-medium.otf</string>
+    <string name="m_regular">fonts/m-regular.otf</string>
+    <string name="m_light">fonts/m_semibold.ttf</string>
+    <string name="m_lighti">fonts/m-light.otf</string>
+    <string name="halvatica">fonts/halvatica.otf</string>
+    <string name="bison_bold">fonts/bison_bold.ttf</string>
+
+    <!-- Field name -->
+
+    <string name="email_id">Enter Email Address</string>
+    <string name="old_pass">OLD PASSWORD</string>
+    <string name="hint_old_pass">Enter Old Password</string>
+    <string name="hint_new_pass">Enter New Password</string>
+    <string name="hint_c_new_pass">Enter Confirm New Password</string>
+    <string name="new_pass">NEW PASSWORD</string>
+    <string name="c_new_pass">CONFIRM NEW PASSWORD</string>
+    <string name="hint_email">Enter Email Address</string>
+    <string name="txt_email">USERNAME</string>
+    <string name="txt_pass">PASSWORD</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="h_name">ACCOUNT HOLDER NAME</string>
+    <string name="hint_h_name">Enter Account Holder Name</string>
+    <string name="a_number">ACCOUNT NUMBER</string>
+    <string name="hint_a_number">Enter Account Number</string>
+    <string name="b_name">BANK NAME</string>
+    <string name="hint_b_name">Enter Bank Name</string>
+    <string name="i_code">SWIFT CODE</string>
+    <string name="hint_i_code">Enter Swift Code</string>
+    <string name="hint_amt">Enter Amount $</string>
+    <string name="amt">Please Enter Tip Amount</string>
+
+    <string name="fname">FIRST NAME</string>
+    <string name="hint_fname">Enter First Name</string>
+    <string name="mname">MIDDLE NAME</string>
+    <string name="hint_mname">Enter Middle Name</string>
+    <string name="lname">LAST NAME</string>
+    <string name="hint_lname">Enter Last Name</string>
+    <string name="pno">PHONE NUMBER</string>
+    <string name="hint_pno">Enter Phone Number</string>
+    <string name="txt_email_add">EMAIL ADDRESS</string>
+    <string name="profile_pic">PROFILE PICTURE</string>
+    <string name="tips">To increase your tips, upload your picture</string>
+
+    <!--<string name="login_vno">Vehicle Number</string>
+  <string name="login_cpassword">CONFIRM PASSWORD</string>
+   <string name="male">Male</string>  <string name="is_owner">Is vehicle owner</string>
+ <string name="female">Female</string>    <string name="gender">Gender</string>
+ <string name="yes">YES</string>     <string name="username">MIDDLE NAME</string>
+ <string name="no">NO</string>-->
+    <string name="login">Login</string>
+    <string name="registor">Sign Up</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="share">Share</string>
+    <string name="dwnload">Download</string>
+    <string name="full_screen">Full Screen View</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="don_have">Registor</string>
+    <string name="log">Logout</string>
+    <string name="edit">Update</string>
+    <string name="fr">Forgot Password</string>
+    <string name="n_seting">Notification Settings</string>
+    <string name="p_seting">Payment History Settings</string>
+
+
+    <!-- Eror message -->
+    <string name="server_error">Connection timeout, please try after sometime.</string>
+    <string name="no_data">No Data Found.</string>
+
+    <!-- app message -->
+    <string name="no_internet">Please connect to working internet.</string>
+    <string name="try_again">Connection timeout, please try after sometime.</string>
+    <string name="valid_data">Please enter valid data.</string>
+    <string name="update_profile">Profile updated.</string>
+    <string name="forgot_msg">A mail has sent to your registered email address for forgot password</string>
+    <string name="password_change">Your password has been changed.</string>
+    <string name="image_saved">Image Saved!</string>
+    <string name="image_save_failed">Failed!</string>
+    <!-- navigation message -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Name : </string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">List</string>
+
+    <!-- Navigation bar-->
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="p_method">Payment Methods</string>
+    <string name="swipe">Swipe Settings</string>
+    <string name="qr_code">Display QR Code</string>
+    <string name="pay_history">Payment History</string>
+    <string name="notification">Notifications</string>
+    <string name="r_tip">Start Receiving Tips</string>
+    <string name="view_qrcode">My QR Code</string>
+    <string name="tip_dashboard">Tip Dashboard</string>
+    <string name="user_dashboard">User Dashboard</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="use">Terms &#38; Condition</string>
+    <string name="help">Help</string>
+    <string name="change">Change Password</string>
+    <string name="bank">Bank Account</string>
+    <string name="logt">Logout</string>
+
+    <string name="ok">Ok</string>
+    <string name="empty"></string>
+
+
+    <!-- Error message text  -->
+    <string name="e_fname"> first name</string>
+    <string name="e_lname">last name</string>
+    <string name="e_hname">account holder name</string>
+    <string name="e_aname">account number</string>
+    <string name="e_bname">bank name</string>
+    <string name="e_iname">swift code</string>
+    <string name="e_amount">amount</string>
+
+</resources>

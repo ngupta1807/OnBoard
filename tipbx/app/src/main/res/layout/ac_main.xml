@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:id="@+id/drawer_layout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:id="@+id/activity_controller"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/nav_bg"
+                    android:padding="5dp">
+
+                <ImageView
+                        android:id="@+id/nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp" />
+
+                <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="HOME"
+                        style="@style/CustomHeaderText"
+                        android:textSize="@dimen/nav_head_size" />
+
+                <ImageView
+                        android:id="@+id/change"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/close"
+                        android:src="@drawable/edit_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp" />
+
+                <ImageView
+                        android:id="@+id/close"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:src="@drawable/close_btn"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                         />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <!-- Side navigation drawer UI -->
+        <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/nav_bg"
+                android:fitsSystemWindows="true">
+        <LinearLayout android:layout_width="wrap_content"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+            <include
+                    layout="@layout/nav_header_main"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></include>
+
+            <ExpandableListView
+                    android:visibility="visible"
+                    android:id="@+id/expandableListView"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:groupIndicator="@null"
+                    android:childDivider="@color/white"
+                    android:divider="@color/white"
+                    android:dividerHeight="0.5dp" />
+        </LinearLayout>
+            <ScrollView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <include
+                            layout="@layout/nav_header_main"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></include>
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_marginRight="10dp"
+                                  android:layout_marginLeft="10dp"
+                    >
+
+                        <TextView
+                                android:id="@+id/dashboard"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/menu_dashboard_icon"
+                                android:gravity="center_vertical"
+                                android:text="@string/dashboard"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+
+                        <TextView
+                                android:id="@+id/profile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/menu_profile_icon"
+                                android:gravity="center_vertical"
+                                android:text="@string/profile"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+                        <TextView
+                                android:id="@+id/notification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/menu_notification_icon"
+                                android:text="@string/notification"
+                                android:gravity="center_vertical"
+                                style="@style/CustomNavUnBoldText"
+                        />
+                        <View android:layout_width="match_parent"
+                              android:layout_height="0.5dp"
+                              android:background="@color/white"
+                        />
+                        <TextView
+                                android:id="@+id/p_method"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/menu_payment_methods_icon"
+                                android:gravity="center_vertical"
+                                android:text="@string/p_method"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+                        <TextView
+                                android:id="@+id/swipe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/menu_swipe_settings_icon"
+                                android:gravity="center_vertical"
+                                android:text="@string/swipe"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+                        <TextView
+                                android:id="@+id/pay_history"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/menu_payment_history_icon"
+                                android:text="@string/pay_history"
+                                style="@style/CustomNavUnBoldText"
+                        />
+                        <View android:layout_width="match_parent"
+                              android:layout_height="0.5dp"
+                              android:background="@color/white"
+                        />
+
+                        <TextView
+                                android:id="@+id/r_tip"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/menu_start_receiving_tips_icon"
+                                android:text="@string/r_tip"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+
+                        <TextView
+                                android:id="@+id/view_qrcode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/menu_download_qr_code_icon"
+                                android:text="Download my QR code"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+                        <View android:layout_width="match_parent"
+                              android:layout_height="0.5dp"
+                              android:background="@color/white"
+                        />
+
+                        <RelativeLayout android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                            <TextView
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:drawableLeft="@drawable/menu_dashboard_settings_icon"
+                                    android:text="Dashboard Settings"
+                                    style="@style/CustomNavUnBoldText"
+                            />
+                            <ImageView
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/give"
+                                    android:clickable="true"
+                                    android:layout_toLeftOf="@+id/receive"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                            />
+                            <ImageView
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/receive"
+                                    android:clickable="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                            />
+
+                        </RelativeLayout>
+                        <View android:layout_width="match_parent"
+                              android:layout_height="0.5dp"
+                              android:background="@color/white"
+                        />
+
+                        <TextView
+                                android:id="@+id/policy"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/menu_privacy_policy_icon"
+                                android:text="@string/policy"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+                        <TextView
+                                android:id="@+id/use"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/menu_terms_of_use_icon"
+                                android:text="@string/use"
+                                style="@style/CustomNavUnBoldText"
+                        />
+                        <TextView
+                                android:id="@+id/help"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/menu_help_icon"
+                                android:text="@string/help"
+                                android:layout_alignParentLeft="true"
+                                style="@style/CustomNavUnBoldText"
+                        />
+
+                        <RelativeLayout android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                            <TextView
+                                    android:id="@+id/logout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableLeft="@drawable/menu_logout_icon"
+                                    android:text="@string/log"
+                                    android:gravity="center_vertical"
+                                    android:layout_alignParentLeft="true"
+                                    style="@style/CustomNavUnBoldText"
+                            />
+                            <ImageView
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/loader"
+                                    android:visibility="gone"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                            />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

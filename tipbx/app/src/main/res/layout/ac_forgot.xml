@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:background="@color/background"
+                                             android:layout_height="match_parent">
+
+  <ScrollView
+          android:id="@+id/scrollView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:fillViewport="true">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+      <RelativeLayout
+              android:id="@+id/ly"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorPrimary"
+      >
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/logo"
+                android:layout_margin="25dp"
+                android:src="@drawable/login_screen_logo"
+                android:layout_centerHorizontal="true"
+        />
+
+      </RelativeLayout>
+      <include layout="@layout/progress_bar_bg"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/ly"/>
+
+      <LinearLayout
+              android:layout_below="@+id/progressbar"
+
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+
+        <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+          <TextView
+                  style="@style/CustomTextView"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:focusableInTouchMode="true"
+                  android:hint="@string/txt_email_add" />
+
+          <EditText
+                  android:id="@+id/login_email_id"
+                  style="@style/CustomEditText"
+                  android:maxLength="@integer/text_alphabet"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:focusableInTouchMode="true"
+                  android:hint="@string/email_id"
+                  android:imeOptions="actionDone"
+                  android:inputType="textEmailAddress" />
+
+          <Button
+                  android:id="@+id/forgot_password"
+                  android:layout_width="fill_parent"
+                  android:layout_marginTop="20dp"
+                  android:textAllCaps="false"
+                  style="@style/CustomClickableButton"
+                  android:onClick="forgot"
+                  android:clickable="true"
+                  android:text="@string/fr" />
+
+        </LinearLayout>
+      </LinearLayout>
+    </RelativeLayout>
+  </ScrollView>
+  <LinearLayout
+          android:gravity="bottom"
+          android:orientation="horizontal"
+          android:weightSum="1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/move_to_register"
+            android:layout_width="fill_parent"
+            android:clickable="true"
+            android:onClick="registor"
+            style="@style/CustomRButton"
+    />
+
+  </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1029398755516",
+    "firebase_url": "https://tipbox-fbf34.firebaseio.com",
+    "project_id": "tipbox-fbf34",
+    "storage_bucket": "tipbox-fbf34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029398755516:android:4ffa24b88ec27982",
+        "android_client_info": {
+          "package_name": "com.tipbox.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029398755516-710khjltc1sq061ku8j8tiplv144c2cu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tipbox.app",
+            "certificate_hash": "8feff0b098b1193b8bdd4bc90af67f1f98e54917"
+          }
+        },
+        {
+          "client_id": "1029398755516-1ivk91c7ttl051nod21e7hauhnvbjofj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK7w9t5lsRkqZ-JJHu1V0KLeO0xWeNznQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029398755516-1ivk91c7ttl051nod21e7hauhnvbjofj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

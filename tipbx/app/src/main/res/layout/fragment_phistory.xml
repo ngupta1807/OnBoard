@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="@color/app_background"
+              android:layout_height="match_parent">
+    <include layout="@layout/progress_bar_app_bg"/>
+    <RelativeLayout
+            android:id="@+id/no_data_view"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/nothing_here"
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                style="@style/CustomTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No payment history record exist !"
+                android:gravity="center_horizontal"
+        />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/progressbar"
+            android:layout_marginTop="5dp"
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+</RelativeLayout>

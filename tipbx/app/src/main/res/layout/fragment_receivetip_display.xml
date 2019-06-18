@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/swipe_st_bg"
+>
+  <include layout="@layout/progress_bar_bg"
+  />
+
+  <TextView
+          android:layout_below="@+id/progressbar"
+          android:id="@+id/tv"
+          android:text="You are all set !"
+          android:layout_width="fill_parent"
+          style="@style/CustomHeaderText"
+          android:layout_margin="25dp"
+          android:textStyle="bold"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content"
+
+  />
+  <RelativeLayout android:layout_width="fill_parent"
+                  android:id="@+id/txt_dis"
+                  android:layout_centerInParent="true"
+                  android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/upload_img"
+                    android:layout_centerInParent="true"
+
+    >
+      <ImageView
+              android:layout_gravity="center_horizontal"
+              android:layout_margin="30dp"
+              android:id="@+id/logo"
+              android:clickable="true"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:visibility="visible"
+      />
+
+    </RelativeLayout>
+
+
+
+  </RelativeLayout>
+  <TextView
+          android:layout_below="@+id/txt_dis"
+          android:textSize="@dimen/btn_size"
+          android:visibility="visible"
+          android:id="@+id/txt_code"
+          android:layout_marginTop="20dp"
+          style="@style/CustomTextView"
+          android:layout_centerHorizontal="true"
+          android:layout_width="180dp"
+          android:gravity="center_horizontal"
+          android:layout_height="wrap_content"
+  />
+  <Button
+          android:layout_width="fill_parent"
+          android:layout_margin="20dp"
+          android:layout_alignParentBottom="true"
+          android:textAllCaps="false"
+          style="@style/CustomClickableButton"
+          android:id="@+id/action_start"
+          android:onClick="start"
+          android:text="Start Receiving Tips" />
+</RelativeLayout>

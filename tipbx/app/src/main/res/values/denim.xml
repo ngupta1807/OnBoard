@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size">15dp</dimen>
+    <dimen name="btn_size">12dp</dimen>
+    <dimen name="scan_size">18dp</dimen>
+    <dimen name="pading">5dp</dimen>
+    <dimen name="title_size">40dp</dimen>
+    <dimen name="thanku_size">30dp</dimen>
+    <dimen name="nav_txt_size">11dp</dimen>
+    <dimen name="nav_head_size">15dp</dimen>
+    <dimen name="box_txt_size">12dp</dimen>
+
+    <integer name="text_alphabet">50</integer>
+    <integer name="text_ac_no">20</integer>
+    <integer name="text_bnk_name">20</integer>
+    <integer name="text_ac_ifsc">20</integer>
+    <integer name="password_text">10</integer>
+    <integer name="phone_text">15</integer>
+
+
+</resources>

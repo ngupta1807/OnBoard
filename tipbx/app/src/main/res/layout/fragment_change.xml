@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/background"
+                android:layout_height="match_parent">
+  <include layout="@layout/progress_bar_bg"
+           />
+  <LinearLayout
+          android:id="@+id/linearLayout"
+          android:layout_margin="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_centerVertical="true"
+          android:layout_gravity="center"
+          android:orientation="vertical">
+
+    <TextView
+            style="@style/CustomTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="@string/old_pass" />
+
+    <EditText
+            android:id="@+id/old_pass"
+            style="@style/CustomEditText"
+            android:tag="@string/txt_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="@string/hint_old_pass"
+            android:maxLength="@integer/password_text"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword" />
+
+    <TextView
+            style="@style/CustomTextView"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="@string/new_pass"
+    />
+
+    <EditText
+            android:id="@+id/new_pass"
+            style="@style/CustomEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_new_pass"
+            android:maxLength="@integer/password_text"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword" />
+
+    <TextView
+            style="@style/CustomTextView"
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="@string/c_new_pass"
+    />
+
+    <EditText
+            android:id="@+id/c_new_pass"
+            style="@style/CustomEditText"
+            android:maxLength="@integer/password_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_c_new_pass"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            style="@style/CustomClickableButton"
+            android:id="@+id/action_login"
+            android:onClick="login"
+            android:text="@string/change" />
+
+
+  </LinearLayout>
+
+</RelativeLayout>
