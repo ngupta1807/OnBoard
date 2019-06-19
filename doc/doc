@@ -1,0 +1,611 @@
+Nisha Project:
+
+	Auto-reply:- (complete) 
+		D:\Auto reply\Final AutoReply
+	KPI: (complete)
+		D:\KPI\dump 21-8-2014\ClientApp\ClientApp
+	Blood-donor:
+		D:\Blood-donor\Blood-donor(9-3-1015)\Donor   (svn://192.168.100.76/svnrepo/BloodDonor/Android_latest)
+	Lean-buddy:
+		D:\GraycellTech\AndroidWorkspace\LeanBuddy
+	MSC project: (complete)
+		D:\msc project\final code\MSCProjectAndroid
+	Lock-Screen: (complete)
+		D:\lock\Final LockScreen
+	Today's Line up:
+		D:\GraycellTech\AndroidWorkspace\TodaysLineup
+	Fashionizer: (complete)
+		D:\fashionizer\final code\Fashionizer
+	Video App: (complete) 
+		D:\VideoApp\RND\Final-code-send  (svn://192.168.100.76/svnrepo/VideoPrototypeAppAndroid/AudioRecorder)
+		svn://192.168.100.76/svnrepo/VideoPrototypeAppAndroid
+	Shape Sustainability 
+		D:\Shape Sustainability\Shape Sustainability code\Final code of 18 may 2015\ShapeSustainability  (svn://192.168.100.76/svnrepo/ShapeSustainability/Android)
+	Be think: (complete)            (svn://192.168.100.76/svnrepo/Bethink)
+		D:\Reminder app\Code\BeThink    
+	Whiskers App (complete)
+		D:\Whisker App\Android     					(svn://192.168.100.76/svnrepo/Whiskr/Android)		
+	In-Kind 
+		D:\GraycellTech\new-AndroidWorkspace\In_Kind  (svn://192.168.100.76/svnrepo/InKind)
+	Datatrack
+		D:\Projects\IB_Workspace\DemoLauncher\git\datatrack-xibo
+	i-wingo
+		D:\Projects\iWin\iWingo
+		
+													
+Vinod Project:
+	Rookids
+		D:\Rookids\Rookids Final Source Code        (svn://192.168.100.76/Svnrepo/RookidsAndroidApp/RooKids)
+	Whiskers App (complete)
+		D:\Whisker App\Android     					(svn://192.168.100.76/svnrepo/Whiskr/Android)
+	Shaping davios (complete)
+		D:\Shaping Davos\shapers final code\ShapingDavos\ShapingDavos 
+	Sweet spot
+		(https://192.168.100.76:8443/summary/SweetSpot.git)
+
+icon sizes:
+LDPI should be 36 x 36.
+MDPI should be 48 x 48.
+HDPI should be 72 x 72.
+XHDPI should be 96 x 96.
+XXHDPI should be 144 x 144.
+
+Starting :
+We reviewed the initial details you shared and we would like to assist you in developing the new iOS and Android app for users to share videos.
+
+Please refer to our updated analysis below and share your inputs for further discussion:
+
+Understanding:- 
+We have to develop an iOS and Android app for users to find workout partner in gym.
+
+Queries:
+Q/1) Please suggest the third party barcode generator library you want to us or we can choose by our own?
+Q/2)  Please suggest the third party payment gateway you want to us or we can choose by our own?
+Q/3) Do you want to set songs limit of a music album by the seller? Please suggest.
+Q/4) How to movies will be added by the seller would they add movie link or upload a complete movie? Please suggest 
+Q/5) Please elaborate about the subscription plan for the seller, How many feature seller can access before subscription?
+Q/6) Please share the percentage of commission cut for the seller?
+Q/7) Please suggest the back-end technology you want to use or we can choose on our own?
+Q/8) Do you want to create an android /iOS app in a native environment or in a hybrid?
+Q/9) Please suggest if all the required graphics (splash screen, background, button, and icons image) for the app will be developed by us or they will be provided by you.
+Q/10) Do you want us to develop centralized databases , back-end , admin panel and  api's required for the app or they will be provided by you?
+Q/11) Do you want to develop an app for android phones and tablet both? Please suggest.
+Q/12) Please suggest the chat SDK you want to use for CHAT setup?
+Payment queries:
+1. When amount will be cut from the company account or employee account(when job assigned or when job completed) and when will the employee receive the amount.
+2. Please confirm do you want the feature that the company can cancel the assigned job post?
+3. Please suggest do you want any commission to be received to admin when the job is completed?
+Rfp message :
+Please suggest if all the required graphics (splash screen, background, button, and icons image) for the app will be developed by us or they will be provided by you.
+Do you want us to develop centralized databases , back-end , admin panel and  api's required for the app or they will be provided by you?
+Please confirm to our assumptions , workflow and reply to our queries so that we can have a better clarity towards the scope of the application and share you the final estimate.
+
+Assumptions:
+1. The application will work with android phones having OS version 2.3.3 and support up to 5.x.
+2. We assume that the app will be deployed for portrait mode only.
+3. All the static text to be used within the application will be provided to you.
+4. The app logo will be provided by you for the app.
+5. The application will be developed in English language only.
+6. At our end app will be tested on Huawei ascend p6, Samsung galaxy S4.
+7. We assume that no local database will be used within the app.
+8. We assume that the beacon device for testing will be provided by you.
+9. We assume that the web services required for the app will be developed by us.
+10.We assume that  the required graphics( splash screen, background images, buttons and icons) for the application will be designed by us.
+11.We assume that no inapp notification and push notification will be implemented within the app.
+
+Accounts created :
+
+testgtechvinod
+gtech@17
+
+Rev-mob account credentails:-
+nisha@graycelltech.com
+nisha123
+
+parteek sir credebtials:-
+Pr@2()12Se
+Pr@2()12se
+parteek@graycelltech.com
+parteek.gct
+
+Facebook and gmail testing account :-
+testgtect@gmail.com
+testing@123
+
+malhotrasahil17@gmail.com
+testing@123
+
+gmail test account :
+graycelldeveloper2018@gmail.com
+Gtech@17
+
+agcell1117@gmail.com
+gtech@1117
+
+Nisha@123
+aditya.uve@gmail.com
+
+chandigarhgct@gmail.com
+testing@123
+
+Quickblox
+testgtect@gmail.com
+testing@123
+
+github
+testgtect@gmail.com
+testing@123
+
+ngupta1807@gmail.com
+varsha5030
+
+Text Fairy forum
+nisha@graycelltech.com
+gtech@17
+username :graycell
+
+nisha@graycelltech.com
+nisha123
+
+hotmail
+ngupta1807@hotmail.com
+shalu5030
+
+instagram
+testgtect@gmail.com
+nisha123
+
+linkedin
+testgtect@gmail.com
+nisha123
+
+samsung developer account:  (http://developer.samsung.com/remotetestlab/rtlDeviceList.action) (use in firefox)
+testgtect@gmail.com 
+N!sha@135
+
+nisha@graycelltech.com
+N!sha@135
+
+twitter
+username:testgtech
+email:testgtech@gmail.com
+pwd:nisha123
+
+
+pwd: nisha123
+
+Iphone password:-
+Rohit23689
+
+aviary:
+testgtect@gmail.com
+nisha123
+
+marvel
+testgtect@gmail.com
+12345678
+
+jwplayer
+nisha@graycelltech.com
+123456
+
+OpenTok
+nisha@graycelltech.com
+N@123456
+
+manymo
+nisha@graycelltech.com
+nisha123
+
+OCR (Image to text)
+https://www.havenondemand.com/signup.html
+nisha@graycelltech.com
+nisha123
+
+https://kickflip.io
+nisha@graycelltech.com
+nisha123
+
+Oracle :
+nisha@graycelltech.com
+gtech@17
+
+app virality:
+nisha@graycelltech.com
+12345678
+
+aditya1.uve@gmail.com   github
+Nisha@123
+
+aditya1.uve@gmail.com   gmail   
+Aditya@123
+
+aditya1.uve@gmail.com   microblink (microblink.com/login)
+aditya123
+
+https://virtual.teamworkpm.net/#/dashboard/activity
+ben.ray@ultimatevirtualemployee.com (gmail account of qr code app)
+wealth1234
+
+http://developer.skobbler.com/
+nisha@graycelltech.com
+testing@123
+
+Jira
+nisha@graycelltech.com
+N!s2o14gpT
+
+vinod@graycelltech.com
+V!nod123#
+
+Soul bowl app :
+test users:
+vivek933@gmail.com
+123456
+vinod@graycelltech.com
+12345678
+
+play store :
+1.Username : soulbowlonline@gmail.com
+2.Password : Ebay@2014/Soul@4321
+
+Play store developer account of moti:
+grabiddeveloper@gmail.com
+Sisi2323mm
+
+Rookids amazon credentails
+https://developer.amazon.com
+dinker@gungroo.com
+Pass: W@!12#4CEAQ
+
+screen-cast:
+http://www.screencast.com/users/Nisha-GCT
+username: nisha@graycelltech.com
+password : nisha123
+
+Stackoverflow
+nisha@graycelltech.com
+nisha123
+
+firefox support 
+nisha@graycelltech.com
+username:nisha_graycell
+G12345678
+
+uc support 
+nisha@graycelltech.com
+nisha123
+nisha1807
+
+campus :
+adityachawla
+Boston2468
+https://virtual.teamworkpm.net/#tasks/9105493?c=4337950
+
+today's line up
+monu
+12345
+
+gimbal
+nisha@graycelltech.com
+Testing@123
+
+Alarm clock--> credentials from dan
+
+bintray account:
+nisha@graycelltech.com
+gtech@17  / Gtech@17
+
+github account
+nisha@graycelltech.com
+Gtech@17
+
+qr code app:
+benray
+wealth1234
+
+ben.ray@ultimatevirtualemployee.com
+testing@123
+
+Nisha system details and login password
+nisha@graycelltech.com
+N!s2o14gpT
+
+Moti teamviewer ID :
+736139236
+
+Trak Scanner
+support@teamglasser.com" and the password is "Traktrak90".
+
+mailto:varun@graycelltech.com
+v@r2320!65cnGy
+
+Google Developer sign in (CDR)
+harry.groome@gmail.com
+Dobby1818!
+
+cview developer login
+alphadeveloper888@gmail.com
+Sisi2323mm
+
+Rmp credentials:
+Google Play Store Developer Login:
+viraldarji@gmail.com
+Acura2015
+
+· Pattillo Construction
+o User: demo20@rmpresources.commailto:demo20@rmpresources.com
+o Password: Temp4321
+· Brooklyn Navy Yard
+o User: demo4@rmpresources.commailto:demo4@rmpresources.com
+o Password: Temp4321
+· RMP Safety App
+o User: demo@rmpresources.commailto:demo@rmpresources.com
+o Password: Temp4321
+Level5
+demo5@rmpresources.commailto:demo5@rmpresources.com
+Temp4321
+South Coast
+demo13@rmpresources.commailto:demo5@rmpresources.com
+Temp4321
+
+hr@kabirinfo.com
+
+akhtaboot
+ngupta1807@gmail.com
+Nisha123@
+
+https://dashboard.zopim.com/?first_login#home
+nisha@graycelltech.com
+gtech@17
+
+Contact numbers :
+kanwar sir:..9780696973
+sachin :9971530964
+Mandy Number:8566041011
+graycell: 9878668136
+rahul:9803775209
+
+
+Full forms:
+GSC - >Global Security Challenge,Global Security Client
+MSL - > Master story list.
+POA: Plan of action  
+MOM: Minutes of meeting
+SOW: Statement of Work
+MRZ: Machine Readable Zone
+MVP : Minimum viable product :(MVP) is a product with just enough features to satisfy early customers, and to provide feedback for future development.
+Some experts suggest that in B2b an MVP also means saleable: "it’s not an MVP until you sell it. Viable means you can sell it".
+SSE : Senior software engg.
+POC : proof of concept 
+
+GIT Commands:
+git config --global user.name "Nisha gupta"
+git config --global user.email "nisha@graycelltech.com" 
+git remote add origin https://ParveenTyagi@bitbucket.org/sweetpot/iwin-go-backend.git
+git clone http://192.168.100.73/root/QRCodeReaderMobileApplication.git (to take first time code syncing with git)
+git status
+git add app/ if some red error  , git add . (means add all)
+git status
+git commit -m "hazard screen changes"  (comit code with mesage)
+git status
+git push origin master
+if git crashed (rm -f ./.git/index.lock)
+git reset --hard
+
+testing tool:
+
+1.https://app.testobject.com/#/party/rookids/manual
+nisha@graycelltech.com
+password : gtech@17
+2.https://www.browserstack.com
+nisha@graycelltech.com
+password : gtech@17
+3. https://www.manymo.com
+nisha@graycelltech.com
+password : gtech@17
+4. http://www.viewportemulator.com/devices/
+5. http://www.mobilexweb.com/emulators
+6. https://appetize.io/docs (for nexa device)
+7. http://developer.samsung.com/remotetestlab/rtlDeviceList.action
+https://support.google.com/googleplay/android-developer/contact/otherbugs?hl=en&ec=bugs&cfsi=bugs_cf&cfnti=escalationflow.email&cft=3
+${com.wowza.wms.context.VHostConfigHome}/dvr
+8. http://blogs.quovantis.com/appium-basics-part-1-pre-requisites-and-setting-up-your-appium-environment-for-windows/
+
+
+5337440601282008
+04/19
+suraj lal
+671
+
+detail : 
+902
+tim
+testing@123
+
+902
+ken
+
+Useful links:
+
+https://github.com/devendroid/VectorChildFinder (SVg sample)
+
+question :(JSONArray) new JSONTokener(itemData).nextValue(); is used to parse string to json
+
+inapp purchase test:
+https://stackoverflow.com/questions/42925447/start-rollout-to-beta-disabled-in-play-store-developer-console
+
+Difference b/t rooted and non-rooted:
+http://www.differencebetween.info/difference-between-rooted-and-unrooted-android-phones
+
+create white label android app: https://www.youtube.com/watch?v=7JDEK4wkN5I
+
+Custom Rating bar:
+https://android-arsenal.com/details/1/3771
+https://android-arsenal.com/tag/84
+
+self signed certificate:
+http://blog.jgc.org/2011/06/importing-existing-ssl-keycertificate.html
+C:\Users\nisha.GCELL\Desktop\Blooddonor\certificate commands :
+keytool -importcert -v -trustcacerts -file "C:/Users/nisha.GCELL/Desktop/test/interm_ca.cer" -alias IntermediateCA -keystore "res/raw/myKeystore.bks" -provider org.bouncycastle.jce.provider.BouncyCastleProvider -providerpath "C:/Users/nisha.GCELL/Desktop/test/bcprov-ext-jdk15on-154.jar" -storetype BKS -storepass mysecret
+keytool -importcert -v -trustcacerts -file "C:\Users\nisha.GCELL\Desktop\Blooddonor\certificate\server.cer" -alias IntermediateCA -keystore "C:\Users\nisha.GCELL\Desktop\Blooddonor\certificate/myKeystore.bks" -provider org.bouncycastle.jce.provider.BouncyCastleProvider -providerpath "C:/Users/nisha.GCELL/Desktop/test/bcprov-ext-jdk15on-154.jar" -storetype BKS -storepass gtech@17
+
+http://stackoverflow.com/questions/3623143/multicast-on-android-2-2?lq=1
+
+http://stackoverflow.com/questions/15743550/unable-to-receive-proper-udp-packets-using-ssdp
+
+Shell commands: adb shell /system/bin/input tap 350 1200
+adb shell /system/bin/screencap -p /sdcard/img.png
+D:\>adb pull /system/app/a.apk  (to pull aok to system apps).
+
+Ble remote control : 1. https://github.com/bertrandmartel/bluetooth-remote-control
+
+To enable logging on Huawei Y300:
+dial *#*#2846579#*#*
+select 'ProjectMenu'
+select 'Background Setting'
+select 'Log Setting'
+select 'Log Switch'
+enable 'LOG on'
+Select 'Log level setting'
+enable 'DEBUG'
+Press the 'Back' key
+select 'Dump and Log'
+enable 'Open Dump and Log'
+Press 'Back' key 5 times to return to home screen.
+Reboot the phone.
+LogCat should now work.
+
+To generate key:
+(For all facebook key) keytool -exportcert -alias androiddebugkey -keystore "C:\\Users\\nisha\\.android\\debug.keystore" | "openssl\\bin\\openssl.exe" sha1 -binary |"openssl\\bin\\openssl.exe" base64
+(For all detail) keytool -list -v -keystore "C:\\Users\\nisha\\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore | openssl sha1 -binary | openssl
+base64
+
+http://stackoverflow.com/questions/18692571/how-it-works-warning-that-app-is-going-to-be-uninstalled
+
+1."menu->settings->more settings->NFC"
+file lock:-
+2.http://examples.javacodegeeks.com/core-java/nio/filelock/create-file-lock-on-file/
+3.http://android.worldbestlearningcenter.com/2013/10/file-locker-for-android.html
+4.http://www.smashingmagazine.com/2010/10/25/get-started-developing-for-android-with-eclipse/
+
+create simple widget in android:-
+1.http://www.javacodegeeks.com/2013/05/modal-dialog-popup-from-android-widget-example.html
+http://smartandroidians.blogspot.in/2010/04/alarmmanager-and-notification-in.html
+
+Android basic:-
+2.http://www.fiveminutes.eu/the-android-cookbook/
+
+color code;
+3.http://www.color-hex.com/
+Download apk for pc.
+http://apps.evozi.com/apk-downloader/?id=com.beyondweb.rocker.free
+
+Its showing blurry images because you are using an EDGE connection (2G) or may be old version of play store.
+For the images to be clear, you will have to use 3G or Wifi. Its Play Store's way of limiting the bandwidth, for faster loading of images.
+http://forum.xda-developers.com/showthread.php?t=2373909
+
+Today's line check if new version has upgraded.
+http://stackoverflow.com/questions/6952643/detect-android-app-upgrade-and-set-application-class-boolean-for-show-hide-of-eu
+http://stackoverflow.com/questions/20808019/android-app-how-to-detect-in-code-if-app-is-new-install-or-update
+
+http://phpfiddle.org/
+
+BLE device:
+http://stackoverflow.com/questions/17870189/android-4-3-bluetooth-low-energy-unstable
+http://evothings.com/doc/examples/ble-scan.html
+https://www.youtube.com/watch?v=vUbFB1Qypg8
+http://stackoverflow.com/questions/18008507/android-4-3-as-a-bluetooth-le-peripheral
+https://learn.adafruit.com/downloads/pdf/introduction-to-bluetooth-low-energy.pdf
+http://binary-studio.com/2014/08/29/bluetooth-low-energy-for-android-part-1/
+https://learn.sparkfun.com/tutorials/bc118-ble-mate-2-hookup-guide
+https://play.google.com/store/apps/details?id=sample.ble.sensortag
+http://stackoverflow.com/questions/26441785/does-bluetoothleadvertiser-work-on-a-nexus-5-with-android-5-0
+http://stackoverflow.com/questions/28364104/android-ble-peripheral-device-data-receiving
+http://stackoverflow.com/questions/17870189/android-4-3-bluetooth-low-energy-unstable
+http://stackoverflow.com/questions/18052593/how-to-connect-android-device-to-an-ios-device-over-ble-bluetooth-low-energy?rq=1
+
+Ble:
+http://www.logicallabs.com/understanding-bluetooth-for-android-ios-and-titanium/
+
+Launch app from our app is null for some app:
+http://stackoverflow.com/questions/30446052/getlaunchintentforpackage-is-null-for-some-apps
+http://stackoverflow.com/questions/3872063/launch-an-application-from-another-application-on-android?lq=1
+
+Ibecon:
+http://www.ibeacon.com/what-is-ibeacon-a-guide-to-beacons/
+
+Blue-tooth: 
+http://stackoverflow.com/questions/6856931/want-a-android-bluetooth-to-be-always-visible-until-app-running
+
+ip camera video streaming:
+http://ijoshsmith.com/2014/01/25/video-streaming-from-an-ip-camera-to-an-android-phone/
+
+Automatic device on when power connected
+http://android.stackexchange.com/questions/20021/automatically-power-on-android-when-the-charger-is-connected
+https://www.olimex.com/forum/index.php?topic=2559.0
+http://stackoverflow.com/questions/26294258/auto-boot-when-wall-charger-is-plugged
+http://www.danmandle.com/blog/auto-boot-android-when-plugged-into-power/
+
+
+https://zackehh.com/remap-the-android-power-button/
+http://techjectives.blogspot.in/2014/01/how-to-install-android-kitchen-in_7433.html
+http://www.mtkroms.com/2015/02/tutorial-to-set-up-cygwin-and-android.html
+
+http://apcmag.com/make-android-rom-part-5.htm/#disqus_thread
+http://apcmag.com/how-to-make-your-own-android-rom-part-2.htm/
+
+Question asked : https://support.mozilla.org/en-US/search/advanced?a=1&asked_by=nisha_graycell&w=2
+Blood donor sample:
+D:\Blood-donor\custom calender for app\Android-Calendar-Sync-master
+
+For fultter :
+1. http://cogitas.net/flutter-ui-code-tutorial-mastering-row-column/ 
+
+
+For ilets(listen):
+1. If sentence then we can add perposition  and if just word then only one word.
+2. In listening given 10 min to transfer answer at that time we need to foucs on spelling.
+3. In multiple chose write only option a , b , c not the value.
+4. Prepare que and ans underline imp words
+5. Make notes while answer come - > write short words
+6.
+
+For ilets(reading) true/false: 
+1. Keep eye on next que as answer comes in order.
+2. Write complete word true,flase,not given (not short word)
+3. Try to fill form in lower reagion not in chd so the studends or not so good in english.(for speaking)
+4. If in true/false you are not able to attempt write true with every answer.
+5. 
+
+trick : 
+Reading:
+first see all three passage and choose what to do first. Move eye with pencil.
+Mark dates and persons in the question and find then in passage.
+first fil ups then on the bases of year choose event, then list of heading.
+If no time left for t/f then add true for every statement
+
+Listening : 
+fill us :  underline imp word so to focus on these only.
+pictute : write short words of option on the picture.
+
+
+r - 2.6
+l - 3.1
+
+b/t 
+r -15-20 (5/5.5)
+l -20-23 - 26(6)
+
+
+bata.in
+ngupta1807@gmail.com
+nisha123
+
+short cut key android studio
+
+ctrl +alt +l format code 
+ctrl +l to logout from fabric
+
+
